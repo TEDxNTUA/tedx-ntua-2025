@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import "./globals.css";
 
 export const metadata = {
   title: "TEDxNTUA 2025",
