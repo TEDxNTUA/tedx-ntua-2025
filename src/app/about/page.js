@@ -10,7 +10,7 @@ export default function AboutPage() {
   const size = isHovered ? 100 : 30;
 
   return (
-    <div className="mt-[65px]">
+    <div>
       <main className={styles.main}>
         {/* Here appears the text when it is hovered. */}
         <motion.div
