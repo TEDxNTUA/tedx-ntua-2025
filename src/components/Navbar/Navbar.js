@@ -1,27 +1,27 @@
-"use client";
-import { useState } from "react";
-import Link from "next/link";
+'use client';
+import {useState} from 'react';
+import Link from 'next/link';
 
-import NavLink from "./NavLink";
+import NavLink from './NavLink';
 
 const navLinks = [
-  { title: "Αρχική", path: "/", isImage: true },
+  {title: 'Αρχική', path: '/', isImage: true},
   {
-    title: "Ομιλητές",
-    path: "/speakers",
+    title: 'Ομιλητές',
+    path: '/speakers'
   },
   {
-    title: "Performers & Workshops",
-    path: "/performers",
+    title: 'Performers & Workshops',
+    path: '/performers'
   },
   {
-    title: "Χορηγοί",
-    path: "/partners",
+    title: 'Χορηγοί',
+    path: '/partners'
   },
   {
-    title: "About",
-    path: "/about",
-  },
+    title: 'About',
+    path: '/about'
+  }
   // {
   //   title: "Booklet",
   //   path: "/booklet"
@@ -38,11 +38,11 @@ function Navbar() {
   };
 
   const hamburgerLine =
-    "h-[4px] w-8 my-[2.5px] rounded-full bg-white transition-all ease-in-out opacity-100 duration-[500ms]";
+    'h-[4px] w-8 my-[2.5px] rounded-full bg-white transition-all ease-in-out opacity-100 duration-[500ms]';
 
   return (
-    <nav className="fixed flex w-full top-0 left-0 right-0 z-10 bg-black">
-      <div className="flex w-[85%] lg:max-w-[100rem] h-[65px] px-6 items-center justify-between mx-auto">
+    <nav className="h-[65px] sticky bg-black flex top-0">
+      <div className="flex  items-center justify-between w-[90%] max-w-[1600px] mx-auto">
         <Link onClick={closeDrawer} href="/">
           <img
             src="./tedxntua_logo.png"
@@ -50,8 +50,8 @@ function Navbar() {
             alt="TEDxNTUA Logo"
             onClick={() =>
               document
-                .getElementById("main-scroll-container")
-                .scrollTo({ top: 0, behavior: "smooth" })
+                .getElementById('main-scroll-container')
+                .scrollTo({top: 0, behavior: 'smooth'})
             }
           ></img>
         </Link>
@@ -104,19 +104,15 @@ function Navbar() {
             onClick={() => setDrawerIsOpen(!drawerIsOpen)}
           >
             <div
-              className={`${hamburgerLine} ${
-                drawerIsOpen ? "translate-y-[9px] rotate-45" : ""
-              }`}
+              className={`${hamburgerLine} ${drawerIsOpen ? 'translate-y-[9px] rotate-45' : ''}`}
             />
             <div
               className={`${hamburgerLine} ${
-                drawerIsOpen ? "origin-center scale-x-0 opacity-0" : ""
+                drawerIsOpen ? 'origin-center scale-x-0 opacity-0' : ''
               }`}
             />
             <div
-              className={`${hamburgerLine} ${
-                drawerIsOpen ? "-translate-y-[9px] -rotate-45" : ""
-              }`}
+              className={`${hamburgerLine} ${drawerIsOpen ? '-translate-y-[9px] -rotate-45' : ''}`}
             />
           </button>
         </div>
@@ -127,8 +123,8 @@ function Navbar() {
         id="mobile-drawer"
         className={
           drawerIsOpen
-            ? "fixed right-0 w-[45%] z-50 lg:hidden h-[calc(100vh-65px)] bg-black ease-in duration-300 mt-[65px]"
-            : "fixed right-[-120%] h-[calc(100vh-65px)] mt-[65px] z-50"
+            ? 'fixed right-0 w-[45%] z-50 lg:hidden h-[calc(100vh-65px)] bg-black ease-in duration-300 mt-[65px]'
+            : 'fixed right-[-120%] h-[calc(100vh-65px)] mt-[65px] z-50'
         }
       >
         {/* <div className="flex flex-col items-center justify-between h-full pt-16 pb-32 w-[90%] mx-auto"> */}
@@ -181,8 +177,8 @@ function Navbar() {
         id="opacity-when-drawer-clicked"
         className={
           drawerIsOpen
-            ? "fixed right-0 w-[100%] lg:hidden bg-black/40 z-40 h-[calc(100vh-65px)] mt-[65px]"
-            : "fixed right-[-120%] h-[calc(100vh-65px)] mt-[65px]"
+            ? 'fixed right-0 w-[100%] lg:hidden bg-black/40 z-40 h-[calc(100vh-65px)] mt-[65px]'
+            : 'fixed right-[-120%] h-[calc(100vh-65px)] mt-[65px]'
         }
       />
     </nav>
