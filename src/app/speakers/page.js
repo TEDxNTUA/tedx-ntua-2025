@@ -1,5 +1,11 @@
+import Schedule from '@srccomponents/Schedule';
+
 function SpeakersPage() {
-  return <main>Speakers' page</main>;
+  return (
+    <>
+      <Schedule />
+    </>
+  );
 }
 
 export default SpeakersPage;
