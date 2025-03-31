@@ -9,7 +9,10 @@ export default {
     extend: {
       colors: {
         background: 'var(--background)',
-        foreground: 'var(--foreground)'
+        foreground: 'var(--foreground)',
+        'tedx-red': '#eb0028',
+        'our-red': '#e14640',
+        'our-black': '#191617'
       }
     }
   },
