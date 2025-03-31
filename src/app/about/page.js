@@ -16,7 +16,7 @@ export default function AboutPage() {
         <motion.div
           className={styles.mask}
           animate={{
-            WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
+            WebkitMaskPosition: `${x - size / 2}px ${y - 120 - size / 2}px`,
             WebkitMaskSize: `${size}px`
           }}
           transition={{type: 'tween', ease: 'backOut', duration: 0.5}}
