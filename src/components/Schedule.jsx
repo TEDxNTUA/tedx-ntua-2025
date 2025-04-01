@@ -1,5 +1,5 @@
 import React from 'react';
-import {PROGRAM} from '@dataprogram';
+import {PROGRAM} from '@data/program';
 
 const Schedule = () => {
   // Define background colors for different types of sessions

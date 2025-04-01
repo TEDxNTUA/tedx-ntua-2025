@@ -1,10 +1,9 @@
-"use client";
-import { useScroll, useTransform, motion } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
-import { GlareCard } from "@/components/GlareCard";
-import Image from "next/image";
+'use client';
+import {useScroll, useTransform, motion} from 'framer-motion';
+import React, {useEffect, useRef, useState} from 'react';
+import {GlareCard} from '@components/GlareCard';
 
-const Timeline = ({ data }) => {
+const Timeline = ({data}) => {
   const ref = useRef(null);
   const containerRef = useRef(null);
   const [height, setHeight] = useState(0);
@@ -16,9 +15,9 @@ const Timeline = ({ data }) => {
     }
   }, []);
 
-  const { scrollYProgress } = useScroll({
+  const {scrollYProgress} = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 50%"],
+    offset: ['start 10%', 'end 50%']
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -52,23 +51,20 @@ const Timeline = ({ data }) => {
               {/* Wrap images with GlareCard */}
               <div className="grid grid-cols-2 gap-4">
                 {item.content.props.children.props.children.map((img, i) => (
-                  <GlareCard key={i}>
-                    {img}
-                  </GlareCard>
+                  <GlareCard key={i}>{img}</GlareCard>
                 ))}
               </div>
-
             </div>
           </div>
         ))}
         <div
-          style={{ height: `${height}px` }}
+          style={{height: `${height}px`}}
           className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-gradient-to-b from-transparent via-neutral-200 dark:via-neutral-700 to-transparent"
         >
           <motion.div
             style={{
               height: heightTransform,
-              opacity: opacityTransform,
+              opacity: opacityTransform
             }}
             className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent rounded-full"
           />

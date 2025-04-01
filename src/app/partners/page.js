@@ -1,42 +1,42 @@
-"use client";
+'use client';
 
-import React, { useEffect } from 'react';
-import Image from "next/image";
+import React, {useEffect} from 'react';
+import Image from 'next/image';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Timeline from "@/components/Timeline";
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import Timeline from '@components/Timeline';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function PartnersPage() {
   useEffect(() => {
-    gsap.utils.toArray('.sponsor img').forEach((img) => {
+    gsap.utils.toArray('.sponsor img').forEach(img => {
       gsap.from(img, {
         scrollTrigger: {
           trigger: img,
-          start: "top 80%",
-          end: "bottom 60%",
-          toggleActions: "play none none reverse",
+          start: 'top 80%',
+          end: 'bottom 60%',
+          toggleActions: 'play none none reverse'
         },
         opacity: 0,
         y: 50,
         duration: 1,
-        ease: "power2.out",
+        ease: 'power2.out'
       });
     });
   }, []);
 
   const timelineData = [
     {
-      title: "Platinum Sponsors",
+      title: 'Platinum Sponsors',
       content: (
         <div>
           <div className="grid grid-cols-2 gap-4">
             {[
-              "https://assets.aceternity.com/cards.png",
-              "https://assets.aceternity.com/cards.png",
-              "https://assets.aceternity.com/cards.png",
-              "https://assets.aceternity.com/cards.png",
+              'https://assets.aceternity.com/cards.png',
+              'https://assets.aceternity.com/cards.png',
+              'https://assets.aceternity.com/cards.png',
+              'https://assets.aceternity.com/cards.png'
             ].map((url, idx) => (
               <Image
                 key={idx}
@@ -49,18 +49,18 @@ function PartnersPage() {
             ))}
           </div>
         </div>
-      ),
+      )
     },
     {
-      title: "Grand Sponsors",
+      title: 'Grand Sponsors',
       content: (
         <div>
           <div className="grid grid-cols-2 gap-4">
             {[
-              "https://assets.aceternity.com/cards.png",
-              "https://assets.aceternity.com/cards.png",
-              "https://assets.aceternity.com/cards.png",
-              "https://assets.aceternity.com/cards.png",
+              'https://assets.aceternity.com/cards.png',
+              'https://assets.aceternity.com/cards.png',
+              'https://assets.aceternity.com/cards.png',
+              'https://assets.aceternity.com/cards.png'
             ].map((url, idx) => (
               <Image
                 key={idx}
@@ -73,18 +73,18 @@ function PartnersPage() {
             ))}
           </div>
         </div>
-      ),
+      )
     },
     {
-      title: "Partners",
+      title: 'Partners',
       content: (
         <div>
           <div className="grid grid-cols-2 gap-4">
             {[
-              "https://assets.aceternity.com/cards.png",
-              "https://assets.aceternity.com/cards.png",
-              "https://assets.aceternity.com/cards.png",
-              "https://assets.aceternity.com/cards.png",
+              'https://assets.aceternity.com/cards.png',
+              'https://assets.aceternity.com/cards.png',
+              'https://assets.aceternity.com/cards.png',
+              'https://assets.aceternity.com/cards.png'
             ].map((url, idx) => (
               <Image
                 key={idx}
@@ -97,8 +97,8 @@ function PartnersPage() {
             ))}
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ];
 
   return (
@@ -107,7 +107,6 @@ function PartnersPage() {
         <h1>TEDxNTUA - Partners</h1>
       </header>
 
-      
       <section className="section bg-white">
         <Timeline data={timelineData} />
       </section>
