@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^12.5.0",
+    "framer-motion": "^12
+    "sass": "^1.86.0"
+    "gsap": "^3.12.7",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sass": "^1.86.0"
+    "tedx-ntua-2025": "file:"
   },
   "devDependencies": {
     "postcss": "^8",
