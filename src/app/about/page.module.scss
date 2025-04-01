@@ -1,0 +1,22 @@
+.main {
+  background-color: black;
+  .mask,
+  .body {
+    color: #ebebeb;
+    font-size: 64px;
+    line-height: 66px;
+    cursor: default;
+  }
+
+  .mask {
+    mask-image: url('../../../public/mask.svg');
+    mask-repeat: no-repeat;
+    mask-size: 40px;
+    background: #ec4e39;
+    position: absolute;
+    color: black;
+  }
+  .text-white:hover {
+    color: red !important;
+  }
+}
