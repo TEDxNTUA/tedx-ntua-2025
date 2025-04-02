@@ -1,11 +1,14 @@
 .main {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Pushes content down */
-  }
+  position: relative;
+  min-height: 100vh;       
+  overflow-x: hidden;      
+  overflow-y: visible;     
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
   
   .sliderContainer {
     position: absolute;
@@ -27,5 +30,7 @@
     font-size: 3.5rem; /* Adjust size as needed */
     font-weight: bold;
     white-space: nowrap;
+    color: white; 
   }
+  
   
