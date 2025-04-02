@@ -1,9 +1,9 @@
 'use client';
 
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Timeline from '@components/Timeline';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -26,22 +26,19 @@ function PartnersPage() {
     });
   }, []);
 
+  const imageURL = 'https://assets.aceternity.com/cards.png';
+
   const timelineData = [
     {
       title: 'Platinum Sponsors',
       content: (
         <div>
           <div className="grid grid-cols-2 gap-4">
-            {[
-              'https://assets.aceternity.com/cards.png',
-              'https://assets.aceternity.com/cards.png',
-              'https://assets.aceternity.com/cards.png',
-              'https://assets.aceternity.com/cards.png'
-            ].map((url, idx) => (
+            {Array.from({ length: 4 }).map((_, idx) => (
               <Image
                 key={idx}
-                src={url}
-                alt={`design ${idx + 1}`}
+                src={imageURL}
+                alt={`platinum sponsor ${idx + 1}`}
                 width={500}
                 height={500}
                 className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow"
@@ -55,20 +52,15 @@ function PartnersPage() {
       title: 'Grand Sponsors',
       content: (
         <div>
-          <div className="grid grid-cols-2 gap-4">
-            {[
-              'https://assets.aceternity.com/cards.png',
-              'https://assets.aceternity.com/cards.png',
-              'https://assets.aceternity.com/cards.png',
-              'https://assets.aceternity.com/cards.png'
-            ].map((url, idx) => (
+          <div className="grid grid-cols-4 gap-4">
+            {Array.from({ length: 8 }).map((_, idx) => (
               <Image
                 key={idx}
-                src={url}
-                alt={`design ${idx + 1}`}
+                src={imageURL}
+                alt={`grand sponsor ${idx + 1}`}
                 width={500}
                 height={500}
-                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow"
+                className="rounded-lg object-cover h-16 md:h-32 lg:h-40 w-full shadow"
               />
             ))}
           </div>
@@ -79,20 +71,15 @@ function PartnersPage() {
       title: 'Partners',
       content: (
         <div>
-          <div className="grid grid-cols-2 gap-4">
-            {[
-              'https://assets.aceternity.com/cards.png',
-              'https://assets.aceternity.com/cards.png',
-              'https://assets.aceternity.com/cards.png',
-              'https://assets.aceternity.com/cards.png'
-            ].map((url, idx) => (
+          <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
+            {Array.from({ length: 16 }).map((_, idx) => (
               <Image
                 key={idx}
-                src={url}
-                alt={`changelog image ${idx + 1}`}
+                src={imageURL}
+                alt={`partner ${idx + 1}`}
                 width={500}
                 height={500}
-                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow"
+                className="rounded-lg object-cover h-14 md:h-24 lg:h-28 w-full shadow"
               />
             ))}
           </div>
