@@ -31,19 +31,19 @@ export default function AboutPage() {
             onMouseLeave={() => { setIsHovered(false); }}
             className={isHovered ? 'text-red' : 'text-white'}
           >
-            <AboutInfo textColor="text-white" />
+            <AboutInfo textColor="text-synelixis-blue" />
           </div>
         </motion.div>
         <div className={styles.body}>
           {/* Text without being hovered */}
-          <AboutInfo textColor="text-our-red" />
+          <AboutInfo textColor="text-synelixis-orange" />
         </div>
       </main>
 
       {/* This div includes the grid with the team members and their doodles */}
-      <div className="max-w-[2080px] mx-auto flex flex-col lg:w-[90%] w-[80%] px-6 mt-[150px] bg-[#160B23]">
-        <h2 className="text-white text-[2.25rem] lg:text-[4.25rem] font-bold">
-          Meet The Team <span className="text-our-red">2025</span>
+      <div className="max-w-[2080px] mx-auto flex flex-col lg:w-[90%] w-[80%] px-6 mt-[150px] bg-synelixis-blue">
+        <h2 className="mb-[30px] text-synelixis-yellow text-[2.25rem] lg:text-[4.25rem] font-bold">
+          Meet The Team <span className="text-synelixis-orange">2025</span>
         </h2>
         <AboutGrid aboutlist={ABOUTLIST} />
       </div>

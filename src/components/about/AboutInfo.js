@@ -2,7 +2,7 @@ import React from "react";
 
 
 //using a feature textColor in order to change the color of the text in the component for TED, TEDx, TEDxNTUA and TEDx Program 
-export default function AboutInfo({textColor = "text-our-red"}) {
+export default function AboutInfo({ textColor = "text-our-red" }) {
     return (
         <div className="about">
             <div className="flex flex-col lg:w-[80%] mx-auto mb-[150px]">
@@ -77,20 +77,23 @@ export default function AboutInfo({textColor = "text-our-red"}) {
                         <a
                             target="_blank"
                             href="https://www.ted.com/about/programs-initiatives/tedx-program"
-                            className={`${textColor} font-extrabold flex flex-row w-fit text-xl hover:cursor-pointer`}
+                            className={`${textColor} font-extrabold flex flex-row w-fit text-xl cursor-pointer`}
                         >
-
-                            <p className="pr-3 hover:pr-6">TEDx PROGRAM </p>
-                            <img
-                                className="my-auto hover:pl-3"
-                                src="https://uploads-ssl.webflow.com/63e118320fe0876684cc169c/63e57c17119d6d2dca8a9624_red-arrow.svg"
-                                style={{
-                                    transform:
-                                        'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-                                    transformStyle: 'preserve-3d'
-                                }}
-                                alt="Arrow"
-                            />
+                            <p className="pr-3">TEDx PROGRAM</p>
+                            <svg 
+                                width="18"
+                                height="17"
+                                viewBox="0 0 16 15"
+                                fill="B07437"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="my-auto w-6"
+                            >
+                                <path
+                                    d="M7.95739 14.7955L6.30966 13.1619L10.6349 8.83665H0.5V6.43608H10.6349L6.30966 2.1179L7.95739 0.477273L15.1165 7.63636L7.95739 14.7955Z"
+                                    fill="#B07437"
+                                />
+                            </svg>
+                            
                         </a>
                     </div>
                 </div>
