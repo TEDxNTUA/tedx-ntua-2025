@@ -5,17 +5,13 @@ import Link from 'next/link';
 import NavLink from './NavLink';
 
 const navLinks = [
-  {title: 'Αρχική', path: '/', isImage: true},
+  {title: 'Home', path: '/', isImage: true},
   {
-    title: 'Ομιλητές',
-    path: '/speakers'
+    title: 'Event',
+    path: '/event'
   },
   {
-    title: 'Performers & Workshops',
-    path: '/performers'
-  },
-  {
-    title: 'Χορηγοί',
+    title: 'Partners',
     path: '/partners'
   },
   {
@@ -86,7 +82,7 @@ function Navbar() {
               alt="ticket"
             ></img> */}
           {/* </a> */}
-          <a
+          {/* <a
             className="hover:cursor-pointer"
             href="./booklet.pdf"
             target="_blank"
@@ -95,7 +91,7 @@ function Navbar() {
             <p className="text-2xl lg:text-base font-semibold hover:text-our-blue text-white">
               Booklet
             </p>
-          </a>
+          </a> */}
         </div>
         {/* Burger for Mobile Nav */}
         <div id="burger" className="block lg:hidden">
@@ -137,18 +133,6 @@ function Navbar() {
             ))}
           </ul>
           {/* <a
-            // className=""
-            href="https://www.eventora.com/el/Events/ephemeral?fbclid=IwAR1dVD5B4W-_9M2s2yfTFu_RAV9GWMdssRmyVqbNu6UWHNIve4H9IHFCCVQ"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="ticket h-[60px]"
-              src="./ticket.png"
-              alt="ticket"
-            ></img>
-          </a> */}
-          <a
             className="hover:cursor-pointer"
             href="./booklet.pdf"
             target="_blank"
@@ -157,7 +141,7 @@ function Navbar() {
             <p className="text-2xl lg:text-base font-semibold hover:text-our-blue text-white">
               Booklet
             </p>
-          </a>
+          </a> */}
           {/* UNCOMMENT WHEN EVENT STARTS AND TICKETS ARE AVAILABLE */}
           {/* <button
             className="bg-our-red bg-opacity-100 hover:bg-our-red hover:bg-opacity-80 text-white font-semibold py-4 px-6 rounded-md focus:outline-none focus:shadow-outline-red"
