@@ -19,7 +19,7 @@ export const SPEAKERS = [
     slug: 'ioannis-pantazopoulos',
     fullNameGR: 'Ιωάννης Πανταζόπουλος',
     fullNameEN: 'Ioannis Pantazopoulos',
-    artisticName: '',
+    artisticName: 'tests',
     job: '"LiFO" Chief Editor - Podcast Creator',
     infoLinks: {
       instagram: 'https://www.instagram.com/johnpantazopoulos/',
@@ -35,7 +35,7 @@ export const SPEAKERS = [
     },
     photo: './speakers/ioannis-pantazopoulos.jpg',
     session: 1,
-    time: '',
+    time: '11:20-11:40',
     talkCategory: 'Science Communication',
     talkDescription:
       'Πώς θα άλλαζε η ζωή σου αν είχες την ευκαιρία να αλληλεπιδράσεις με μερικούς από τους πιο καταξιωμένους επιστήμονες της χώρας; Να δεις τον κόσμο μέσα από το πρίσμα της οπτικής τους και να νιώσεις το πανταχού παρόν μεγαλείο της επιστήμης να παίρνει ανθρώπινη υπόσταση; Μήπως το να ακούς την επιστήμη είναι ο δίαυλος για αυτή την αμφίδρομη σχέση, όπου άνθρωποι και ιδέες έρχονται στη δική τους "συνέλιξη";',
