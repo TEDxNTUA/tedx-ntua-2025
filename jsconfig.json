@@ -5,7 +5,7 @@
       "@src*": ["./src/*"],
       "@data*": ["./data/*"],
       "@components*": ["./src/components/*"],
-      "@constants*": ["./src/constants/*"]
+      "@lib*": ["./lib/*"]
     }
   }
 }
