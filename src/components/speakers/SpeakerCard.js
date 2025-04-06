@@ -6,7 +6,7 @@ function SpeakeCard({speaker}) {
       <Link href={`speakers/${speaker.slug}`}>
         <img
           className="object-cover grayscale-[0.65] group-hover:grayscale-0 transition"
-          src={`/event/speakers/${speaker.slug}.jpg`}
+          src={`/event/speakers/${encodeURIComponent(speaker.slug)}.jpg`}
           alt={`Picture of ${speaker.slug}`}
           width={300}
           height={300}
