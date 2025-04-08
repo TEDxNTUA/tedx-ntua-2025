@@ -8,26 +8,21 @@ function SocialMediaItem({ iconName, link, color, hoverColor }) {
     <a
       href={link}
       target="_blank"
-      className="max-w-[50%] sm:max-w-[30%] md:max-w-[60%] inline-block"
+      rel="noopener noreferrer"
+      className="transition-transform duration-300 hover:scale-125 w-[30px] h-[30px]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div>
-        {/* <Image */}
+      <div className="relative w-[30px] h-[30px]">
         <img
-          className={`${isHovered ? "hidden" : "block"}`}
-          src={`./socialMediaIcons/${color}/${iconName}-${color}.png`}
-          alt={`${iconName}-icon`}
-          width={30}
-          height={30}
+          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-200 ${isHovered ? "opacity-0" : "opacity-100"}`}
+          src={`/socialMediaIcons/${color}/${iconName}-${color}.png`}
+          alt={`${iconName}`}
         />
-        {/* <Image */}
         <img
-          className={`${isHovered ? "block" : "hidden"}`}
-          src={`./socialMediaIcons/${hoverColor}/${iconName}-${hoverColor}.png`}
-          alt={`${iconName}-icon`}
-          width={30}
-          height={30}
+          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-200 ${isHovered ? "opacity-100" : "opacity-0"}`}
+          src={`/socialMediaIcons/${hoverColor}/${iconName}-${hoverColor}.png`}
+          alt={`${iconName}`}
         />
       </div>
     </a>

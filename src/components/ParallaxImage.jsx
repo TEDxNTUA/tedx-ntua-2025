@@ -1,18 +1,26 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { useScroll, useTransform, motion } from 'framer-motion';
 
 export default function ParallaxImage() {
   const containerRef = useRef();
+  const imageRef = useRef();
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start start', 'end start'],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '30%']); // subtle smooth shift
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
+
+  useEffect(() => {
+    if (imageRef.current) {
+      console.log('Rendered size:', imageRef.current.offsetWidth, imageRef.current.offsetHeight);
+      console.log('Natural size:', imageRef.current.naturalWidth, imageRef.current.naturalHeight);
+    }
+  }, []);
 
   return (
     <div
@@ -24,6 +32,7 @@ export default function ParallaxImage() {
         className="absolute inset-0"
       >
         <Image
+          ref={imageRef}
           src="/1.jpg"
           alt="Parallax Synelixis"
           fill
