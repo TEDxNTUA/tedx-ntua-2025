@@ -14,6 +14,14 @@ export default {
   			'tedx-red': '#eb0028',
   			'our-red': '#e14640',
   			'our-black': '#191617',
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        'tedx-red': '#eb0028',
+        'our-red': '#e14640',
+        'our-black': '#191617',
+        'synelixis-blue': '#001a32',
+        'synelixis-yellow': '#f1be3d',
+        'synelixis-orange': '#ed6d23'},
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'

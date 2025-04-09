@@ -1,8 +1,8 @@
 .main {
-  background-color: black;
+  background-color: #01172F;
   .mask,
   .body {
-    color: #ebebeb;
+    color: #f1be3d;
     font-size: 64px;
     line-height: 66px;
     cursor: default;
@@ -12,11 +12,13 @@
     mask-image: url('../../../public/mask.svg');
     mask-repeat: no-repeat;
     mask-size: 40px;
-    background: #ec4e39;
+    background: #f1be3d;
     position: absolute;
-    color: black;
+    color: #ed6d23;
   }
   .text-white:hover {
     color: red !important;
   }
 }
+
+// B07437 orange and F7C64F yellow
