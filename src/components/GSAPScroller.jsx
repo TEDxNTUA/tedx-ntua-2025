@@ -3,16 +3,9 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Lenis from 'lenis';
+import styles from './GSAPScroller.module.css'; // optional Tailwind alternative
 
-import Intro from '@components/Intro';
-import Description from '@components/Description';
-import ParallaxImage from '@components/ParallaxImage'; // adjust path if not using alias
-
-
-import styles from './page.module.css';
-
-export default function Home() {
+export default function GSAPScroller() {
   const slider = useRef(null);
   let xPercent = 0;
   let direction = -1;
@@ -33,17 +26,6 @@ export default function Home() {
     requestAnimationFrame(animate);
   }, []);
 
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
-
   const animate = () => {
     if (xPercent < -100) {
       xPercent = 0;
@@ -57,19 +39,12 @@ export default function Home() {
   };
 
   return (
-    <main className={styles.main}>
-      <div className={styles.sliderContainer}>
-        <div ref={slider} className={styles.slider}>
-          {Array(20).fill('Synelixis').map((word, index) => (
-            <span key={index}>{word}</span>
-          ))}
-        </div>
+    <div className="overflow-hidden whitespace-nowrap bg-white py-6">
+      <div ref={slider} className="flex gap-4 text-4xl font-bold uppercase tracking-widest text-black">
+        {Array(20).fill('Synelixis').map((word, i) => (
+          <span key={i}>{word}</span>
+        ))}
       </div>
-
-      <Intro />
-      <Description />
-      <ParallaxImage />
-
-    </main>
+    </div>
   );
 }

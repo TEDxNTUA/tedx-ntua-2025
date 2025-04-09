@@ -1,0 +1,20 @@
+.body {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10vh auto;
+}
+
+.body p {
+  font-size: 1.8vw;
+  margin: 0;
+  margin-right: 1.2vw;
+  font-weight: 700;
+  color: rgb(211, 211, 211);
+}
+
+.body span {
+  opacity: 0.2;
+  transition: opacity 0.3s ease-out;
+}
