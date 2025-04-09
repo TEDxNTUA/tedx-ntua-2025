@@ -23,13 +23,6 @@ export default function Intro() {
         style={{ y }}
         className="absolute inset-0"
       >
-        <Image
-          src="/2.jpg" // ✅ your image path
-          alt="TEDxNTUA Intro Background"
-          fill
-          priority
-          className="object-cover"
-        />
       </motion.div>
     </div>
   );

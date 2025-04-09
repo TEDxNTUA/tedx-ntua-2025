@@ -33,19 +33,13 @@ export default function ParallaxImage() {
       >
         <Image
           ref={imageRef}
-          src="/1.jpg"
+          src="/WEB.webp"
           alt="Parallax Synelixis"
           fill
-          className="object-cover"
+          className="w-full h-auto"
           priority
         />
       </motion.div>
-
-      <div className="relative z-10 flex items-center justify-center h-full text-white text-center px-4">
-        <h2 className="text-4xl md:text-6xl font-bold">
-          Scroll deeper into Synelixis
-        </h2>
-      </div>
     </div>
   );
 }

@@ -18,7 +18,7 @@ function SocialMediaFooter() {
           link={url}
           iconName={platform}
           color="white"
-          hoverColor="yellow"
+          hoverColor="white"
         />
       ))}
     </div>
