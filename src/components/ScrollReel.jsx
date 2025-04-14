@@ -15,7 +15,6 @@ export default function ScrollReel() {
     { src: '/logo/eli.png', alt: 'Frame 2' },
     { src: '/logo/xis.png', alt: 'Frame 3' },
     { src: '/logo/asterismos.png', alt: 'Frame 4' },
-    { src: '/logo/SYNELIXIS.png', alt: 'Frame 5' }, 
   ];
 
   const setSectionRef = (el, idx) => {
@@ -24,16 +23,15 @@ export default function ScrollReel() {
 
   useEffect(() => {
     const totalFrames = frames.length;
-    
     const scrollDistance = totalFrames * 300;
 
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: containerRef.current,
-        pin: true,            
-        pinSpacing: true,     
+        pin: true,
+        pinSpacing: true,
         start: 'top top',
-        end: `+=${scrollDistance}`, 
+        end: `+=${scrollDistance}`,
         scrub: true,
       },
     });
@@ -47,18 +45,6 @@ export default function ScrollReel() {
         { autoAlpha: 1, y: 0, scale: 1, duration: 1, ease: 'power1.out' },
         frameStart
       );
-
-      if (i === totalFrames - 1) {
-        tl.to(
-          section,
-          {
-            scale: 1.5,
-            duration: 3,
-            ease: 'power1.out',
-          },
-          frameStart + 0.6
-        );
-      }
     });
 
     return () => {

@@ -1,8 +1,8 @@
 .container {
   position: relative;
   width: 100%;
-  height: 100vh; /* Fill the entire viewport */
-  overflow: hidden; /* Hide overscroll */
+  height: 100vh; 
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,21 +12,14 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  /* You can center child content with flex or use absolute positioning on the child image */
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0; /* Start invisible; we'll animate with GSAP */
+  opacity: 0; 
 }
 
 .frameImage {
   max-width: 60vw;
   max-height: 80vh;
-  /* or any sizing strategy you want */
-}
-.frameImage {
-  max-width: 60vw;
-  max-height: 80vh;
-  transform-origin: center center; /* ensure it zooms from center */
 }
 

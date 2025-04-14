@@ -25,7 +25,6 @@ const secondLines = [
 ];
 
 // For the SECOND text, we’ll replace these exact strings with a <span> to highlight them
-// (Make sure they match exactly how they appear in the text, including punctuation or quotes)
 const highlightTargetsSecond = [
   'stars',
   '“connect”',
@@ -39,8 +38,8 @@ export default function Description() {
   const [mounted, setMounted] = useState(false);
 
   // 1) FIRST TEXT REFS (letter-by-letter)
-  const refs = useRef([]);          // array of <span> references
-  const container = useRef(null);   // container ref
+  const refs = useRef([]);         // array of <span> references
+  const container = useRef(null);  // container ref
 
   // 2) SECOND TEXT REFS (line-by-line)
   const secondContainer = useRef(null);
@@ -52,7 +51,6 @@ export default function Description() {
 
   useEffect(() => {
     if (!mounted) return;
-
     gsap.registerPlugin(ScrollTrigger);
 
     // Initialize letter opacity in the first text
@@ -98,16 +96,13 @@ export default function Description() {
   }, [mounted]);
 
   // ========== FIRST TEXT: SPLIT WORDS & LETTERS ==========
-
-  // Splits entire phrase into <p> blocks for each "word"
   const splitWords = (inputPhrase) => {
     refs.current = []; 
     return inputPhrase.split(' ').map((word, i) => {
       const isHighlight = highlightWordsFirst.has(word);
       return (
         <p
-          key={word + '_' + i}
-          // Apply highlightWord class if the word is in highlight set
+          key={`${word}_${i}`}
           className={isHighlight ? styles.highlightWord : ''}
         >
           {splitLetters(word, i)}
@@ -116,11 +111,10 @@ export default function Description() {
     });
   };
 
-  // Splits a single "word" into individual letter <span>s
   const splitLetters = (word, wordIndex) => {
     return word.split('').map((letter, i) => (
       <span
-        key={letter + '_' + i + '_' + wordIndex}
+        key={`${letter}_${i}_${wordIndex}`}
         ref={(el) => {
           if (el) refs.current.push(el);
         }}
@@ -131,24 +125,14 @@ export default function Description() {
   };
 
   // ========== SECOND TEXT: HIGHLIGHT WORDS IN-LINE ==========
-
-  // For each line, replace highlight words with a <span class="highlightWord"> 
-  // Then return the resulting HTML via dangerouslySetInnerHTML
   const highlightLine = (line) => {
     let replaced = line;
-
-    // For each target word or phrase, do a simple .replaceAll() 
-    // to wrap it in a <span class="highlightWord">. 
-    // Make sure to match exact text, including punctuation or quotes.
     highlightTargetsSecond.forEach((target) => {
-      // We'll only replace if the target actually appears 
-      // (to avoid accidental partial matches).
       if (replaced.includes(target)) {
         const replacement = `<span class="${styles.highlightWord}">${target}</span>`;
         replaced = replaced.replaceAll(target, replacement);
       }
     });
-
     return replaced;
   };
 
@@ -167,12 +151,21 @@ export default function Description() {
           const replacedLine = highlightLine(line);
           return (
             <p
-              key={'line_' + i}
+              key={`line_${i}`}
               ref={(el) => (secondLineRefs.current[i] = el)}
               dangerouslySetInnerHTML={{ __html: replacedLine }}
             />
           );
         })}
+      </div>
+
+      {/* IMAGE BELOW TEXT */}
+      <div className={styles.logoWrapper}>
+        <img
+          src="/logo/SYNELIXIS.png"
+          alt="SYNELIXIS Logo"
+          className={styles.synelixisLogo}
+        />
       </div>
     </div>
   );

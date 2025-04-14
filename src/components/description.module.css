@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 10vh auto;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
 }
 
 .body p {
@@ -24,7 +24,7 @@
 /* The second text block */
 .secondBody {
   width: 80%;
-  margin: 15vh auto;
+  margin: 3vh auto;
   text-align: left;
   color: rgb(230, 230, 230);
   font-family: 'Roboto', sans-serif; 
@@ -34,9 +34,22 @@
   font-size: 1.6rem;
   line-height: 1.4;
   margin: 2rem 0;
-  opacity: 0;
+  opacity: 0; /* Starting opacity for GSAP fade-in */
 }
-/* Highlight entire word in #c8921c */
+
 .highlightWord {
   color: #c8921c !important; 
+}
+
+.logoWrapper {
+  width: 100%;
+  margin: 2rem auto;
+  text-align: center; 
+}
+
+.synelixisLogo {
+  max-width: 400px;  
+  width: 100%;
+  height: auto;
+  display: inline-block;
 }
