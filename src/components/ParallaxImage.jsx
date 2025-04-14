@@ -33,7 +33,7 @@ export default function ParallaxImage() {
       >
         <Image
           ref={imageRef}
-          src="/WEB.webp"
+          src="/logo/SYNELIXIS.png"
           alt="Parallax Synelixis"
           fill
           className="w-full h-auto"
