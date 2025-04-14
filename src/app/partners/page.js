@@ -90,9 +90,6 @@ function PartnersPage() {
 
   return (
     <main className="bg-[#f5f5f5]">
-      <header className="p-5 text-center bg-[#222] text-white">
-        <h1>TEDxNTUA - Partners</h1>
-      </header>
 
       <section className="bg-[#f5f5f5]">
         <Timeline data={timelineData} />
