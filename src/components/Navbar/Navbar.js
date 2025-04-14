@@ -41,7 +41,7 @@ function Navbar() {
     'h-[4px] w-8 my-[2.5px] rounded-full bg-white transition-all ease-in-out opacity-100 duration-[500ms]';
 
   return (
-    <nav className="h-[65px] sticky bg-black flex top-0">
+    <nav className="h-[80px] bg-black flex">
       <div className="flex  items-center justify-between w-[90%] max-w-[1600px] mx-auto">
         <Link onClick={closeDrawer} href="/">
           <img
