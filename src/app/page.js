@@ -5,9 +5,10 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
 
-import Intro from '@components/Intro';
 import Description from '@components/Description';
-import ParallaxImage from '@components/ParallaxImage'; // adjust path if not using alias
+import ScrollReel from '@components/ScrollReel';
+import Odeio from '@components/Odeio'
+
 
 
 import styles from './page.module.css';
@@ -65,10 +66,10 @@ export default function Home() {
           ))}
         </div>
       </div>
-
-      <Intro />
+      
+      <ScrollReel />
       <Description />
-      <ParallaxImage />
+      <Odeio />
 
     </main>
   );
