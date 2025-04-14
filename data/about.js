@@ -6,6 +6,7 @@ export const ABOUTLIST = [
         photo: "/team/curators-nagia1.webp",
         doodles: "/team/curators-nagia2.webp",
         team: "The Curators",
+        teamPhoto: "/team/curators.png",
       },{
         id: "2",
         fullname: "Alexandros Charitonidis",
@@ -13,62 +14,70 @@ export const ABOUTLIST = [
         photo: "/team/curators-alex1.webp",
         doodles: "/team/curators-alex2.webp",
         team: "The Curators",
+        teamPhoto: "/team/curators.png",
       },
       {
         id: "3",
-        fullname: "Giannis Tsagkaropoulos",
-        linkedin: "https://www.linkedin.com/in/ioannis-tsagkaropoulos-85a280233/", 
-        photo: "/team/it-giannhs1.webp",
-        doodles: "/team/it-giannhs2.webp",
-        team: "Information & Technology Team",
-      },
-      {
-        id: "4",
         fullname: "Korina Karatzouni",
         linkedin: "https://www.linkedin.com/in/korina-karatzouni-6b3928252/", 
         photo: "/team/it-korina1.webp",
         doodles: "/team/it-korina2.webp",
         team: "Information & Technology Team",
+        teamPhoto: "/team/it.png",
       },
       {
-        id: "5",
+        id: "4",
         fullname: "Vivian Thanou",
         linkedin: "https://www.linkedin.com/in/vivian-thanou-6b8b9b2b7/", 
         photo: "/team/it-vivian1.webp",
         doodles: "/team/it-vivian2.webp",
         team: "Information & Technology Team",
+        teamPhoto: "/team/it.png",
+      },
+      {
+        id: "5",
+        fullname: "Giannis Tsagkaropoulos",
+        linkedin: "https://www.linkedin.com/in/ioannis-tsagkaropoulos-85a280233/", 
+        photo: "/team/it-giannhs1.webp",
+        doodles: "/team/it-giannhs2.webp",
+        team: "Information & Technology Team",
+        teamPhoto: "/team/it.png",
       },
       {
         id: "6",
-        fullname: "Marilena Papathanasiou",
-        linkedin: "https://www.linkedin.com/in/marilena-papathanasiou/", 
-        photo: "/team/design-marilena1.webp",
-        doodles: "/team/design-marilena2.webp",
-        team: "Design Team",
-      },
-      {
-        id: "7",
         fullname: "Maro Kokosis",
         linkedin: "https://www.linkedin.com/in/maro-kokosis-174106344/", 
         photo: "/team/design-maro1.webp",
         doodles: "/team/design-maro2.webp",
         team: "Design Team",
+        teamPhoto: "/team/design.png",
       },
       {
-        id: "8",
+        id: "7",
         fullname: "Kostas Pariaros",
         linkedin: "https://www.linkedin.com/in/konstantinos-pariaros-4a0791346/", 
         photo: "/team/design-kostas1.webp",
         doodles: "/team/design-kostas2.webp",
         team: "Design Team",
+        teamPhoto: "/team/design.png",
       },
       {
-        id: "9",
+        id: "8",
         fullname: "Thanos Papatatsis",
         linkedin: "https://www.linkedin.com/in/athanasios-papatatsis-42b790336/", 
         photo: "/team/design-thanos1.webp",
         doodles: "/team/design-thanos2.webp",
         team: "Design Team",
+        teamPhoto: "/team/design.png",
+      },
+      {
+        id: "9",
+        fullname: "Marilena Papathanasiou",
+        linkedin: "https://www.linkedin.com/in/marilena-papathanasiou/", 
+        photo: "/team/design-marilena1.webp",
+        doodles: "/team/design-marilena2.webp",
+        team: "Design Team",
+        teamPhoto: "/team/design.png",
       },
       {
         id: "10",
@@ -77,6 +86,7 @@ export const ABOUTLIST = [
         photo: "/team/fr-naria1.webp",
         doodles: "/team/fr-naria2.webp",
         team: "Fundraising Team",
+        teamPhoto: "/team/fr.png",
       },
       {
         id: "11",
@@ -85,6 +95,7 @@ export const ABOUTLIST = [
         photo: "/team/fr-mariamt1.webp",
         doodles: "/team/fr-mariamt2.webp",
         team: "Fundraising Team",
+        teamPhoto: "/team/fr.png",
       },
       {
         id: "12",
@@ -93,6 +104,7 @@ export const ABOUTLIST = [
         photo: "/team/fr-dimitra1.webp",
         doodles: "/team/fr-dimitra2.webp",
         team: "Fundraising Team",
+        teamPhoto: "/team/fr.png",
       },
       {
         id: "13",
@@ -101,6 +113,7 @@ export const ABOUTLIST = [
         photo: "/team/fr-eleni1.webp",
         doodles: "/team/fr-eleni2.webp",
         team: "Fundraising Team",
+        teamPhoto: "/team/fr.png",
       },
       {
         id: "14",
@@ -109,6 +122,7 @@ export const ABOUTLIST = [
         photo: "/team/fr-mariaf1.webp",
         doodles: "/team/fr-mariaf2.webp",
         team: "Fundraising Team",
+        teamPhoto: "/team/fr.png",
       },
       {
         id: "15",
@@ -117,6 +131,7 @@ export const ABOUTLIST = [
         photo: "/team/fr-aggelos1.webp",
         doodles: "/team/fr-aggelos2.webp",
         team: "Fundraising Team",
+        teamPhoto: "/team/fr.png",
       },
       {
         id: "16",
@@ -125,6 +140,7 @@ export const ABOUTLIST = [
         photo: "/team/experience-elpida1.webp",
         doodles: "/team/experience-elpida2.webp",
         team: "Experience & Workshops Team",
+        teamPhoto: "/team/experience.png",
       },
       {
         id: "17",
@@ -133,6 +149,7 @@ export const ABOUTLIST = [
         photo: "/team/experience-fannie1.webp",
         doodles: "/team/experience-fannie2.webp",
         team: "Experience & Workshops Team",
+        teamPhoto: "/team/experience.png",
       },
       {
         id: "18",
@@ -141,6 +158,7 @@ export const ABOUTLIST = [
         photo: "/team/experience-lito1.webp",
         doodles: "/team/experience-lito2.webp",
         team: "Experience & Workshops Team",
+        teamPhoto: "/team/experience.png",
       },
       {
         id: "19",
@@ -149,6 +167,7 @@ export const ABOUTLIST = [
         photo: "/team/experience-paris1.webp",
         doodles: "/team/experience-paris2.webp",
         team: "Experience & Workshops Team",
+        teamPhoto: "/team/experience.png",
       },
       {
         id: "20",
@@ -157,6 +176,7 @@ export const ABOUTLIST = [
         photo: "/team/media-kostas1.webp",
         doodles: "/team/media-kostas2.webp",
         team: "Media & Marketing Team",
+        teamPhoto: "/team/media.png",
       },
       {
         id: "21",
@@ -165,6 +185,7 @@ export const ABOUTLIST = [
         photo: "/team/media-aliki1.webp",
         doodles: "/team/media-aliki2.webp",
         team: "Media & Marketing Team",
+        teamPhoto: "/team/media.png",
       },
       {
         id: "22",
@@ -173,14 +194,16 @@ export const ABOUTLIST = [
         photo: "/team/media-anastasia1.webp",
         doodles: "/team/media-anastasia2.webp",
         team: "Media & Marketing Team",
+        teamPhoto: "/team/media.png",
       },
       {
         id: "23",
-        fullname: "Tolis Apostolos",
+        fullname: "Apostolos Tolis",
         linkedin: "https://www.linkedin.com/in/apostolos-tolis", 
         photo: "/team/media-tolis1.webp",
         doodles: "/team/media-tolis2.webp",
         team: "Media & Marketing Team",
+        teamPhoto: "/team/media.png",
       },
       {
         id: "24",
@@ -189,6 +212,7 @@ export const ABOUTLIST = [
         photo: "/team/media-myrto1.webp",
         doodles: "/team/media-myrto2.webp",
         team: "Media & Marketing Team",
+        teamPhoto: "/team/media.png",
       },
       {
         id: "25",
@@ -197,6 +221,7 @@ export const ABOUTLIST = [
         photo: "/team/venue-katerina1.webp",
         doodles: "/team/venue-katerina2.webp",
         team: "Venue & Production Team",
+        teamPhoto: "/team/venue.png",
       },
       {
         id: "26",
@@ -205,6 +230,7 @@ export const ABOUTLIST = [
         photo: "/team/venue-eirini1.webp",
         doodles: "/team/venue-eirini2.webp",
         team: "Venue & Production Team",
+        teamPhoto: "/team/venue.png",
       },
       {
         id: "27",
@@ -213,6 +239,7 @@ export const ABOUTLIST = [
         photo: "/team/venue-andriani1.webp",
         doodles: "/team/venue-andriani2.webp",
         team: "Venue & Production Team",
+        teamPhoto: "/team/venue.png",
       },
       {
         id: "28",
@@ -221,6 +248,7 @@ export const ABOUTLIST = [
         photo: "/team/speakers-aggelos1.webp",
         doodles: "/team/speakers-aggelos2.webp",
         team: "Speakers Team",
+        teamPhoto: "/team/speakers.png",
       },
       {
         id: "29",
@@ -229,6 +257,7 @@ export const ABOUTLIST = [
         photo: "/team/speakers-elena1.webp",
         doodles: "/team/speakers-elena2.webp",
         team: "Speakers Team",
+        teamPhoto: "/team/speakers.png",
       },
       {
         id: "30",
@@ -237,6 +266,7 @@ export const ABOUTLIST = [
         photo: "/team/speakers-eirini1.webp",
         doodles: "/team/speakers-eirini2.webp",
         team: "Speakers Team",
+        teamPhoto: "/team/speakers.png",
       },
       {
         id: "31",
@@ -245,14 +275,16 @@ export const ABOUTLIST = [
         photo: "/team/speakers-dimitra1.webp",
         doodles: "/team/speakers-dimitra2.webp",
         team: "Speakers Team",
+        teamPhoto: "/team/speakers.png",
       },
       {
         id: "32",
-        fullname: "Yiorgos",
+        fullname: "Yiorgos Papanikos",
         linkedin: "https://www.linkedin.com/in/yiorgos-papanikos", 
         photo: "/team/speakers-giwrgos1.webp",
         doodles: "/team/speakers-giwrgos2.webp",
         team: "Speakers Team",
+        teamPhoto: "/team/speakers.png",
       },
     
     

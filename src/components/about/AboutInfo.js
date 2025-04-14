@@ -84,13 +84,13 @@ export default function AboutInfo({ textColor = "text-our-red" }) {
                                 width="18"
                                 height="17"
                                 viewBox="0 0 16 15"
-                                fill="B07437"
+                                fill="e14640"
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="my-auto w-6"
                             >
                                 <path
                                     d="M7.95739 14.7955L6.30966 13.1619L10.6349 8.83665H0.5V6.43608H10.6349L6.30966 2.1179L7.95739 0.477273L15.1165 7.63636L7.95739 14.7955Z"
-                                    fill="#B07437"
+                                    fill="#e14640"
                                 />
                             </svg>
                             

@@ -1,8 +1,7 @@
 .main {
-  background-color: #01172F;
   .mask,
   .body {
-    color: #f1be3d;
+    color: #ffffff;
     font-size: 64px;
     line-height: 66px;
     cursor: default;
@@ -12,9 +11,9 @@
     mask-image: url('../../../public/mask.svg');
     mask-repeat: no-repeat;
     mask-size: 40px;
-    background: #f1be3d;
+    background: #ffffff;
     position: absolute;
-    color: #ed6d23;
+    color: #001a32;
   }
   .text-white:hover {
     color: red !important;
