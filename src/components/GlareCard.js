@@ -1,6 +1,7 @@
+'use client';
 import { useRef } from "react";
 
-export const GlareCard = ({ children }) => {
+export const GlareCard = ({ href, children }) => {
   const isPointerInside = useRef(false);
   const refElement = useRef(null);
   const state = useRef({
@@ -19,7 +20,7 @@ export const GlareCard = ({ children }) => {
   };
 
   return (
-    <a href="https://www.tedxntua.com/" target="_blank" rel="noopener noreferrer">
+    <a href={href} target="_blank" rel="noopener noreferrer">
       <div
         ref={refElement}
         className="relative w-full rounded-lg overflow-hidden transition-transform duration-300 ease-out transform-gpu border border-gray-300 shadow-lg cursor-pointer"
@@ -61,7 +62,7 @@ export const GlareCard = ({ children }) => {
           }
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-white/10 opacity-0 transition-opacity duration-300 hover:opacity-100 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-white/10 opacity-0 transition-opacity duration-300 hover:opacity-100 pointer-events-none" />
         {children}
       </div>
     </a>
