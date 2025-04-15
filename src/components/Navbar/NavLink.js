@@ -1,21 +1,26 @@
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import {usePathname} from 'next/navigation';
+import Link from 'next/link';
 
-function NavLink({ href, title }) {
+function NavLink({href, title, closeDrawer = () => {}}) {
   const path = usePathname();
 
+  const handleClick = () => {
+    closeDrawer();
+  };
+
   return (
-    <Link
-      href={href}
-      passHref
-      className={`text-2xl lg:text-base font-semibold hover:text-our-blue ${
-        path === href
-          ? "text-blue-400" // Apply the active class
-          : "text-white" // No additional class if not active
-      }`}
-    >
-      {title}
-    </Link>
+    <li>
+      <Link
+        href={href}
+        passHref
+        className={`text-2xl lg:text-base font-semibold hover:text-our-blue block py-2 ${
+          path === href ? 'text-synelixis-yellow' : 'text-white'
+        }`}
+        onClick={handleClick}
+      >
+        {title}
+      </Link>
+    </li>
   );
 }
 

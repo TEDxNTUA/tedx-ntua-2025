@@ -1,103 +1,56 @@
 'use client';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import Link from 'next/link';
 
 import NavLink from './NavLink';
+import SocialMediaNav from './SocialMediaNav';
 
-const navLinks = [
-  {title: 'Home', path: '/', isImage: true},
-  {
-    title: 'Event',
-    path: '/event'
-  },
-  {
-    title: 'Partners',
-    path: '/partners'
-  },
-  {
-    title: 'About',
-    path: '/about'
-  }
-  // {
-  //   title: "Booklet",
-  //   path: "/booklet"
-  // }
-];
-
-function Navbar() {
+export default function Navbar() {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
-  // const [buttonClicked, setButtonClicked] = useState("");
-  const closeDrawer = () => {
-    if (drawerIsOpen) {
-      setDrawerIsOpen(false);
-    }
+
+  const toggleDrawer = () => {
+    setDrawerIsOpen(prev => !prev);
   };
+
+  const closeDrawer = () => {
+    setDrawerIsOpen(false);
+  };
+
+  useEffect(() => {
+    if (drawerIsOpen) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.top = `-${window.scrollY}px`;
+      document.body.style.width = '100%';
+    } else {
+      document.body.style.overflow = 'auto';
+      const scrollY = document.body.style.top;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      window.scrollTo(0, -parseInt(scrollY || '0'));
+    }
+  }, [drawerIsOpen]);
 
   const hamburgerLine =
     'h-[4px] w-8 my-[2.5px] rounded-full bg-white transition-all ease-in-out opacity-100 duration-[500ms]';
 
   return (
-    <nav className="h-[80px] bg-black flex">
-      <div className="flex  items-center justify-between w-[90%] max-w-[1600px] mx-auto">
-        <Link onClick={closeDrawer} href="/">
+    <nav className={`h-[65px] bg-black flex sticky top-0 z-50`}>
+      <div className="max-w-[1600px] flex items-center justify-between w-[90%] lg:w-[80%] mx-auto">
+        <Link href="/" onClick={drawerIsOpen ? closeDrawer : undefined}>
           <img
-            src="./tedxntua_logo.png"
-            className="w-auto h-[40px] object-contain"
+            src="/tedxntua-logo.png"
+            className="w-auto h-[40px] object-contain cursor-pointer"
             alt="TEDxNTUA Logo"
-            onClick={() =>
-              document
-                .getElementById('main-scroll-container')
-                .scrollTo({top: 0, behavior: 'smooth'})
-            }
-          ></img>
+          />
         </Link>
-        {/* Desktop Nav */}
-        <div
-          id="desktop-navbar"
-          className="menu hidden lg:flex flex-row-reverse lg:flex-row gap-8 xl:gap-16 justify-center items-center"
-        >
-          <ul className="flex lg:flex-row lg:space-x-8 xl:space-x-16">
-            {navLinks.map((link, index) => (
-              <li key={index} className="mx-2">
-                <NavLink
-                  href={link.path}
-                  title={link.title}
-                  // onClick={() => setButtonClicked(link.title)}
-                  // buttonClicked={buttonClicked}
-                />
-              </li>
-            ))}
-          </ul>
 
-          {/* <a
-            // className=""
-            href="https://www.eventora.com/el/Events/ephemeral?fbclid=IwAR1dVD5B4W-_9M2s2yfTFu_RAV9GWMdssRmyVqbNu6UWHNIve4H9IHFCCVQ"
-            target="_blank"
-            rel="noopener noreferrer"
-          > */}
-
-          {/* <img
-              className="ticket h-[60px]"
-              src="./ticket.png"
-              alt="ticket"
-            ></img> */}
-          {/* </a> */}
-          {/* <a
-            className="hover:cursor-pointer"
-            href="./booklet.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className="text-2xl lg:text-base font-semibold hover:text-our-blue text-white">
-              Booklet
-            </p>
-          </a> */}
-        </div>
         {/* Burger for Mobile Nav */}
         <div id="burger" className="block lg:hidden">
           <button
             className="flex cursor-pointer flex-col items-center justify-center outline-none"
-            onClick={() => setDrawerIsOpen(!drawerIsOpen)}
+            onClick={toggleDrawer}
+            aria-label="Toggle menu"
+            aria-expanded={drawerIsOpen}
           >
             <div
               className={`${hamburgerLine} ${drawerIsOpen ? 'translate-y-[9px] rotate-45' : ''}`}
@@ -112,61 +65,45 @@ function Navbar() {
             />
           </button>
         </div>
-      </div>
-      {/* Menu-Drawer for Mobile Nav */}
-      <div
-        onClick={closeDrawer}
-        id="mobile-drawer"
-        className={
-          drawerIsOpen
-            ? 'fixed right-0 w-[45%] z-50 lg:hidden h-[calc(100vh-65px)] bg-black ease-in duration-300 mt-[65px]'
-            : 'fixed right-[-120%] h-[calc(100vh-65px)] mt-[65px] z-50'
-        }
-      >
-        {/* <div className="flex flex-col items-center justify-between h-full pt-16 pb-32 w-[90%] mx-auto"> */}
-        <div className="flex flex-col items-center justify-between h-full pt-16 pb-32 w-[90%] mx-auto">
-          <ul className="flex flex-col place-items-center text-center">
-            {navLinks.map((link, index) => (
-              <li key={index} className="py-4">
-                <NavLink href={link.path} title={link.title} />
-              </li>
-            ))}
-          </ul>
-          {/* <a
-            className="hover:cursor-pointer"
-            href="./booklet.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className="text-2xl lg:text-base font-semibold hover:text-our-blue text-white">
-              Booklet
-            </p>
-          </a> */}
-          {/* UNCOMMENT WHEN EVENT STARTS AND TICKETS ARE AVAILABLE */}
-          {/* <button
-            className="bg-our-red bg-opacity-100 hover:bg-our-red hover:bg-opacity-80 text-white font-semibold py-4 px-6 rounded-md focus:outline-none focus:shadow-outline-red"
-            onClick={() => {
-              // Handle booking logic here
-              console.log("Booking button clicked");
-            }}
-          >
-            Book Your Ticket!
-          </button> */}
 
-          {/* <SocialMediaNav onClick={closeDrawer} /> */}
+        <div
+          onClick={closeDrawer}
+          id="underlay"
+          className={`lg:hidden overflow-y-hidden top-[65px] left-0 bg-black/40 h-[calc(100vh-65px)] overflow-hidden z-0 w-full ${
+            drawerIsOpen ? 'absolute' : 'hidden'
+          }`}
+        ></div>
+
+        {/* Drawer Menu */}
+        <div
+          className={`fixed bg-black w-[300px] top-[65px] z-40 h-[calc(100vh-65px)] overflow-hidden lg:hidden 
+          ${drawerIsOpen ? 'right-0' : 'right-[-350px]'} transition-all duration-500 ease-in-out 
+          `}
+          role="dialog"
+          aria-hidden={!drawerIsOpen}
+        >
+          <div
+            className="flex flex-col justify-between gap-12 h-full py-[70px]"
+            onClick={closeDrawer}
+          >
+            <ul className="flex flex-col text-center justify-start pt-10 gap-6">
+              <NavLink href={'/'} title={'Home'} closeDrawer={closeDrawer} />
+              <NavLink href={'/event'} title={'Event'} closeDrawer={closeDrawer} />
+              <NavLink href={'/partners'} title={'Partners'} closeDrawer={closeDrawer} />
+              <NavLink href={'/about'} title={'About'} closeDrawer={closeDrawer} />
+            </ul>
+            <SocialMediaNav />
+          </div>
+        </div>
+
+        {/* --- Desktop Navigation (Hidden on Mobile) --- */}
+        <div className="hidden lg:flex items-center space-x-6">
+          <NavLink href={'/'} title={'Home'} />
+          <NavLink href={'/event'} title={'Event'} />
+          <NavLink href={'/partners'} title={'Partners'} />
+          <NavLink href={'/about'} title={'About'} />
         </div>
       </div>
-      <div
-        onClick={closeDrawer}
-        id="opacity-when-drawer-clicked"
-        className={
-          drawerIsOpen
-            ? 'fixed right-0 w-[100%] lg:hidden bg-black/40 z-40 h-[calc(100vh-65px)] mt-[65px]'
-            : 'fixed right-[-120%] h-[calc(100vh-65px)] mt-[65px]'
-        }
-      />
     </nav>
   );
 }
-
-export default Navbar;
