@@ -1,6 +1,6 @@
 import Schedule from '@srccomponents/Schedule';
 
-function SpeakersPage() {
+function EventPage() {
   return (
     <>
       <Schedule />
@@ -8,4 +8,4 @@ function SpeakersPage() {
   );
 }
 
-export default SpeakersPage;
+export default EventPage;

@@ -3,9 +3,9 @@
     "baseUrl": ".",
     "paths": {
       "@src*": ["./src/*"],
-      "@data*": ["./data/*"],
+      "@data*": ["./data/index.js"],
       "@components*": ["./src/components/*"],
-      "@constants*": ["./src/constants/*"]
+      "@lib*": ["./lib/*"]
     }
   }
 }
