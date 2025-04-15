@@ -104,8 +104,8 @@ export default async function IndividualSpeakerPage({params}) {
           {speaker.session ? ` | Session ${speaker.session}` : ''}
           {speaker.time ? ` | ${speaker.time}` : ''}
         </p>
-        {speaker.talkDescription && (
-          <p className="text-synelixis-blue/70 leading-relaxed">{speaker.talkDescription}</p>
+        {speaker.talkDescriptionGR && (
+          <p className="text-synelixis-blue/70 leading-relaxed">{speaker.talkDescriptionGR}</p>
         )}
       </div>
     </div>
