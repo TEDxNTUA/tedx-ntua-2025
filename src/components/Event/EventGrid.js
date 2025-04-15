@@ -1,4 +1,4 @@
-import EventCard from '@srccomponents/Event/EventCard';
+import EventCard from '@components/Event/EventCard';
 
 export default function EventGrid({type, hosts}) {
   if (!hosts || hosts.length === 0) {

@@ -24,16 +24,16 @@ export const SPEAKERS = [
     jobGR: 'Αρχισυντάκτης LiFO - Δημιουργός Podcast',
     jobEN: '"LiFO" Chief Editor - Podcast Creator',
     infoLinks: {
-      instagram: 'https://www.instagram.com/johnpantazopoulos/',
-      facebook: 'https://www.facebook.com/j.pantazopoulos',
-      x: 'https://x.com/JPantazopoulos',
+      instagram: ['https://www.instagram.com/johnpantazopoulos/'],
+      facebook: ['https://www.facebook.com/j.pantazopoulos'],
+      x: ['https://x.com/JPantazopoulos'],
       podcast: '',
       lifo: [
         'https://www.lifo.gr/authors/giannis-pantazopoylos',
         'https://www.lifo.gr/podcasts/akou-tin-epistimi'
       ],
-      spotify: 'https://open.spotify.com/show/23AO8QeHCFgvN7h89kleOo',
-      applePodcast: 'https://podcasts.apple.com/gr/podcast/άκου-την-επιστήμη/id1546432943'
+      spotify: ['https://open.spotify.com/show/23AO8QeHCFgvN7h89kleOo'],
+      applePodcast: ['https://podcasts.apple.com/gr/podcast/άκου-την-επιστήμη/id1546432943']
     },
     session: 1,
     time: '11:20-11:40',
@@ -53,7 +53,7 @@ export const SPEAKERS = [
     jobGR: 'Αρχιτέκτονας',
     jobEN: 'Architect',
     infoLinks: {
-      linkedIn: 'https://www.linkedin.com/in/georgios-gougoulakis-4200b742/',
+      linkedIn: ['https://www.linkedin.com/in/georgios-gougoulakis-4200b742/'],
       instagram: [
         'https://www.instagram.com/g_architects_',
         'https://www.instagram.com/giorgio_el_greco'
@@ -62,7 +62,7 @@ export const SPEAKERS = [
         'https://www.facebook.com/profile.php?id=100009012744658',
         'https://www.facebook.com/gougoulakisarchitects'
       ],
-      website: 'https://garchitects.gr'
+      website: ['https://garchitects.gr']
     },
     session: 0,
     time: '',
@@ -81,7 +81,7 @@ export const SPEAKERS = [
     artisticName: '',
     jobGR: 'Πρόεδρος @MediterranIA',
     jobEN: 'President @MediterranIA',
-    infoLinks: {linkedIn: 'https://www.linkedin.com/in/rosariomoscato/'},
+    infoLinks: {linkedIn: ['https://www.linkedin.com/in/rosariomoscato/']},
     session: 0,
     time: '',
     talkCategory: 'AI Ethics',
@@ -201,10 +201,13 @@ export const SPEAKERS = [
   //   slug: 'aristides-eliopoulos',
   //   fullNameGR: 'Αριστείδης Γ. Ηλιόπουλος',
   //   fullNameEN: 'Aristides G. Eliopoulos',
-  //   artisticName: 'Zografos',
+  //   artisticName: '',
   //   jobGR: 'Καθηγητής Βιολογίας & Γενετικής, Διευθυντής Εργαστηρίου Βιολογίας της Ιατρικής Σχολής του ΕΚΠΑ. Συνιδρυτής και Επιστημονικός Υπεύθυνος της εταιρείας-τεχνοβλαστού GENOSOPHY',
   //   jobEN: 'Professor of Biology & Genetics, Head of Department of Biology, School of Medicine, NKUA, Co-founder and CSO of GENOSOPHY S.A. spin-off company.',
-  //   infoLinks: {instagram: ['https://www.instagram.com/zografos_vita/']},
+  //   infoLinks: { facebook: ['https://www.facebook.com/eliopag'],
+  //    linkedIn: ['https://www.linkedin.com/in/eliopoulos-aristides-0586159a/'],
+  //    website: ['https://biology.med.uoa.gr', 'https://genosophy.gr', 'https://precision-medicine-cap.gr']
+  //    }
   //   session: 0,
   //   time: '',
   //   talkCategory: '',
@@ -221,10 +224,10 @@ export const SPEAKERS = [
   //   artisticName: 'Zografos',
   //   jobGR: 'Καλλιτέχνης & Στιχουργός',
   //   jobEN: 'Artist & Lyricist',
-  //   infoLinks: {instagram: [facebook: ['https://www.facebook.com/eliopag'],
-  //    linkedIn: ['https://www.linkedin.com/in/eliopoulos-aristides-0586159a/'],
-  //    website: ['https://biology.med.uoa.gr', 'https://genosophy.gr', 'https://precision-medicine-cap.gr']
-  // },
+  //   infoLinks: {
+  //        'instagram': ['https://www.instagram.com/zografos_vita/'],
+  //        facebook: ['https://www.facebook.com/people/Zografos-Vita/100008272368995/']
+  //    },
   //   session: 0,
   //   time: '',
   //   talkCategory: '',

@@ -10,4 +10,4 @@
 //   infoLinks: string[],
 // };
 
-const SIDE_HAPPENINGS = [];
+export const SIDE_HAPPENINGS = [];

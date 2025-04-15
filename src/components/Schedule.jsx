@@ -1,59 +1,124 @@
 import React from 'react';
-import {PROGRAM} from '@data/program';
+import {PROGRAM} from '@data';
+import Link from 'next/link';
+
+const typeColors = {
+  0: 'bg-synelixis-yellow',
+  1: 'bg-synelixis-orange',
+  2: 'bg-synelixis-blue',
+  3: 'bg-synelixis-blue'
+};
+
+const typeLinks = {
+  0: '/event/speakers',
+  1: '/event/performances',
+  2: '/event/experience-workshops',
+  3: '/event/professional-workshops'
+};
+
+function formatSlug(slug) {
+  // 1. Replace dashes with spaces
+  let words = slug.split('-');
+
+  // 2. Join into a full string to find the 'and' connectors
+  let phrase = words.join(' ');
+
+  // 3. Split by ' and ' into individual names
+  let parts = phrase.split(' and ').map(part => part.trim());
+
+  // 4. Capitalize first letter of each word in each part
+  const capitalizeWords = str =>
+    str
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+
+  const formattedParts = parts.map(capitalizeWords);
+
+  // 5. Combine with commas and ampersand
+  if (formattedParts.length === 1) return formattedParts[0];
+  if (formattedParts.length === 2) return formattedParts.join(' & ');
+
+  return formattedParts.slice(0, -1).join(', ') + ' & ' + formattedParts[formattedParts.length - 1];
+}
 
 const Schedule = () => {
-  // Define background colors for different types of sessions
-  const typeColors = ['bg-green-200', 'bg-blue-200', 'bg-yellow-200'];
-
   return (
-    <main className="max-w-[1600px] flex flex-col gap-4 bg-sky-500/20 p-4">
-      {/* Session Menu */}
-      <section id="session-menu" className="grid grid-cols-3 text-center">
-        <span className="bg-green-200 border-white border-2 p-2">Talks</span>
-        <span className="bg-blue-200 border-white border-2 p-2">Performances</span>
-        <span className="bg-yellow-200 border-white border-2 p-2">Workshops</span>
-      </section>
-
-      {/* Class Menu */}
-      <section id="class-menu" className="grid grid-cols-6 bg-blue-500 text-center mt-2">
-        <div></div>
-        <span className="col-span-1 bg-red-200 border-white border-2 p-2">Main Stage</span>
-        <span className="col-span-1 bg-red-200 border-white border-2 p-2">Room 1</span>
-        <span className="col-span-1 bg-red-200 border-white border-2 p-2">Room 2</span>
-        <span className="col-span-1 bg-red-200 border-white border-2 p-2">Room 3</span>
-        <div></div>
-      </section>
-
-      {/* Main Content */}
-      <ul id="main-content" className="bg-green-500 mt-2">
-        {PROGRAM.map(programmHour => (
-          <li
-            key={programmHour.hour}
-            className="grid grid-cols-6 items-center border-b border-white p-2"
+    <main className="max-w-[1600px] flex flex-col gap-6 p-6 mx-auto text-xs md:text-sm">
+      <section
+        id="class-menu"
+        className="grid grid-cols-6 text-center text-sm font-semibold"
+        aria-label="Room Header"
+      >
+        {['Session', 'Time', 'Main Stage', 'Room 1', 'Room 2', 'Room 3'].map((label, i) => (
+          <span
+            key={label}
+            className="p-3 bg-synelixis-blue text-white border border-white rounded-t-md shadow-sm"
           >
-            <div className="bg-white border-black border-2 p-2 text-center">
-              {programmHour.hour}
-            </div>
-            <div className="col-span-4 grid grid-cols-4 gap-2">
-              {/* Mapping sessions into respective columns */}
-              {programmHour.sessions.map((session, index) => (
-                <div
-                  key={index}
-                  className={`col-start-${session.room + 1} ${
-                    typeColors[session.type]
-                  } border-black border-2 p-2 text-center`}
-                >
-                  <p className="font-bold">{session.title}</p>
-                  <p className="text-sm">{session.speakers.join(', ')}</p>
-                </div>
-              ))}
-            </div>
-            <div className="bg-white border-black border-2 p-2 text-center">
-              {programmHour.hour}
-            </div>
-          </li>
+            {label}
+          </span>
         ))}
-      </ul>
+      </section>
+
+      <section className="flex flex-col gap-10">
+        {PROGRAM.map(session => (
+          <section
+            key={session.title}
+            className="grid grid-cols-6 gap-px bg-gray-200 rounded-md overflow-hidden shadow-md"
+            aria-label={`Schedule for ${session.title}`}
+          >
+            <div
+              className={`col-start-1 row-start-1 row-end-[-1] flex justify-center items-center bg-synelixis-blue text-white font-bold text-lg p-4`}
+            >
+              {session.title}
+            </div>
+
+            {session.allHappenings.map((happening, i) => {
+              const roomCols = Array(4).fill(null);
+              happening.timeSpecificHappenings.forEach(h => {
+                roomCols[h.room] = h;
+              });
+
+              return (
+                <React.Fragment key={`${session.title}-${happening.time}`}>
+                  <div className="col-start-2 flex items-center justify-center bg-white font-medium p-2 border border-gray-300">
+                    {happening.time}
+                  </div>
+
+                  {roomCols.map((h, roomIndex) => {
+                    const col = roomIndex + 3;
+
+                    if (!h) {
+                      return (
+                        <div
+                          key={`empty-${session.title}-${roomIndex}-${i}`}
+                          className={`col-start-${col} bg-gray-100 border border-gray-300`}
+                        />
+                      );
+                    }
+
+                    const colorClass = typeColors[h.type] || 'bg-gray-300';
+                    const linkUrl = h.slug ? typeLinks[h.type] + `/${h.slug}` : '#';
+
+                    return (
+                      <Link
+                        href={linkUrl}
+                        key={h.slug}
+                        className={`flex items-center justify-center col-start-${col} ${colorClass} border border-gray-300 p-3 text-white text-sm hover:brightness-105 transition-all duration-200`}
+                      >
+                        <p className="font-bold break-words flex items-center justify-center">
+                          {formatSlug(h.slug)}
+                        </p>
+                        <p>{h.title}</p>
+                      </Link>
+                    );
+                  })}
+                </React.Fragment>
+              );
+            })}
+          </section>
+        ))}
+      </section>
     </main>
   );
 };

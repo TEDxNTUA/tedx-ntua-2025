@@ -1,5 +1,5 @@
 import EventGrid from '@components/Event/EventGrid';
-import {SPEAKERS} from '@data/speakers';
+import {SPEAKERS} from '@data';
 
 async function fetchSpeakers() {
   return SPEAKERS;
