@@ -1,4 +1,4 @@
-export default function SpeakerCardSkeleton() {
+export default function EventCardSkeleton() {
   return (
     <div className="w-[300px] mb-2">
       {' '}
