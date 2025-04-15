@@ -5,21 +5,19 @@
 // Room 3 = 3
 
 // Happening Type
-// 0 = Talk
+// 0 = Speaker
 // 1 = Performance
-// 2 = Workshop
+// 2 = Professional Workshop
+// 3 = Experience Workshop
 
 export const PROGRAM = [
   {
-    hour: '11:00',
-    sessions: [
+    sessionNumber: 1,
+    happenings: [
       {
-        type: 0,
-        title: 'Talk 1',
-        speakers: ['Speaker 1'],
-        room: 0,
-        description: 'Description of Talk 1',
-        image: 'https://example.com/image1.jpg'
+        happeningType: 0,
+        roomNumber: 0,
+        happeningSlug: 'lah-porella-and-lorqa-and-wera'
       },
       {
         type: 1,
