@@ -5,27 +5,27 @@ import {usePathname} from 'next/navigation';
 
 const colorClasses = {
   'synelixis-orange': {
-    bg: 'bg-synelixis-orange/80',
+    bg: 'bg-synelixis-orange',
     focusRing: 'focus-visible:ring-synelixis-orange',
-    hoverBg: 'hover:bg-synelixis-orange/20',
+    hoverBg: 'hover:bg-synelixis-orange/70',
     hoverText: 'hover:text-synelixis-orange'
   },
   'synelixis-yellow': {
-    bg: 'bg-synelixis-yellow/80',
+    bg: 'bg-synelixis-yellow',
     focusRing: 'focus-visible:ring-synelixis-yellow',
-    hoverBg: 'hover:bg-synelixis-yellow/30',
+    hoverBg: 'hover:bg-synelixis-yellow/80',
     hoverText: 'hover:text-yellow-700'
   },
   'synelixis-blue': {
     bg: 'bg-synelixis-blue/80',
     focusRing: 'focus-visible:ring-synelixis-blue',
-    hoverBg: 'hover:bg-synelixis-blue/20',
+    hoverBg: 'hover:bg-synelixis-blue/60',
     hoverText: 'hover:text-synelixis-blue'
   }
 };
 
 const links = [
-  {href: '/event', label: 'Schedule', colorKey: 'synelixis-blue'},
+  {href: '/event/schedule', label: 'Schedule', colorKey: 'synelixis-blue'},
   {href: '/event/speakers', label: 'Speakers', colorKey: 'synelixis-yellow'},
   {href: '/event/performances', label: 'Performances', colorKey: 'synelixis-orange'},
   {href: '/event/experience-workshops', label: 'Experience Workshops', colorKey: 'synelixis-blue'},
