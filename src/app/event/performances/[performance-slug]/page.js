@@ -24,10 +24,8 @@ export async function generateMetadata({params}) {
 export default async function IndividualPerformancePage({params}) {
   const param = await params;
   const performanceSlug = await param['performance-slug'];
-  console.log('slug', performanceSlug);
   const performance = await getPerformanceBySlug(performanceSlug);
 
-  console.log('Performacne', performance);
   const nameToDisplay =
     performance.fullNameGR ||
     performance.fullNameEN ||
