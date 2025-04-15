@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import {getSpeakerBySlug, getAllSpeakerSlugs} from '@lib/speakerData';
-import BackToSpeakersButton from '@components/speakers/BackToSpeakersButton';
+import {getSpeakerBySlug, getAllSpeakerSlugs} from '@lib/eventData';
+import SynelixisButton from '@components/Event/SynelixisButton';
 
 export async function generateStaticParams() {
   const slugs = await getAllSpeakerSlugs();
@@ -60,7 +60,11 @@ export default async function IndividualSpeakerPage({params}) {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-[1200px]">
-      <BackToSpeakersButton />
+      <SynelixisButton
+        color={'synelixis-yellow'}
+        text={'← Back to Speakers'}
+        linkUrl={'/event/speakers'}
+      />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 my-12">
         <div className="md:col-span-1 flex justify-center md:justify-start">

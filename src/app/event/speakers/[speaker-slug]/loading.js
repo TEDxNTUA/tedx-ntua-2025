@@ -1,4 +1,4 @@
-export default function LoadingIndividualSpeakerPage() {
+export default function LoadingIndividualHostPage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl animate-pulse">
       <div className="h-[68px] w-48 bg-gray-300 rounded-sm mb-6"></div>

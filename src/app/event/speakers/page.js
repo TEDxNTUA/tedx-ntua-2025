@@ -1,4 +1,4 @@
-import SpeakerGrid from '@components/speakers/SpeakerGrid';
+import EventGrid from '@components/Event/EventGrid';
 import {SPEAKERS} from '@data/speakers';
 
 async function fetchSpeakers() {
@@ -12,7 +12,7 @@ export default async function SpeakersListPage() {
     <div>
       <h1 className="text-synelixis-blue text-3xl font-bold text-center my-8">Meet Our Speakers</h1>
 
-      <SpeakerGrid speakers={speakers} />
+      <EventGrid hosts={speakers} type={'speaker'} />
     </div>
   );
 }
