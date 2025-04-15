@@ -9,7 +9,7 @@
 //   photo: string;
 // };
 
-const PLATINUM_SPONSORS = [
+export const PLATINUM_SPONSORS = [
   {
     slug: '',
     type: '',

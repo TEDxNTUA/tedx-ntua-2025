@@ -1,16 +1,16 @@
 'use client';
-import { useState } from 'react';
+import {useState} from 'react';
 import styles from './page.module.scss';
-import { motion } from 'framer-motion';
-import useMousePosition from '../utils/useMousePosition';
-import AboutInfo from '../../components/about/AboutInfo';
-import MeetTheTeam from "../../components/about/MeetTheTeam";
-import AboutGrid from "../../components/about/AboutGrid";
-import { ABOUTLIST } from "../../../data/about";
+import {motion} from 'framer-motion';
+import useMousePosition from '@utils/useMousePosition';
+import AboutInfo from '@components/about/AboutInfo';
+import MeetTheTeam from '@components/about/MeetTheTeam';
+import AboutGrid from '@components/about/AboutGrid';
+import {ABOUTLIST} from '@data';
 
 export default function AboutPage() {
   const [isHovered, setIsHovered] = useState(false);
-  const { x, y } = useMousePosition();
+  const {x, y} = useMousePosition();
   const size = isHovered ? 100 : 30;
 
   return (
@@ -24,11 +24,15 @@ export default function AboutPage() {
             WebkitMaskPosition: `${x - size / 2}px ${y - 65 - size / 2}px`,
             WebkitMaskSize: `${size}px`
           }}
-          transition={{ type: 'tween', ease: 'backOut', duration: 0.5 }}
+          transition={{type: 'tween', ease: 'backOut', duration: 0.5}}
         >
           <div
-            onMouseEnter={() => { setIsHovered(true); }}
-            onMouseLeave={() => { setIsHovered(false); }}
+            onMouseEnter={() => {
+              setIsHovered(true);
+            }}
+            onMouseLeave={() => {
+              setIsHovered(false);
+            }}
             className={isHovered ? 'text-red' : 'text-white'}
           >
             <AboutInfo textColor="text-synelixis-blue" />
