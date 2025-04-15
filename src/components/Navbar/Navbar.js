@@ -15,8 +15,8 @@ const eventLinks = [
 ];
 
 const aboutLinks = [
-  {href: '/about', title: 'Organization & History'},
-  {href: '/team', title: 'The Team'}
+  {href: '/about/organisation-and-history', title: 'Organization & History'},
+  {href: '/about/team', title: 'The Team'}
 ];
 
 export default function Navbar() {
