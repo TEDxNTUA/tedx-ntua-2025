@@ -3,12 +3,14 @@ import { useState } from 'react';
 import styles from './page.module.scss';
 import { motion } from 'framer-motion';
 import useMousePosition from '../utils/useMousePosition';
+import useIsMobile from '../utils/mobilefounder'
 import AboutInfo from '../../components/about/AboutInfo';
 import MeetTheTeam from "../../components/about/MeetTheTeam";
 import AboutGrid from "../../components/about/AboutGrid";
 import { ABOUTLIST } from "../../../data/about";
 
 export default function AboutPage() {
+  const isMobile = useIsMobile();
   const [isHovered, setIsHovered] = useState(false);
   const { x, y } = useMousePosition();
   const size = isHovered ? 100 : 30;
@@ -17,7 +19,7 @@ export default function AboutPage() {
     <div className="bg-synelixis-blue">
       {/* Main includes information about TED, TEDx and TEDxNTUA with a mask interactive effect */}
       <main className={styles.main}>
-        {/* Here appears the text when it is hovered. */}
+        {!isMobile && (/* Here appears the text when it is hovered. */
         <motion.div
           className={styles.mask}
           animate={{
@@ -34,6 +36,7 @@ export default function AboutPage() {
             <AboutInfo textColor="text-our-red" />
           </div>
         </motion.div>
+        )}
         <div className={styles.body}>
           {/* Text without being hovered */}
           <AboutInfo textColor="text-our-red" />

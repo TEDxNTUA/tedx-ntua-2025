@@ -34,7 +34,7 @@ export default function AboutGrid({ aboutlist }) {
           >
             {teamPhoto}
           </h1> */}
-          <img className="flex flex-row items-center flex-wrap w-[100%] md:w-[40%] h-[100px] md:h-[150px] lg:h-[200px] 2xl:h-[250px] object-contain mx-auto mt-10 " src={teamPhoto} />
+          <img className="flex flex-row items-center flex-wrap w-[100%] md:w-[50%] h-[100px] md:h-[150px] lg:h-[200px] 2xl:h-[250px] object-contain mx-auto mt-10 " src={teamPhoto} />
           <ul className="flex flex-row items-center gap-4 lg:gap-12 justify-center mx-auto flex-wrap w-[100%] md:w-[80%]">
             {filterPartnersByTeam(teamPhoto).map(
               (
