@@ -14,53 +14,41 @@ export default function ScrollReel() {
   };
 
   const frames = [
-    { src: '/logo/syn.png',        alt: 'Syn' },       
-    { src: '/logo/eli.png',        alt: 'Eli' },       
-    { src: '/logo/xis.png',        alt: 'Xis' },        
-    { src: '/logo/asterismos.png', alt: 'Asterismos' },
+    { src: '/logo/syn.png',  alt: 'Syn' },
+    { src: '/logo/eli.png',  alt: 'Eli' },
+    { src: '/logo/xis.png',  alt: 'Xis' },
   ];
-  
-  // we’ll show frames in this sequence
-  const order = [3, 0, 1, 2];
+
+  const asterismos = { src: '/logo/asterismos.png', alt: 'Asterismos' };
 
   useEffect(() => {
-    // 1) Immediately reveal the first‑to‑show frame (asterismos)
-    const initialIdx = order[0];
-    if (sectionRefs.current[initialIdx]) {
-      gsap.set(sectionRefs.current[initialIdx], { autoAlpha: 1 });
-    }
-
-    // 2) build the scroll‑driven timeline for the other three
     const scrollDistance = frames.length * 300;
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger:    containerRef.current,
-        pin:        true,
+        trigger: containerRef.current,
+        pin: true,
         pinSpacing: true,
-        start:      'top top',
-        end:        `+=${scrollDistance}`,
-        scrub:      true,
+        start: 'top top',
+        end: `+=${scrollDistance}`,
+        scrub: true,
       },
     });
 
-    order.forEach((frameIdx, seq) => {
-      const section    = sectionRefs.current[frameIdx];
-      const frameStart = seq * 1.5;
+    frames.forEach((_, idx) => {
+      const section = sectionRefs.current[idx];
+      const frameStart = idx * 1.5;
 
-      // stacking order
-      tl.set(section, { zIndex: seq + 1 }, frameStart);
-
-      // fade/slide in when that segment of the scroll is reached
+      tl.set(section, { zIndex: idx + 1 }, frameStart);
       tl.fromTo(
         section,
         { autoAlpha: 0, y: 50, scale: 1 },
         {
-          autoAlpha:       1,
-          y:               0,
-          scale:           1,
-          duration:        1,
-          ease:            'power1.out',
-          immediateRender: false,    // don’t override our initial CSS/JS-set
+          autoAlpha: 1,
+          y: 0,
+          scale: 1,
+          duration: 1,
+          ease: 'power1.out',
+          immediateRender: false,
         },
         frameStart
       );
@@ -80,13 +68,17 @@ export default function ScrollReel() {
           ref={(el) => setSectionRef(el, idx)}
           className={styles.frameWrapper}
         >
-          <img
-            src={frame.src}
-            alt={frame.alt}
-            className={styles.frameImage}
-          />
+          <img src={frame.src} alt={frame.alt} className={styles.frameImage} />
         </div>
       ))}
+
+      <div className={styles.asterismosLayer}>
+        <img
+          src={asterismos.src}
+          alt={asterismos.alt}
+          className={styles.frameImage}
+        />
+      </div>
     </section>
   );
 }
