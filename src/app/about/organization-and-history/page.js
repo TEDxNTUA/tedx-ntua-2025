@@ -4,11 +4,8 @@ import styles from './page.module.scss';
 import {motion} from 'framer-motion';
 import useMousePosition from '@utils/useMousePosition';
 import AboutInfo from '@components/about/AboutInfo';
-import MeetTheTeam from '@components/about/MeetTheTeam';
-import AboutGrid from '@components/about/AboutGrid';
-import {ABOUTLIST} from '@data';
 
-export default function AboutPage() {
+export default function OrganizationAndHistoryPage() {
   const [isHovered, setIsHovered] = useState(false);
   const {x, y} = useMousePosition();
   const size = isHovered ? 100 : 30;

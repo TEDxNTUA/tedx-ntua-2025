@@ -1,18 +1,18 @@
 .main {
-  background-color: #01172F;
+  background-color: #01172f;
   .mask,
   .body {
-    color: #f1be3d;
+    color: white;
     font-size: 64px;
     line-height: 66px;
     cursor: default;
   }
 
   .mask {
-    mask-image: url('../../../public/mask.svg');
+    mask-image: url('/mask.svg');
     mask-repeat: no-repeat;
     mask-size: 40px;
-    background: #f1be3d;
+    background: red;
     position: absolute;
     color: #ed6d23;
   }
