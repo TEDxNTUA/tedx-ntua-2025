@@ -1,52 +1,195 @@
-// type Sponsors = {
-//   name: string;
-//   slug: string;
-//   websiteLink: string;
-//   type: string;
-//   cvUrl: string;
-//   bioGR: string;
-//   bioEN: string;
-//   photo: string;
-// };
-
-export const PLATINUM_SPONSORS = [
+export const partnersData = [
   {
-    slug: '',
-    type: '',
-    name: '',
-    cvUrl: '',
-    bioGR: '',
-    bioEN: '',
-    websiteLink: '',
-    photo: ''
-  }
-];
-
-export const GRAND_SPONSORS = [
+    title: 'Platinum Sponsors',
+    content: [
+      {
+        href: 'https://www.acg.edu/',
+        imgSrc: '/Partners/Platinum/ACGLogo.jpg',
+        alt: 'ACG Logo',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow',
+      },
+      {
+        href: 'https://www.archirodon.net/',
+        imgSrc: '/Partners/Platinum/65years_Archirodon_Fin.jpg',
+        alt: 'Archirodon 65 Years',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow',
+      },
+      {
+        href: 'https://www.dei.gr/en/',
+        imgSrc: '/Partners/Platinum/DEI.jpg',
+        alt: 'DEI',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow',
+      },
+      {
+        href: 'https://www.oliverwyman.com/in.html',
+        imgSrc: '/Partners/Platinum/oliver-wyman-logo.png',
+        alt: 'Oliver Wyman',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow',
+      },
+    ],
+  },
   {
-    slug: '',
-    type: '',
-    name: '',
-    cvUrl: '',
-    bioGR: '',
-    bioEN: '',
-    websiteLink: '',
-    photo: ''
-  }
-];
-
-// type Partners = {
-//   name: string;
-//   slug: string;
-//   websiteLink: string;
-//   type: string;
-//   logo = ./partners/{type}/{slug}-logo.png';
-
-export const PARTNERS = [
+    title: 'Grand Sponsors',
+    content: [
+      {
+        href: 'https://www.space.gr/en',
+        imgSrc: '/Partners/Grand/space.png',
+        alt: 'Space',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full shadow',
+      },
+      {
+        href: 'https://www.elpedison.gr/el/',
+        imgSrc: '/Partners/Grand/elpedison.png',
+        alt: 'Elpedison',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full shadow',
+      },
+      {
+        href: 'https://www.thenamaris.com/',
+        imgSrc: '/Partners/Grand/THENAMARIS.png',
+        alt: 'thenamaris',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full shadow',
+      },
+    ],
+  },
   {
-    name: 'Εκδόσεις Κλειδάριθμος ',
-    slug: 'kleidarithmos',
-    websiteLink: 'https://www.klidarithmos.gr/',
-    type: 'Supporter'
-  }
+    title: 'Partners',
+    content: [
+      {
+        href: 'https://maps.app.goo.gl/t2PodNBQHvZu9BgCA',
+        imgSrc: '/Partners/Partners/layers.png',
+        alt: 'Layers',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full shadow',
+      },
+      {
+        href: 'https://gr.coca-colahellenic.com/',
+        imgSrc: '/Partners/Partners/logo3E.jpg',
+        alt: '3E',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full shadow',
+      },
+      {
+        href: 'https://www.frezyderm.gr/?UserAction=True',
+        imgSrc: '/Partners/Partners/frezyderm.png',
+        alt: 'Frezyderm',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full shadow',
+      },
+    ],
+  },
+  {
+    title: 'Supporters',
+    content: [
+      {
+        href: 'https://myredraven.com/?gad_source=1&gclid=CjwKCAjw5PK_BhBBEiwAL7GTPaEnqPEVpxX__Mq2Xx7Z3Pp3f7IBQiiVUElk0wniDdllnsqo13RyvhoCP18QAvD_BwE',
+        imgSrc: '/Partners/Supporters/RedRaven.png',
+        alt: 'RedRaven',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow',
+      },
+      {
+        href: 'https://www.olympos.gr/',
+        imgSrc: '/Partners/Supporters/olympos2.png',
+        alt: 'OLYMPOS',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow',
+      },
+      {
+        href: 'https://www.melissa.gr/en/',
+        imgSrc: '/Partners/Supporters/Melissa.png',
+        alt: 'Melissa',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow',
+      },
+      {
+        href: 'https://megaspileo.gr/?gad_source=1&gclid=CjwKCAjw5PK_BhBBEiwAL7GTPfxmQa_DvfGssV_jD3xHBCoStOyqIJ5F83qwlLmZ5c3w0GQ4u0WvHxoC2wkQAvD_BwE',
+        imgSrc: '/Partners/Supporters/megaspileo.png',
+        alt: 'megaspileo',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow',
+      },
+      {
+        href: 'https://www.nanoudonutshouse.com/',
+        imgSrc: '/Partners/Supporters/nanou.png',
+        alt: 'nanou',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow',
+      },
+      {
+        href: 'https://www.ikea.gr/',
+        imgSrc: '/Partners/Supporters/IKEA2.png',
+        alt: 'IKEA',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow',
+      },
+      {
+        href: 'https://www.deepsea.ai/',
+        imgSrc: '/Partners/Supporters/deepsealogo.png',
+        alt: 'deepsealogo',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow',
+      },
+      {
+        href: 'https://www.ahmadtea.com/',
+        imgSrc: '/Partners/Supporters/AhmadTea.jpg',
+        alt: 'AhmadTea',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow',
+      },
+      {
+        href: 'https://www.flexopack.com/en/',
+        imgSrc: '/Partners/Supporters/flexopack.png',
+        alt: 'Flexopack',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow',
+      },
+      {
+        href: 'https://kanellakis-sa.gr/',
+        imgSrc: '/Partners/Supporters/kanellakis.png',
+        alt: 'kanellakis',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow',
+      },
+    ],
+  },
+  {
+    title: 'Exclusive Air Transport Sponsor',
+    content: [
+      {
+        href: 'https://en.aegeanair.com/',
+        imgSrc: '/Partners/Supporters/aegean.png',
+        alt: 'Aegean',
+        width: 500,
+        height: 500,
+        className: 'rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow',
+      },
+    ],
+  },
 ];
