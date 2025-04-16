@@ -6,20 +6,17 @@ export const metadata = {
   description: "The live performances TEDxNTUA's 2025 event with theme Synelixis."
 };
 
-async function fetchPerformances() {
-  return PERFORMANCES;
-}
-
-export default async function PerformancesListPgae() {
-  const performances = await fetchPerformances();
-
+export default function PerformancesListPgae() {
   return (
     <div>
-      <h1 className="text-synelixis-blue/90 text-3xl font-bold text-center my-8">
-        Live Performances
-      </h1>
+      <section className="flex flex-col items-center justify-center gap-4">
+        <h1 className="text-synelixis-blue/90 text-3xl font-bold text-center">Live Performances</h1>
+        <p className="text-synelixis-blue/50 text-lg text-center ">
+          Stay tuned for more performance announcements!
+        </p>
+      </section>
 
-      <EventGrid hosts={performances} type={'performance'} />
+      <EventGrid hosts={PERFORMANCES} type={'performance'} />
     </div>
   );
 }
