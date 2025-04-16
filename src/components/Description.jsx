@@ -5,11 +5,11 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // FIRST PHRASE (letter-split)
-const phrase = `[𝗦𝗬𝗡𝗘𝗟𝗜𝗫𝗜𝗦] What happens when two worlds come into contact? Synelixis, in its mathematical sense, describes the transformation one function causes in another as it passes through it — and the result that emerges as a combination of both. In our lives, in our everyday reality, a 'function' can be seen as any idea, any interaction, any moment — a brief (or perhaps not so brief) exchange. A dialogue between the old and the new, the familiar and the unknown, the fleeting and the eternal — not simply the merging of opposites, but the birth of something new and unique.`;
+const phrase = `𝗦𝗬𝗡𝗘𝗟𝗜𝗫𝗜𝗦 What happens when two worlds come into contact? Synelixis, in its mathematical sense, describes the transformation one function causes in another as it passes through it — and the result that emerges as a combination of both. In our lives, in our everyday reality, a 'function' can be seen as any idea, any interaction, any moment — a brief (or perhaps not so brief) exchange. A dialogue between the old and the new, the familiar and the unknown, the fleeting and the eternal — not simply the merging of opposites, but the birth of something new and unique.`;
 
 // EXACT words (including punctuation) that should appear in gold (#c8921c) in the FIRST text
 const highlightWordsFirst = new Set([
-  '[𝗦𝗬𝗡𝗘𝗟𝗜𝗫𝗜𝗦]',
+  '𝗦𝗬𝗡𝗘𝗟𝗜𝗫𝗜𝗦',
   'function',
   'combination',
   'idea,',
