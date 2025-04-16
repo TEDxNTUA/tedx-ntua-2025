@@ -5,6 +5,6 @@ export default function ProfessionalWorkshopsPage() {
 }
 
 export const metadata = {
-  title: 'Experience Workshops - Coming Soon | TEDxNTUA 2025, Synelixis',
+  title: 'Experience Workshops - Coming Soon | Synelixis',
   description: 'Stay tuned for announcements about our Experience Workshops.'
 };
