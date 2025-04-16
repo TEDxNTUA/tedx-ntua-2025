@@ -22,17 +22,18 @@
 }
 
 .highlightWord {
-  color: #f1be3d !important; 
+  color: #f1be3d !important;
+  font-weight: 600;
 }
 
 .logoWrapper {
   width: 100%;
   margin: 2rem auto;
-  text-align: center; 
+  text-align: center;
 }
 
 .synelixisLogo {
-  max-width: 400px;  
+  max-width: 400px;
   width: 100%;
   height: auto;
   display: inline-block;
