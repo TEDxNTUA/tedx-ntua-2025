@@ -25,7 +25,7 @@ const colorClasses = {
 };
 
 const links = [
-  {href: '/event/schedule', label: 'Schedule', colorKey: 'synelixis-blue'},
+  // {href: '/event/schedule', label: 'Schedule', colorKey: 'synelixis-blue'},
   {href: '/event/speakers', label: 'Speakers', colorKey: 'synelixis-yellow'},
   {href: '/event/performances', label: 'Performances', colorKey: 'synelixis-orange'},
   {href: '/event/experience-workshops', label: 'Experience Workshops', colorKey: 'synelixis-blue'},
