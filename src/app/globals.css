@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* --- Cascadia Code @font-face declarations --- */
 @font-face {
-    font-family: 'AestheticRegular';
-    /* font-style: regular; */
-    font-weight: 400;
-    src: url('/fonts/AestheticRegular.ttf') format('ttf'); 
+  font-family: 'CascadiaCode';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Cascadia.ttf') format('truetype');
+}
+
+@layer base {
+  html {
+    font-family: 'CascadiaCode', ui-sans-serif, system-ui, sans-serif;
   }
+}
