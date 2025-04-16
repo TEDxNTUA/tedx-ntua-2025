@@ -12,12 +12,14 @@
 
 /* Highlight class for the replaced words */
 .highlightWord {
-  color: #c8921c;
+  color: #f1be3d;
 }
 
 .textWrapper h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #f1be3d;
+  font-weight: 700;
 }
 
 .textWrapper p {
@@ -68,4 +70,8 @@
   .mapWrapper iframe {
     height: auto;
   }
+}
+.locationInfo p {
+  margin: 0.25rem 0;
+  font-size: 1.2rem;
 }

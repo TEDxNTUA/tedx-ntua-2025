@@ -15,11 +15,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0; 
+  opacity: 0;      
+}
+
+.frameWrapper:nth-child(4) {
+  opacity: 1;
 }
 
 .frameImage {
   max-width: 60vw;
   max-height: 80vh;
 }
-
