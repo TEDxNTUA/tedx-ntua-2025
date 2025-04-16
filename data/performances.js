@@ -46,13 +46,13 @@ export const PERFORMANCES = [
     artisticNameGR: '',
     artisticNameEN: '',
     infoLinks: {
-      instagram: [
-        'https://www.instagram.com/evita.tsakalaki',
-        'https://www.instagram.com/maria_blossoms'
-      ],
       facebook: [
         'https://www.facebook.com/evita.tsakalaki',
         'https://www.facebook.com/maria.kritsotaki.79'
+      ],
+      instagram: [
+        'https://www.instagram.com/evita.tsakalaki',
+        'https://www.instagram.com/maria_blossoms'
       ]
     },
     performanceTypeGR: 'Χορός & Τραγούδι',

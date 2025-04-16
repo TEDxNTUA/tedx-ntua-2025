@@ -101,12 +101,15 @@ export const SPEAKERS = [
     jobEN:
       'Founder and Pres. of CuR / Pres. of CNS & CEO and Co-Founder of Sporo Health / Harvard Alumnus',
     infoLinks: {
+      instagram: [
+        'https://www.instagram.com/antoniaavogt/',
+        'https://www.instagram.com/kimonvogt/'
+      ],
       linkedIn: [
         'http://linkedin.com/in/antonia-vogt',
         'https://www.linkedin.com/in/kimon-aristotelis-vogt/'
       ],
-      website: ['https://sporohealth.com'],
-      instagram: ['https://www.instagram.com/antoniaavogt/', 'https://www.instagram.com/kimonvogt/']
+      website: ['https://sporohealth.com']
     },
     session: 0,
     time: '',
@@ -126,11 +129,11 @@ export const SPEAKERS = [
     jobGR: 'Αρχιτέκτων Μηχανικός, Αρχιτέκτων Τοπίου, Ιδρύτρια LandmArch',
     jobEN: 'Landscape Architect, Founder LandmArch',
     infoLinks: {
+      facebook: 'https://www.facebook.com/landmarch.architecture/',
       instagram: [
         'https://www.instagram.com/landmarch/',
         'https://www.instagram.com/xeniamastoraki/'
       ],
-      facebook: 'https://www.facebook.com/landmarch.architecture/',
       linkedIn: 'https://www.linkedin.com/in/xeniamastoraki/',
       website: 'https://www.landmarch.gr'
     },
@@ -152,13 +155,13 @@ export const SPEAKERS = [
     jobGR: 'Συνιδρυτής BACKPACK BROTHERS / A.T.A.X.T.O.I.',
     jobEN: 'Co-Founder BACKPACK BROTHERS / A.T.A.X.T.O.I.',
     infoLinks: {
-      instagram: [
-        'https://www.instagram.com/ataxtoi/',
-        'https://www.instagram.com/backpackbrothers.gr/'
-      ],
       facebook: [
         'https://www.facebook.com/Ataxtoi/',
         'https://www.facebook.com/backpackbrothers.gr'
+      ],
+      instagram: [
+        'https://www.instagram.com/ataxtoi/',
+        'https://www.instagram.com/backpackbrothers.gr/'
       ]
     },
     session: 0,
@@ -180,8 +183,8 @@ export const SPEAKERS = [
     jobGR: 'Product Manager & Ακτιβίστρια',
     jobEN: 'Product Manager & Activist',
     infoLinks: {
-      instagram: ['https://www.instagram.com/the.abstract.girl/'],
-      facebook: ['https://www.facebook.com/p/The-Abstract-Girl-100063759715231/']
+      facebook: ['https://www.facebook.com/p/The-Abstract-Girl-100063759715231/'],
+      instagram: ['https://www.instagram.com/the.abstract.girl/']
     },
     session: 0,
     time: '',
