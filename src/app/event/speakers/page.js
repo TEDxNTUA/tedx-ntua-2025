@@ -5,6 +5,11 @@ async function fetchSpeakers() {
   return SPEAKERS;
 }
 
+export const metadata = {
+  title: 'Speakers | Synelixis',
+  description: "The speakers of TEDxNTUA's 2025 event with theme Synelixis."
+};
+
 export default async function SpeakersListPage() {
   const speakers = await fetchSpeakers();
 

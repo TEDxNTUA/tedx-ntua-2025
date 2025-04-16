@@ -5,6 +5,6 @@ export default function ProfessionalWorkshopsPage() {
 }
 
 export const metadata = {
-  title: 'Side Happenings - Coming Soon | TEDxNTUA 2025, Synelixis',
+  title: 'Side Happenings - Coming Soon | Synelixis',
   description: 'Stay tuned for announcements about our Side Happenings.'
 };

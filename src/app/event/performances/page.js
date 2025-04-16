@@ -1,6 +1,11 @@
 import EventGrid from '@components/Event/EventGrid';
 import {PERFORMANCES} from '@data';
 
+export const metadata = {
+  title: 'Performances | Synelixis',
+  description: "The live performances TEDxNTUA's 2025 event with theme Synelixis."
+};
+
 async function fetchPerformances() {
   return PERFORMANCES;
 }

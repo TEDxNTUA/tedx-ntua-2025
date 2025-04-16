@@ -7,7 +7,7 @@ import SocialMediaNav from './SocialMediaNav';
 
 const eventLinks = [
   {href: '/event/speakers', title: 'Speakers'},
-  {href: '/event/schedule', title: 'Schedule'},
+  // {href: '/event/schedule', title: 'Schedule'},
   {href: '/event/performances', title: 'Performances'},
   {href: '/event/professional-workshops', title: 'Professional Workshops'},
   {href: '/event/experience-workshops', title: 'Experience Workshops'},
