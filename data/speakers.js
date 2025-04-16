@@ -20,20 +20,19 @@ export const SPEAKERS = [
     slug: 'ioannis-pantazopoulos',
     fullNameGR: 'Ιωάννης Πανταζόπουλος',
     fullNameEN: 'Ioannis Pantazopoulos',
-    artisticName: 'tests',
+    artisticName: '',
     jobGR: 'Αρχισυντάκτης LiFO - Δημιουργός Podcast',
     jobEN: '"LiFO" Chief Editor - Podcast Creator',
     infoLinks: {
-      instagram: ['https://www.instagram.com/johnpantazopoulos/'],
       facebook: ['https://www.facebook.com/j.pantazopoulos'],
-      x: ['https://x.com/JPantazopoulos'],
-      podcast: '',
+      applePodcast: ['https://podcasts.apple.com/gr/podcast/άκου-την-επιστήμη/id1546432943'],
+      twitter: ['https://x.com/JPantazopoulos'],
+      instagram: ['https://www.instagram.com/johnpantazopoulos/'],
+      spotify: ['https://open.spotify.com/show/23AO8QeHCFgvN7h89kleOo'],
       lifo: [
         'https://www.lifo.gr/authors/giannis-pantazopoylos',
         'https://www.lifo.gr/podcasts/akou-tin-epistimi'
-      ],
-      spotify: ['https://open.spotify.com/show/23AO8QeHCFgvN7h89kleOo'],
-      applePodcast: ['https://podcasts.apple.com/gr/podcast/άκου-την-επιστήμη/id1546432943']
+      ]
     },
     session: 1,
     time: '11:20-11:40',
@@ -53,15 +52,15 @@ export const SPEAKERS = [
     jobGR: 'Αρχιτέκτονας',
     jobEN: 'Architect',
     infoLinks: {
-      linkedIn: ['https://www.linkedin.com/in/georgios-gougoulakis-4200b742/'],
-      instagram: [
-        'https://www.instagram.com/g_architects_',
-        'https://www.instagram.com/giorgio_el_greco'
-      ],
       facebook: [
         'https://www.facebook.com/profile.php?id=100009012744658',
         'https://www.facebook.com/gougoulakisarchitects'
       ],
+      instagram: [
+        'https://www.instagram.com/g_architects_',
+        'https://www.instagram.com/giorgio_el_greco'
+      ],
+      linkedIn: ['https://www.linkedin.com/in/georgios-gougoulakis-4200b742/'],
       website: ['https://garchitects.gr']
     },
     session: 0,
@@ -102,14 +101,12 @@ export const SPEAKERS = [
     jobEN:
       'Founder and Pres. of CuR / Pres. of CNS & CEO and Co-Founder of Sporo Health / Harvard Alumnus',
     infoLinks: {
-      instagram: [
-        'https://www.instagram.com/antoniaavogt/',
-        'https://www.instagram.com/kimonvogt/'
-      ],
       linkedIn: [
         'http://linkedin.com/in/antonia-vogt',
         'https://www.linkedin.com/in/kimon-aristotelis-vogt/'
-      ]
+      ],
+      website: ['https://sporohealth.com'],
+      instagram: ['https://www.instagram.com/antoniaavogt/', 'https://www.instagram.com/kimonvogt/']
     },
     session: 0,
     time: '',
@@ -155,7 +152,7 @@ export const SPEAKERS = [
     jobGR: 'Συνιδρυτής BACKPACK BROTHERS / A.T.A.X.T.O.I.',
     jobEN: 'Co-Founder BACKPACK BROTHERS / A.T.A.X.T.O.I.',
     infoLinks: {
-      instragram: [
+      instagram: [
         'https://www.instagram.com/ataxtoi/',
         'https://www.instagram.com/backpackbrothers.gr/'
       ],
