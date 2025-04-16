@@ -1,5 +1,3 @@
-import {hover} from 'framer-motion';
-import Link from 'next/link';
 import React from 'react';
 import SocialList from '@components/SocialMedia/SocialList';
 // PropsInterface {
@@ -14,6 +12,7 @@ function EventCard({host, type}) {
   let secondaryInfo = '';
   let altText = 'Event image';
   let hoverColor = '';
+  let socialHoverColor = '';
 
   const slug = encodeURIComponent(host.slug);
 
@@ -25,6 +24,7 @@ function EventCard({host, type}) {
       secondaryInfo = host.jobEN;
       altText = `Picture of ${type}: ${displayName}`;
       hoverColor = 'group-hover:text-synelixis-yellow';
+      socialHoverColor = 'yellow';
       break;
     case 'performance':
       linkUrl = `/event/performances/${slug}`;
@@ -33,6 +33,7 @@ function EventCard({host, type}) {
       secondaryInfo = host.performanceTypeEN;
       altText = `Image for ${type}: ${displayName}`;
       hoverColor = 'group-hover:text-synelixis-orange';
+      socialHoverColor = 'orange';
       break;
     case 'side-happening':
       linkUrl = `/event/side-happenings/${slug}`;
@@ -68,29 +69,31 @@ function EventCard({host, type}) {
   return (
     <div className="flex flex-col gap-2">
       <section className="link-wrapper mb-2 text-white group max-w-[300px] h-full">
-        <Link href={linkUrl}>
-          <img
-            className="object-cover grayscale-[0.65] group-hover:grayscale-0 transition"
-            src={imageUrl}
-            alt={altText}
-            width={300}
-            height={300}
-          />
-          <div className="text-container mt-2 xl:mt-4">
-            <h2
-              className={`text-lg xl:text-xl text-synelixis-blue ${hoverColor} font-semibold transition-colors duration-200 ease-in-out text-wrap`}
-            >
-              {displayName}
-            </h2>
-            {/* {secondaryInfo && ( */}
-            <p className="text-sm text-synelixis-blue/50 group-hover:underline transition-colors duration-200 ease-in-out mt-1 text-wrap">
-              {secondaryInfo}
-            </p>
-          </div>
-        </Link>
+        <img
+          className="object-cover grayscale-[0.65] group-hover:grayscale-0 transition"
+          src={imageUrl}
+          alt={altText}
+          width={300}
+          height={300}
+        />
+        <div className="text-container mt-2 xl:mt-4">
+          <h2
+            className={`text-lg xl:text-xl text-synelixis-blue ${hoverColor} font-semibold transition-colors duration-200 ease-in-out text-wrap`}
+          >
+            {displayName}
+          </h2>
+          {/* {secondaryInfo && ( */}
+          <p className="text-sm text-synelixis-blue/50 group-hover:underline transition-colors duration-200 ease-in-out mt-1 text-wrap">
+            {secondaryInfo}
+          </p>
+        </div>
       </section>
       <section className="flex flex-row gap-3">
-        <SocialList socialMediaLinks={socialMediaLinks} color={'blue'} hoverColor={'yellow'} />
+        <SocialList
+          socialMediaLinks={socialMediaLinks}
+          color={'blue'}
+          hoverColor={socialHoverColor}
+        />
       </section>
     </div>
   );
