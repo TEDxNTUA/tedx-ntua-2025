@@ -15,7 +15,7 @@ const eventLinks = [
 ];
 
 const aboutLinks = [
-  {href: '/about/organisation-and-history', title: 'Organization & History'},
+  {href: '/about/organization-and-history', title: 'Organization & History'},
   {href: '/about/team', title: 'The Team'}
 ];
 
