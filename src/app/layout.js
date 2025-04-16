@@ -1,6 +1,8 @@
-import Navbar from '@components/Navbar/Navbar';
-import Footer from '@components/Footer/Footer';
-import './globals.css';
+// src/app/layout.js
+import Navbar from '@components/Navbar/Navbar'
+import Footer from '@components/Footer/Footer'
+import ClientScrollProvider from './ClientScrollProvider'
+import './globals.css'
 
 export const metadata = {
   title: 'TEDxNTUA 2025',
@@ -20,16 +22,21 @@ export const metadata = {
       url: './favicons/favicon-16x16.png'
     }
   ]
-};
+}
 
-export default function RootLayout({children}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <body>
         <Navbar />
-        <main className="max-w-[2000px] mx-auto">{children}</main>
+        {/* only inside here do we enable client‑side effects */}
+        <ClientScrollProvider>
+          <main className="max-w-[2000px] mx-auto">
+            {children}
+          </main>
+        </ClientScrollProvider>
         <Footer />
       </body>
     </html>
-  );
+  )
 }

@@ -19,7 +19,10 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
           {/* TEDxNTUA Info */}
           <div className="w-full lg:w-1/3 text-xs md:text-sm text-left text-gray-300 leading-relaxed">
-            <p className="text-white font-bold text-2xl mb-2">TEDxNTUA</p>
+          <p className="font-bold text-2xl mb-2">
+              <span style={{ color: "#eb0028" }}>TEDx</span>
+              <span className="text-white">NTUA</span>
+            </p>
             <p>
               This independent TEDx event is operated under license from TED and the auspices of ICCS. This website is our latest version : 2025
             </p>
