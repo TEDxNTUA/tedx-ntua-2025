@@ -14,28 +14,61 @@
   background-attachment: fixed;
 }
 
-  
-  .sliderContainer {
-    position: absolute;
-    top: 80px; 
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    z-index: 10; 
-  }
-  
-  .slider {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    will-change: transform;
-  }
-  
-  .slider span {
-    font-size: 3.5rem; /* Adjust size as needed */
-    font-weight: bold;
-    white-space: nowrap;
-    color: white; 
-  }
-  
-  
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 4rem 0;
+  padding-bottom: 4rem; 
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  will-change: transform;
+}
+
+.slider span {
+  font-size: 3.5rem; 
+  font-weight: bold;
+  white-space: nowrap;
+  color: white;
+}
+.scrollIndicator {
+  position: relative;     
+  margin-top: -2rem;      
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+  font-family: sans-serif;
+}
+
+.scrollIndicator p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.scrollIndicator .arrow {
+  display: block;
+  font-size: 2rem;
+  line-height: 1;
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(8px); }
+}
+.slider span span.speakers {
+  color: #f1be3d;
+}
+.slider span span.performances {
+  color: #ed6d23;
+}
+.slider span span.workshops {
+  color: #ffffff;
+}
+
+

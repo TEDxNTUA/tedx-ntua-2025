@@ -9,47 +9,66 @@ gsap.registerPlugin(ScrollTrigger);
 export default function ScrollReel() {
   const containerRef = useRef(null);
   const sectionRefs = useRef([]);
-
-  const frames = [
-    { src: '/logo/syn.png', alt: 'Frame 1' },
-    { src: '/logo/eli.png', alt: 'Frame 2' },
-    { src: '/logo/xis.png', alt: 'Frame 3' },
-    { src: '/logo/asterismos.png', alt: 'Frame 4' },
-  ];
-
   const setSectionRef = (el, idx) => {
     sectionRefs.current[idx] = el;
   };
 
-  useEffect(() => {
-    const totalFrames = frames.length;
-    const scrollDistance = totalFrames * 300;
+  const frames = [
+    { src: '/logo/syn.png',        alt: 'Syn' },       
+    { src: '/logo/eli.png',        alt: 'Eli' },       
+    { src: '/logo/xis.png',        alt: 'Xis' },        
+    { src: '/logo/asterismos.png', alt: 'Asterismos' },
+  ];
+  
+  // we’ll show frames in this sequence
+  const order = [3, 0, 1, 2];
 
+  useEffect(() => {
+    // 1) Immediately reveal the first‑to‑show frame (asterismos)
+    const initialIdx = order[0];
+    if (sectionRefs.current[initialIdx]) {
+      gsap.set(sectionRefs.current[initialIdx], { autoAlpha: 1 });
+    }
+
+    // 2) build the scroll‑driven timeline for the other three
+    const scrollDistance = frames.length * 300;
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: containerRef.current,
-        pin: true,
+        trigger:    containerRef.current,
+        pin:        true,
         pinSpacing: true,
-        start: 'top top',
-        end: `+=${scrollDistance}`,
-        scrub: true,
+        start:      'top top',
+        end:        `+=${scrollDistance}`,
+        scrub:      true,
       },
     });
 
-    sectionRefs.current.forEach((section, i) => {
-      const frameStart = i * 1.5;
-      
+    order.forEach((frameIdx, seq) => {
+      const section    = sectionRefs.current[frameIdx];
+      const frameStart = seq * 1.5;
+
+      // stacking order
+      tl.set(section, { zIndex: seq + 1 }, frameStart);
+
+      // fade/slide in when that segment of the scroll is reached
       tl.fromTo(
         section,
         { autoAlpha: 0, y: 50, scale: 1 },
-        { autoAlpha: 1, y: 0, scale: 1, duration: 1, ease: 'power1.out' },
+        {
+          autoAlpha:       1,
+          y:               0,
+          scale:           1,
+          duration:        1,
+          ease:            'power1.out',
+          immediateRender: false,    // don’t override our initial CSS/JS-set
+        },
         frameStart
       );
     });
 
     return () => {
       tl.kill();
-      ScrollTrigger.getAll().forEach(st => st.kill());
+      ScrollTrigger.getAll().forEach((st) => st.kill());
     };
   }, [frames]);
 
@@ -61,7 +80,11 @@ export default function ScrollReel() {
           ref={(el) => setSectionRef(el, idx)}
           className={styles.frameWrapper}
         >
-          <img src={frame.src} alt={frame.alt} className={styles.frameImage} />
+          <img
+            src={frame.src}
+            alt={frame.alt}
+            className={styles.frameImage}
+          />
         </div>
       ))}
     </section>

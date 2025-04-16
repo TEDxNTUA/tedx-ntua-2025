@@ -48,10 +48,12 @@ export default function Odeio() {
           );
         })}
         <div className={styles.locationInfo}>
-          <h4>Athens Conservatoire</h4>
-          <p>Rigillis &amp; Vassileos Georgiou II 17–19</p>
-          <p>Metro Line 3 (“Evangelismos” Station)</p>
-        </div>
+  <h4>Athens Conservatoire</h4>
+  <address>
+    <p>Rigillis &amp; Vassileos Georgiou II 17–19</p>
+    <p><strong>Metro:</strong> Line 3 (<em>“Evangelismos” Station</em>)</p>
+  </address>
+</div>
       </div>
 
       {/* Row holding Image + Map side by side */}

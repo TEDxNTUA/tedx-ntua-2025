@@ -5,19 +5,19 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // FIRST PHRASE (letter-split)
-const phrase = `𝗦𝗬𝗡𝗘𝗟𝗜𝗫𝗜𝗦 What happens when two worlds come into contact? Synelixis, in its mathematical sense, describes the transformation one function causes in another as it passes through it — and the result that emerges as a combination of both. In our lives, in our everyday reality, a 'function' can be seen as any idea, any interaction, any moment — a brief (or perhaps not so brief) exchange. A dialogue between the old and the new, the familiar and the unknown, the fleeting and the eternal — not simply the merging of opposites, but the birth of something new and unique.`;
+const phrase =  `Just as stars come together in the sky to form constellations — even from afar — we too “connect” the scattered pieces around us, shaping new versions of ourselves. Just like the pixels on a screen break down into levels to create images, our moments and memories form a reality that is multi-layered and one-of-a-kind. At TEDxNTUA 2025, we will explore how every small or grand synelixis — every interaction — transforms us at our core and gives rise to a new world, a new reality.`;
 
 // EXACT words (including punctuation) that should appear in gold (#c8921c) in the FIRST text
 const highlightWordsFirst = new Set([
-  '𝗦𝗬𝗡𝗘𝗟𝗜𝗫𝗜𝗦',
-  'function',
-  'combination',
-  'idea,',
-  'new',
-  'unique.'
+    'stars',
+    '“connect”',
+    'memories',
+    'synelixis',
+    'transforms',
+    'new reality'
 ]);
 
-export default function Description() {
+export default function Descriptiontwo() {
   const [mounted, setMounted] = useState(false);
 
   // FIRST TEXT REFS (letter-by-letter)
@@ -91,6 +91,15 @@ export default function Description() {
       {/* FIRST TEXT BLOCK */}
       <div ref={container} className={styles.body}>
         {splitWords(phrase)}
+      </div>
+
+      {/* IMAGE BELOW TEXT */}
+      <div className={styles.logoWrapper}>
+        <img
+          src="/logo/SYNELIXIS.png"
+          alt="SYNELIXIS Logo"
+          className={styles.synelixisLogo}
+        />
       </div>
     </div>
   );
