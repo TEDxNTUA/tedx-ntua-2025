@@ -1,245 +1,216 @@
-import React from 'react';
-import Image from 'next/image';
-import { GlareCard } from '@components/GlareCard';
+// type Sponsors = {
+//   slug: string;
+//   name: string;
+//   bioGR: string;
+//   bioEN: string;
+//   infoLinks: {};
+// };
 
-export const timelineData = [
+export const PLATINUM_SPONSORS = [
   {
-        title: 'Platinum Sponsors',
-        content: (
-          <>
-            <GlareCard href="https://www.acg.edu/">
-              <Image
-                src="/Partners/Platinum/ACGLogo.jpg"
-                alt="ACG Logo"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow"
-              />
-            </GlareCard>
-  
-            <GlareCard href="https://www.archirodon.net/">
-              <Image
-                src="/Partners/Platinum/65years_Archirodon_Fin.jpg"
-                alt="Archirodon 65 Years"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow"
-              />
-            </GlareCard>
-  
-            <GlareCard href="https://www.dei.gr/en/">
-              <Image
-                src="/Partners/Platinum/DEI.jpg"
-                alt="DEI"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow"
-              />
-            </GlareCard>
-            <GlareCard href="https://www.oliverwyman.com/in.html">
-            <Image
-              src="/Partners/Platinum/oliver-wyman-logo.png"
-              alt="Oliver Wyman"
-              width={500}
-              height={500}
-              className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow"
-            />
-          </GlareCard>
-          </>
-        ),
-      },
-      {
-        title: 'Grand Sponsors',
-        content: (
-          <>
-          <GlareCard href="https://www.space.gr/en">
-            <Image
-              src="/Partners/Grand/space.png"
-              alt="Grand Sponsor 1"
-              width={500}
-              height={500}
-              className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full shadow"
-            />
-          </GlareCard>
-  
-          <GlareCard href="https://www.elpedison.gr/el/">
-            <Image
-              src="/Partners/Grand/elpedison.png"
-              alt="Elpedison"
-              width={500}
-              height={500}
-              className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full shadow"
-            />
-          </GlareCard>
-  
-          <GlareCard href="https://www.thenamaris.com/">
-            <Image
-              src="/Partners/Grand/THENAMARIS.png"
-              alt="thenamaris"
-              width={500}
-              height={500}
-              className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full shadow"
-            />
-          </GlareCard>
-        </>
-          
-        ),
-      },
-      {
-        title: 'Partners',
-        content: (
-          <>
-            <GlareCard href="https://maps.app.goo.gl/t2PodNBQHvZu9BgCA">
-            <Image
-              src="/Partners/Partners/layers.png"
-              alt="Layers"
-              width={500}
-              height={500}
-              className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full shadow"
-            />
-          </GlareCard>
-          <GlareCard href="https://gr.coca-colahellenic.com/">
-            <Image
-              src="/Partners/Partners/logo3E.jpg"
-              alt="3E"
-              width={500}
-              height={500}
-              className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full shadow"
-            />
-          </GlareCard>
-          <GlareCard href="https://www.frezyderm.gr/?UserAction=True">
-              <Image
-                src="/Partners/Partners/frezyderm.png"
-                alt="Partner 1"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full shadow"
-              />
-            </GlareCard>
-          </>
-        ),
-      },
-      {
-        title: 'Supporters',
-        content: (
-          <>
-            <GlareCard href="https://myredraven.com/?gad_source=1&gclid=CjwKCAjw5PK_BhBBEiwAL7GTPaEnqPEVpxX__Mq2Xx7Z3Pp3f7IBQiiVUElk0wniDdllnsqo13RyvhoCP18QAvD_BwE">
-              <Image
-                src="/Partners/Supporters/RedRaven.png"
-                alt="RedRaven"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow"
-              />
-            </GlareCard>
-  
-            <GlareCard href="https://www.olympos.gr/">
-              <Image
-                src="/Partners/Supporters/olympos2.png"
-                alt="OLYMPOS"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow"
-              />
-            </GlareCard>
-  
-            <GlareCard href="https://www.melissa.gr/en/">
-              <Image
-                src="/Partners/Supporters/Melissa.png"
-                alt="Melissa"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow"
-              />
-            </GlareCard>
-  
-            <GlareCard href="https://megaspileo.gr/?gad_source=1&gclid=CjwKCAjw5PK_BhBBEiwAL7GTPfxmQa_DvfGssV_jD3xHBCoStOyqIJ5F83qwlLmZ5c3w0GQ4u0WvHxoC2wkQAvD_BwE">
-              <Image
-                src="/Partners/Supporters/megaspileo.png"
-                alt="megaspileo"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow"
-              />
-            </GlareCard>
-  
-            <GlareCard href="https://www.nanoudonutshouse.com/">
-              <Image
-                src="/Partners/Supporters/nanou.png"
-                alt="nanou"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow"
-              />
-            </GlareCard>
-  
-            <GlareCard href="https://www.ikea.gr/">
-              <Image
-                src="/Partners/Supporters/IKEA2.png"
-                alt="IKEA"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow"
-              />
-            </GlareCard>
-  
-            <GlareCard href="https://www.deepsea.ai/">
-              <Image
-                src="/Partners/Supporters/deepsealogo.png"
-                alt="deepsealogo"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow"
-              />
-            </GlareCard>
-            
-            <GlareCard href="https://www.ahmadtea.com/">
-              <Image
-                src="/Partners/Supporters/AhmadTea.jpg"
-                alt="AhmadTea"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow"
-              />
-            </GlareCard>
-  
-            <GlareCard href="https://www.flexopack.com/en/">
-              <Image
-                src="/Partners/Supporters/flexopack.png"
-                alt="Flexopack"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow"
-              />
-            </GlareCard>
-  
-            <GlareCard href="https://kanellakis-sa.gr/">
-              <Image
-                src="/Partners/Supporters/kanellakis.png"
-                alt="kanellakis"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full shadow"
-              />
-            </GlareCard>
-  
-          </>
-        ),
-      },
-      {
-        title: 'Exclusive Air Transport Sponsor',
-        content: (
-          <>
-            <GlareCard href="https://en.aegeanair.com/">
-              <Image
-                src="/Partners/Supporters/aegean.png"
-                alt="Aegean"
-                width={500}
-                height={500}
-                className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow"
-              />
-            </GlareCard>
-          </>
-        ),
-      },
-    ];
+    slug: 'dei',
+    name: 'ΔΕΗ',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {website: ['https://www.ppcgroup.com/el']}
+  },
+  {
+    slug: 'the-american-college-of-greece',
+    name: 'The American College of Greece',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'oliver-wyman',
+    name: 'Oliver Wyman',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'archidoron',
+    name: 'Archidoron',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  }
+];
+
+export const GRAND_SPONSORS = [
+  {
+    slug: 'uniperfect',
+    name: 'Uniperfect',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'thenamaris',
+    name: 'Thenamaris',
+    bioGR: '',
+    bioEN:
+      'Thenamaris is a global ship manager of high specification modern ocean-going vessels. We help deliver goods to people around the world, enriching their lives. We do this by safely managing a world class fleet of ships, providing the highest levels of service to our principals and clients. Thenamaris (Ships Management) Inc. manages Tanker vessels, Thenamaris ConBulk Inc. manages bulk carriers and containerships, while Thenamaris LNG Inc. manages LNG and LPG carriers.',
+    infoLinks: {}
+  },
+  {
+    slug: 'elpedison',
+    name: 'Elpedison',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'space',
+    name: 'Space',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  }
+];
+
+export const PARTNERS = [
+  {
+    slug: 'papoutsanis',
+    name: 'Papaoutsanis',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'q-project',
+    name: 'QPROJECT',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'coca-cola',
+    name: 'Coca Cola 3E',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'red-bull',
+    name: 'Reb Bull',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'frenzyderm',
+    name: 'Frenzyderm',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  }
+];
+
+export const SUPPORTERS = [
+  {
+    slug: 'charge-me',
+    name: 'Charge Me',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'tefaco',
+    name: 'Tefaco',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'ioniki',
+    name: 'Ιονική',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'ikea',
+    name: 'IKEA',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'melissa',
+    name: 'Melissa',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'nanou',
+    name: 'NANOY',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  // {
+  //   slug: 'glaros',
+  //   name: 'Γλάρος',
+  //   bioGR: '',
+  //   bioEN: '',
+  //   infoLinks: {}
+  // },
+  {
+    slug: 'atflya',
+    name: 'AtFlya',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'symetal',
+    name: 'Symetal',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'cavino',
+    name: 'Cavino',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'colgate',
+    name: 'Colgate',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  // {
+  //   slug: 'bakkar',
+  //   name: 'Bakkar',
+  //   bioGR: '',
+  //   bioEN: '',
+  //   infoLinks: {}
+  // },
+  {
+    slug: 'rodopaki',
+    name: 'Ροδοπάκι',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'deepsea',
+    name: 'Deepsea',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'olympos',
+    name: 'Olympos',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  }
+];
