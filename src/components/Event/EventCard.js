@@ -13,6 +13,7 @@ function EventCard({host, type}) {
   let altText = 'Event image';
   let hoverColor = '';
   let socialHoverColor = '';
+  const slug = host.slug;
 
   switch (type) {
     case 'speaker':

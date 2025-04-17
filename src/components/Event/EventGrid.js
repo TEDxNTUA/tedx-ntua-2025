@@ -16,9 +16,9 @@ export default function EventGrid({type, hosts}) {
   return (
     <div className="w-[90%] md:w-[80%] mx-auto py-8">
       <ul className={gridClasses}>
-        {hosts.map(host => {
+        {hosts.map((host, index) => {
           return (
-            <li key={host.slug}>
+            <li key={index}>
               <EventCard host={host} type={type} />
             </li>
           );

@@ -3,7 +3,7 @@ import {SPEAKERS} from '@data';
 
 export const metadata = {
   title: 'Speakers | Synelixis',
-  description: "The speakers of TEDxNTUA's 2025 event with theme Synelixis."
+  description: "The spekaers of TEDxNTUA's 2025 event with theme Synelixis."
 };
 
 export default function SpeakersListPage() {
