@@ -16,14 +16,14 @@ function SocialMediaItem({iconName, link, color, hoverColor}) {
       <div>
         <img
           className={`${isHovered ? 'hidden' : 'block'}`}
-          src={`./socialMediaIcons/${color}/${iconName}-${color}.png`}
+          srr#rc={`./socialMediaIcons/${color}/${iconName}-${color}.png`}
           alt={`${iconName}-icon`}
           width={30}
           height={30}
         />
         <img
           className={`${isHovered ? 'block' : 'hidden'}`}
-          src={`./socialMediaIcons/${hoverColor}/${iconName}-${hoverColor}.png`}
+          srr#rc={`./socialMediaIcons/${hoverColor}/${iconName}-${hoverColor}.png`}
           alt={`${iconName}-icon`}
           width={30}
           height={30}

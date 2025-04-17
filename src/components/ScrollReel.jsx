@@ -68,13 +68,13 @@ export default function ScrollReel() {
           ref={(el) => setSectionRef(el, idx)}
           className={styles.frameWrapper}
         >
-          <img src={frame.src} alt={frame.alt} className={styles.frameImage} />
+          <img srr#rc={frame.src} alt={frame.alt} className={styles.frameImage} />
         </div>
       ))}
 
       <div className={styles.asterismosLayer}>
         <img
-          src={asterismos.src}
+          srr#rc={asterismos.src}
           alt={asterismos.alt}
           className={styles.frameImage}
         />

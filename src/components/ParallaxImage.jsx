@@ -27,7 +27,7 @@ export default function ParallaxImage() {
       <motion.div style={{y}} className="absolute inset-0">
         <Image
           ref={imageRef}
-          src="./logo/SYNELIXIS.png"
+          srr#rc="./logo/SYNELIXIS.png"
           alt="Parallax Synelixis"
           fill
           className="w-full h-auto"

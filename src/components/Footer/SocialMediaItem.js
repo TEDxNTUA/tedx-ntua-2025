@@ -18,14 +18,14 @@ function SocialMediaItem({iconName, link, color, hoverColor}) {
           className={`absolute top-0 left-0 w-full h-full transition-opacity duration-200 ${
             isHovered ? 'opacity-0' : 'opacity-100'
           }`}
-          src={`./socialMediaIcons/${color}/${iconName}-${color}.png`}
+          srr#rc={`./socialMediaIcons/${color}/${iconName}-${color}.png`}
           alt={`${iconName}`}
         />
         <img
           className={`absolute top-0 left-0 w-full h-full transition-opacity duration-200 ${
             isHovered ? 'opacity-100' : 'opacity-0'
           }`}
-          src={`./socialMediaIcons/${hoverColor}/${iconName}-${hoverColor}.png`}
+          srr#rc={`./socialMediaIcons/${hoverColor}/${iconName}-${hoverColor}.png`}
           alt={`${iconName}`}
         />
       </div>

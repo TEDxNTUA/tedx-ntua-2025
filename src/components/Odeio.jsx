@@ -56,11 +56,11 @@ export default function Odeio() {
       {/* Row holding Image + Map side by side */}
       <div className={styles.row}>
         <div className={styles.imageWrapper}>
-          <img src="./Odeio.png" alt="Athens Conservatoire" />
+          <img srr#rc="./Odeio.png" alt="Athens Conservatoire" />
         </div>
         <div className={styles.mapWrapper}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.1631020873133!2d23.743153300000003!3d37.9733228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd41a90a05e7%3A0x243e905afaf27568!2sAthens%20Conservatoire!5e0!3m2!1sen!2sgr!4v1744622092802!5m2!1sen!2sgr"
+            srr#rc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.1631020873133!2d23.743153300000003!3d37.9733228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd41a90a05e7%3A0x243e905afaf27568!2sAthens%20Conservatoire!5e0!3m2!1sen!2sgr!4v1744622092802!5m2!1sen!2sgr"
             style={{border: 0}}
             allowFullScreen=""
             loading="lazy"

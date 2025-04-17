@@ -20,12 +20,12 @@ export default function MeetTheTeam({fullname, photo, doodles, link}) {
               isHovered ? 'hidden' : 'block'
               // } object-top object-cover w-[28vh] h-[28vh] md:w-[36vh] md:h-[36vh]`}
             } object-top object-cover`}
-            src={photo}
+            srr#rc={photo}
             alt={fullname}
           />
           <img
             className={`${isHovered ? 'block' : 'hidden'} border-4 border-our-yellow rounded-md`}
-            src={doodles}
+            srr#rc={doodles}
             alt={fullname}
           />
         </div>
