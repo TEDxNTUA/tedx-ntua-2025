@@ -71,7 +71,7 @@ function EventCard({host, type}) {
       <section className="link-wrapper mb-2 text-white group max-w-[300px] h-full">
         <img
           className="object-cover grayscale-[0.65] group-hover:grayscale-0 transition"
-          srr#rc={imageUrl}
+          src={imageUrl}
           alt={altText}
           width={300}
           height={300}

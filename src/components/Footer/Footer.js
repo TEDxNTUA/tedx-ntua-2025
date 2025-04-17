@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import SocialMediaFooter from "./SocialMediaFooter";
-import styles from "./magnetic.module.css";
+import Link from 'next/link';
+import SocialMediaFooter from './SocialMediaFooter';
+import styles from './magnetic.module.css';
 
 export default function Footer() {
   return (
     <footer
       className="text-white pt-12 pb-6 px-6 md:px-12"
       style={{
-        backgroundImage: `url('/background.jpg')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundImage: `url('./background.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
       }}
     >
       <div className="flex flex-col gap-8">
@@ -19,12 +19,13 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
           {/* TEDxNTUA Info */}
           <div className="w-full lg:w-1/3 text-xs md:text-sm text-left text-gray-300 leading-relaxed">
-          <p className="font-bold text-2xl mb-2">
-              <span style={{ color: "#eb0028" }}>TEDx</span>
+            <p className="font-bold text-2xl mb-2">
+              <span style={{color: '#eb0028'}}>TEDx</span>
               <span className="text-white">NTUA</span>
             </p>
             <p>
-              This independent TEDx event is operated under license from TED and the auspices of ICCS. This website is our latest version : 2025
+              This independent TEDx event is operated under license from TED and the auspices of
+              ICCS. This website is our latest version : 2025
             </p>
           </div>
 
@@ -37,12 +38,12 @@ export default function Footer() {
         {/* Center Row: Navigation Links */}
         <ul className="flex flex-wrap justify-center gap-x-6 gap-y-4 text-center">
           {[
-            { label: "Αρχική", href: "/" },
-            { label: "Ομιλητές", href: "/speakers" },
-            { label: "Performers & Workshops", href: "/performers" },
-            { label: "Χορηγοί", href: "/partners" },
-            { label: "About", href: "/about" },
-          ].map(({ label, href }) => (
+            {label: 'Αρχική', href: '/'},
+            {label: 'Ομιλητές', href: '/speakers'},
+            {label: 'Performers & Workshops', href: '/performers'},
+            {label: 'Χορηγοί', href: '/partners'},
+            {label: 'About', href: '/about'}
+          ].map(({label, href}) => (
             <li key={label}>
               <Link href={href}>
                 <p
@@ -56,9 +57,7 @@ export default function Footer() {
         </ul>
 
         {/* Bottom Row: Copyright */}
-        <p className="text-gray-400 text-xs text-center mt-4">
-          ALL RIGHTS RESERVED © 2025
-        </p>
+        <p className="text-gray-400 text-xs text-center mt-4">ALL RIGHTS RESERVED © 2025</p>
       </div>
     </footer>
   );

@@ -46,7 +46,7 @@ export default function AboutGrid({aboutlist}) {
       {teamNames.map(team => (
         <div key={team.imageUrl} className="flex flex-col items-center gap-8 lg:gap-12">
           <img
-            srr#rc={`./team/bitmaps/${team.imageUrl}.png`}
+            src={`./team/bitmaps/${team.imageUrl}.png`}
             alt={`Title for team: ${team.imageUrl}`}
             className="h-12 max-h-16 w-auto mx-auto"
           />

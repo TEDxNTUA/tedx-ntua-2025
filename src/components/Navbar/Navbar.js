@@ -89,7 +89,7 @@ export default function Navbar() {
           {' '}
           {/* Ensure logo is clickable */}
           <img
-            srr#rc="./tedxntua-logo.png"
+            src="./tedxntua-logo.png"
             className="w-auto h-[40px] object-contain cursor-pointer"
             alt="TEDxNTUA Logo"
           />

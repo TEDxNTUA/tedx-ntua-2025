@@ -35,10 +35,10 @@ function PartnersPage() {
 
   //           <img
   //             // key={index}
-  //             // srr#rc="./partners/supporters/.webp"
+  //             // src="./partners/supporters/.webp"
   //             // alt={item.slug}
   //             // className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full
-  //             srr#rc="./partners/supporters/.webp"
+  //             src="./partners/supporters/.webp"
   //             alt="ACG Logo"
   //             width={500}
   //             height={500}
@@ -56,7 +56,7 @@ function PartnersPage() {
       content: (
         <>
           <img
-            srr#rc="./partners/platinum/the-american-college-of-greece.webp"
+            src="./partners/platinum/the-american-college-of-greece.webp"
             alt="ACG Logo"
             width={500}
             height={500}
@@ -64,7 +64,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/platinum/archidoron.webp"
+            src="./partners/platinum/archidoron.webp"
             alt="Archirodon 65 Years"
             width={500}
             height={500}
@@ -72,7 +72,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/platinum/dei.webp"
+            src="./partners/platinum/dei.webp"
             alt="DEI"
             width={500}
             height={500}
@@ -80,7 +80,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/platinum/oliver-wyman-1.webp"
+            src="./partners/platinum/oliver-wyman-1.webp"
             alt="Oliver Wyman"
             width={500}
             height={500}
@@ -94,7 +94,7 @@ function PartnersPage() {
       content: (
         <>
           <img
-            srr#rc="./partners/grand/uniperfect.webp"
+            src="./partners/grand/uniperfect.webp"
             alt="uniperfect"
             width={500}
             height={500}
@@ -102,7 +102,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/grand/elpedison.webp"
+            src="./partners/grand/elpedison.webp"
             alt="elpedison"
             width={500}
             height={500}
@@ -110,7 +110,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/grand/thenamaris.webp"
+            src="./partners/grand/thenamaris.webp"
             alt="thenamaris"
             width={500}
             height={500}
@@ -118,7 +118,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/grand/space.webp"
+            src="./partners/grand/space.webp"
             alt="space"
             width={500}
             height={500}
@@ -132,7 +132,7 @@ function PartnersPage() {
       content: (
         <>
           <img
-            srr#rc="./partners/partners/coca-cola.webp"
+            src="./partners/partners/coca-cola.webp"
             alt="Coca Cola 3E"
             width={500}
             height={500}
@@ -140,7 +140,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/partners/frenzyderm.webp"
+            src="./partners/partners/frenzyderm.webp"
             alt="Frenzyderm"
             width={500}
             height={500}
@@ -148,7 +148,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/partners/red-bull.webp"
+            src="./partners/partners/red-bull.webp"
             alt="Red Bull"
             width={500}
             height={500}
@@ -156,7 +156,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/partners/papoutsanis.webp"
+            src="./partners/partners/papoutsanis.webp"
             alt="Partner 1"
             width={500}
             height={500}
@@ -164,7 +164,7 @@ function PartnersPage() {
           />
 
           {/* <img
-            srr#rc="./partners/partners/q-project.webp"
+            src="./partners/partners/q-project.webp"
             alt="Partner 1"
             width={500}
             height={500}
@@ -178,7 +178,7 @@ function PartnersPage() {
       content: (
         <>
           <img
-            srr#rc="./partners/supporters/olympos.webp"
+            src="./partners/supporters/olympos.webp"
             alt="OLYMPOS"
             width={500}
             height={500}
@@ -186,7 +186,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/melissa-1.webp"
+            src="./partners/supporters/melissa-1.webp"
             alt="Melissa"
             width={500}
             height={500}
@@ -194,7 +194,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/mega-spileo.webp"
+            src="./partners/supporters/mega-spileo.webp"
             alt="mega-spileo"
             width={500}
             height={500}
@@ -202,7 +202,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/nanou.webp"
+            src="./partners/supporters/nanou.webp"
             alt="nanou"
             width={500}
             height={500}
@@ -210,7 +210,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/ikea.webp"
+            src="./partners/supporters/ikea.webp"
             alt="IKEA"
             width={500}
             height={500}
@@ -218,14 +218,14 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/deepsea-1.webp"
+            src="./partners/supporters/deepsea-1.webp"
             alt="deepsealogo"
             width={500}
             height={500}
             className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.65] hover:grayscale-0"
           />
           <img
-            srr#rc="./partners/supporters/ahmad-tea.webp"
+            src="./partners/supporters/ahmad-tea.webp"
             alt="ahmad-tea"
             width={500}
             height={500}
@@ -233,7 +233,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/atflya.webp"
+            src="./partners/supporters/atflya.webp"
             alt="atflya"
             width={500}
             height={500}
@@ -241,7 +241,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/cavino.webp"
+            src="./partners/supporters/cavino.webp"
             alt="cavino"
             width={500}
             height={500}
@@ -249,7 +249,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/colgate-1.webp"
+            src="./partners/supporters/colgate-1.webp"
             alt="Colgate"
             width={500}
             height={500}
@@ -257,7 +257,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/flexopack.webp"
+            src="./partners/supporters/flexopack.webp"
             alt="Flexopack"
             width={500}
             height={500}
@@ -265,7 +265,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/kanellakis.webp"
+            src="./partners/supporters/kanellakis.webp"
             alt="kanellakis"
             width={500}
             height={500}
@@ -273,7 +273,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/red-raven.webp"
+            src="./partners/supporters/red-raven.webp"
             alt="Red Raven"
             width={500}
             height={500}
@@ -281,7 +281,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/rodopaki.webp"
+            src="./partners/supporters/rodopaki.webp"
             alt="Rodopaki"
             width={500}
             height={500}
@@ -289,7 +289,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/symetal.webp"
+            src="./partners/supporters/symetal.webp"
             alt="Symetal"
             width={500}
             height={500}
@@ -297,7 +297,7 @@ function PartnersPage() {
           />
 
           <img
-            srr#rc="./partners/supporters/tefaco.webp"
+            src="./partners/supporters/tefaco.webp"
             alt="Tefaco"
             width={500}
             height={500}
@@ -311,7 +311,7 @@ function PartnersPage() {
       content: (
         <>
           <img
-            srr#rc="./partners/exclusive-air/aegean.webp"
+            src="./partners/exclusive-air/aegean.webp"
             alt="Aegean"
             width={500}
             height={500}
@@ -325,7 +325,7 @@ function PartnersPage() {
       content: (
         <>
           <img
-            srr#rc="./partners/exclusive-burger/layers.webp"
+            src="./partners/exclusive-burger/layers.webp"
             alt="Aegean"
             width={500}
             height={500}
@@ -339,7 +339,7 @@ function PartnersPage() {
   return (
     <main
       className="bg-white min-h-screen bg-cover bg-center bg-no-repeat"
-      // style={{backgroundImage: "url('/background.jpg')"}}
+      // style={{backgroundImage: "url('./background.jpg')"}}
     >
       <section>
         <Timeline data={timelineData} />
