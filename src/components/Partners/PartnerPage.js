@@ -55,7 +55,7 @@ function PartnersPageComponent() {
           />
 
           <img
-            src="/partners/platinum/oliver-wyman-1.webp"
+            src="/partners/platinum/oliver-wyman.webp"
             alt="Oliver Wyman"
             width={500}
             height={500}
@@ -69,7 +69,7 @@ function PartnersPageComponent() {
       content: (
         <>
           <img
-            src="/partners/grand/uniperfect.webp"
+            src="/partners/grand/uni-perfect.webp"
             alt="uniperfect"
             width={500}
             height={500}
@@ -115,36 +115,12 @@ function PartnersPageComponent() {
           />
 
           <img
-            src="/partners/partners/frenzyderm.webp"
-            alt="Frenzyderm"
-            width={500}
-            height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
-          />
-
-          <img
-            src="/partners/partners/red-bull.webp"
-            alt="Red Bull"
-            width={500}
-            height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
-          />
-
-          <img
-            src="/partners/partners/papoutsanis.webp"
-            alt="Partner 1"
-            width={500}
-            height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
-          />
-
-          {/* <img
             src="/partners/partners/q-project.webp"
             alt="Partner 1"
             width={500}
             height={500}
             className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
-          /> */}
+          />
         </>
       )
     },
@@ -161,7 +137,7 @@ function PartnersPageComponent() {
           />
 
           <img
-            src="/partners/supporters/melissa-1.webp"
+            src="/partners/supporters/melissa.webp"
             alt="Melissa"
             width={500}
             height={500}
@@ -175,7 +151,28 @@ function PartnersPageComponent() {
             height={500}
             className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.65] hover:grayscale-0"
           />
+          <img
+            src="/partners/supporters/frenzyderm.webp"
+            alt="Frenzyderm"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
+          />
+          <img
+            src="/partners/supporters/red-bull.webp"
+            alt="Red Bull"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
+          />
 
+          <img
+            src="/partners/supporters/papoutsanis.webp"
+            alt="Partner 1"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
+          />
           <img
             src="/partners/supporters/nanou.webp"
             alt="nanou"
@@ -193,7 +190,7 @@ function PartnersPageComponent() {
           />
 
           <img
-            src="/partners/supporters/deepsea-1.webp"
+            src="/partners/supporters/deepsea.webp"
             alt="deepsealogo"
             width={500}
             height={500}
@@ -224,7 +221,7 @@ function PartnersPageComponent() {
           />
 
           <img
-            src="/partners/supporters/colgate-1.webp"
+            src="/partners/supporters/colgate.webp"
             alt="Colgate"
             width={500}
             height={500}

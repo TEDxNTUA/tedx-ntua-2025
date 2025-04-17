@@ -71,13 +71,6 @@ const GRAND_SPONSORS = [
 
 const PARTNERS = [
   {
-    slug: 'papoutsanis',
-    name: 'Papaoutsanis',
-    bioGR: '',
-    bioEN: '',
-    infoLinks: {}
-  },
-  {
     slug: 'q-project',
     name: 'QPROJECT',
     bioGR: '',
@@ -94,13 +87,6 @@ const PARTNERS = [
   {
     slug: 'red-bull',
     name: 'Reb Bull',
-    bioGR: '',
-    bioEN: '',
-    infoLinks: {}
-  },
-  {
-    slug: 'frenzyderm',
-    name: 'Frenzyderm',
     bioGR: '',
     bioEN: '',
     infoLinks: {}
@@ -157,6 +143,20 @@ const SUPPORTERS = [
   //   bioEN: '',
   //   infoLinks: {}
   // },
+  {
+    slug: 'papoutsanis',
+    name: 'Papaoutsanis',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'frenzyderm',
+    name: 'Frenzyderm',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
   {
     slug: 'atflya',
     name: 'AtFlya',
