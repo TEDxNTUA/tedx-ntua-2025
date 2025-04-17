@@ -185,13 +185,13 @@ const SUPPORTERS = [
     bioEN: '',
     infoLinks: {}
   },
-  // {
-  //   slug: 'bakkar',
-  //   name: 'Bakkar',
-  //   bioGR: '',
-  //   bioEN: '',
-  //   infoLinks: {}
-  // },
+  {
+    slug: 'bakkar',
+    name: 'Bakkar',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
   {
     slug: 'rodopaki',
     name: 'Ροδοπάκι',
