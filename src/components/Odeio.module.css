@@ -2,7 +2,6 @@
   width: 80%;
   margin: 4rem auto;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
 }
 
@@ -10,15 +9,18 @@
   margin-bottom: 2rem;
 }
 
-/* Highlight class for the replaced words */
 .highlightWord {
   color: #f1be3d;
+}
+
+.specialRedWord {
+  color: #eb0028;
+  font-weight: 700;
 }
 
 .textWrapper h2 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
-  color: #f1be3d;
   font-weight: 700;
 }
 
@@ -34,7 +36,7 @@
 .row {
   display: flex;
   gap: 2rem;
-  align-items: stretch;  
+  align-items: stretch;
 }
 
 .imageWrapper,
@@ -71,6 +73,7 @@
     height: auto;
   }
 }
+
 .locationInfo p {
   margin: 0.25rem 0;
   font-size: 1.2rem;

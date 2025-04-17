@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 10vh auto;
-  font-family: 'Roboto', sans-serif;
 }
 
 .body p {
@@ -15,7 +14,6 @@
   color: rgb(211, 211, 211);
 }
 
-/* The letter spans fade from opacity 0.2 to 1 via GSAP */
 .body span {
   opacity: 0.2;
   transition: opacity 0.3s ease-out;
@@ -37,4 +35,8 @@
   width: 100%;
   height: auto;
   display: inline-block;
+}
+.specialRedWord {
+  color: #eb0028 !important;
+  font-weight: 700;
 }
