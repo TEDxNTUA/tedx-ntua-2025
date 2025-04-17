@@ -22,8 +22,7 @@ export default function Footer() {
               <span className="text-white">NTUA</span>
             </p>
             <p>
-              This independent TEDx event is operated under license from TED and the auspices of
-              ICCS. This website is our latest version : 2025
+              This independent <span style={{color: '#eb0028'}}>TEDx</span> event is operated under license from TED and the auspices of ICCS. This website is our latest version : 2025
             </p>
           </div>
 
@@ -36,11 +35,11 @@ export default function Footer() {
         {/* Center Row: Navigation Links */}
         <ul className="flex flex-wrap justify-center gap-x-6 gap-y-4 text-center">
           {[
-            {label: 'Αρχική', href: '/'},
-            {label: 'Ομιλητές', href: '/speakers'},
-            {label: 'Performers & Workshops', href: '/performers'},
-            {label: 'Χορηγοί', href: '/partners'},
-            {label: 'About', href: '/about'}
+            {label: 'Home', href: '/'},
+            {label: 'Speakers', href: '/event/speakers'},
+            {label: 'Performances', href: '/event/performances'},
+            {label: 'Partners', href: '/partners'},
+            {label: 'About', href: '/about/organization-and-history'}
           ].map(({label, href}) => (
             <li key={label}>
               <Link href={href}>

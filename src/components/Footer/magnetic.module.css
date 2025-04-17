@@ -19,7 +19,7 @@
 
 .magnetic:hover {
   transform: scale(1.08);
-  color: #c8921c; /* New hover color */
+  color: #f1be3d; 
 }
 
 .magnetic:hover::after {
