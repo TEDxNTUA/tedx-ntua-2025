@@ -9,9 +9,8 @@ export const metadata = {
 function TeamPage() {
   return (
     <div
-      className="relative min-h-screen overflow-x-hidden overflow-y-visible flex flex-col items-center"
+      className="relative min-h-screen overflow-x-hidden overflow-y-visible flex flex-col items-center bg-synelixis-blue lg:bg-[url('/background.jpg')]"
       style={{
-        backgroundImage: `url('/background.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
