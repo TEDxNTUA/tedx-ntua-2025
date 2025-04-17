@@ -2,11 +2,12 @@
   width: 80%;
   margin: 4rem auto;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .textWrapper {
   margin-bottom: 2rem;
+  word-break: break-word;
 }
 
 .highlightWord {
@@ -19,22 +20,23 @@
 }
 
 .textWrapper h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
 
 .textWrapper p {
-  line-height: 1.5;
+  line-height: 1.2;
   margin-bottom: 1rem;
 }
 
 .locationInfo {
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
 }
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   align-items: stretch;
 }
