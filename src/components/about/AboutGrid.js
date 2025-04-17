@@ -1,3 +1,4 @@
+'use client';
 import MeetTheTeam from '@components/about/MeetTheTeam';
 
 export default function AboutGrid({teamSlug, members}) {
@@ -15,7 +16,7 @@ export default function AboutGrid({teamSlug, members}) {
               className="h-[150px] w-[150px] md:h-[200px] md:w-[200px] lg:h-[250px] lg:w-[250px] 2xl:h-[300px] 2xl:w-[300px]"
               key={teamMember.slug}
             >
-              <MeetTheTeam teamMember={teamMember} />
+              <MeetTheTeam teamSlug={teamSlug} teamMember={teamMember} />
             </li>
           ))}
         </ul>
