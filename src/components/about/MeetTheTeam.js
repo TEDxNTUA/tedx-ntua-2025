@@ -30,12 +30,14 @@ export default function MeetTheTeam({teamSlug, teamMember}) {
           {teamMember.fullnameEN}
         </h2>
 
-        <SocialMediaItem
-          iconName={'linkedIn'}
-          link={teamMember.linkedIn}
-          color={'white'}
-          hoverColor={'yellow'}
-        />
+        {teamMember.linkedIn && (
+          <SocialMediaItem
+            iconName={'linkedIn'}
+            link={teamMember.linkedIn}
+            color={'white'}
+            hoverColor={'yellow'}
+          />
+        )}
       </div>
     </section>
   );
