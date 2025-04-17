@@ -6,7 +6,7 @@
 //   infoLinks: {};
 // };
 
-export const PLATINUM_SPONSORS = [
+const PLATINUM_SPONSORS = [
   {
     slug: 'dei',
     name: 'ΔΕΗ',
@@ -37,7 +37,7 @@ export const PLATINUM_SPONSORS = [
   }
 ];
 
-export const GRAND_SPONSORS = [
+const GRAND_SPONSORS = [
   {
     slug: 'uniperfect',
     name: 'Uniperfect',
@@ -69,7 +69,7 @@ export const GRAND_SPONSORS = [
   }
 ];
 
-export const PARTNERS = [
+const PARTNERS = [
   {
     slug: 'papoutsanis',
     name: 'Papaoutsanis',
@@ -107,7 +107,7 @@ export const PARTNERS = [
   }
 ];
 
-export const SUPPORTERS = [
+const SUPPORTERS = [
   {
     slug: 'charge-me',
     name: 'Charge Me',
@@ -213,4 +213,11 @@ export const SUPPORTERS = [
     bioEN: '',
     infoLinks: {}
   }
+];
+
+export const ALL_PARTNERS = [
+  {title: 'Platinum Sponsors', data: PLATINUM_SPONSORS},
+  {title: 'Grand Sponsors', data: GRAND_SPONSORS},
+  {title: 'Partners', data: PARTNERS},
+  {title: 'Supporters', data: SUPPORTERS}
 ];
