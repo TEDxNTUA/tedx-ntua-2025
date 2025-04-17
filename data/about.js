@@ -4,12 +4,12 @@ export const ABOUTLIST = [
     members: [
       {
         slug: 'nagia-economidou',
-        fullname: 'Nagia Economidou',
+        fullnameEN: 'Nagia Economidou',
         linkedIn: 'https://www.linkedin.com/in/nagia-economidou/'
       },
       {
         slug: 'alexandros-charitonidis',
-        fullname: 'Alexandros Charitonidis',
+        fullnameEN: 'Alexandros Charitonidis',
         linkedIn: 'https://www.linkedin.com/in/alexandros-charitonidis-8095a6279/'
       }
     ]
@@ -19,17 +19,17 @@ export const ABOUTLIST = [
     members: [
       {
         slug: 'giannis-tsagkaropoulos',
-        fullname: 'Giannis Tsagkaropoulos',
+        fullnameEN: 'Giannis Tsagkaropoulos',
         linkedIn: 'https://www.linkedin.com/in/ioannis-tsagkaropoulos-85a280233/'
       },
       {
         slug: 'korina-karatzouni',
-        fullname: 'Korina Karatzouni',
+        fullnameEN: 'Korina Karatzouni',
         linkedIn: 'https://www.linkedin.com/in/korina-karatzouni-6b3928252/'
       },
       {
         slug: 'vivian-thanou',
-        fullname: 'Vivian Thanou',
+        fullnameEN: 'Vivian Thanou',
         linkedIn: 'https://www.linkedin.com/in/vivian-thanou-6b8b9b2b7/'
       }
     ]
@@ -39,22 +39,22 @@ export const ABOUTLIST = [
     members: [
       {
         slug: 'marilena-papathanasiou',
-        fullname: 'Marilena Papathanasiou',
+        fullnameEN: 'Marilena Papathanasiou',
         linkedIn: 'https://www.linkedin.com/in/marilena-papathanasiou/'
       },
       {
         slug: 'maro-kokosis',
-        fullname: 'Maro Kokosis',
+        fullnameEN: 'Maro Kokosis',
         linkedIn: 'https://www.linkedin.com/in/maro-kokosis-174106344/'
       },
       {
         slug: 'kostas-pariaros',
-        fullname: 'Kostas Pariaros',
+        fullnameEN: 'Kostas Pariaros',
         linkedIn: 'https://www.linkedin.com/in/konstantinos-pariaros-4a0791346/'
       },
       {
         slug: 'thanos-papatatsis',
-        fullname: 'Thanos Papatatsis',
+        fullnameEN: 'Thanos Papatatsis',
         linkedIn: 'https://www.linkedin.com/in/athanasios-papatatsis-42b790336/'
       }
     ]
@@ -64,32 +64,32 @@ export const ABOUTLIST = [
     members: [
       {
         slug: 'naria-spilidi',
-        fullname: 'Naria Spilidi',
+        fullnameEN: 'Naria Spilidi',
         linkedIn: 'https://www.linkedin.com/in/naria-spilidi-789262270'
       },
       {
         slug: 'maria-mitrelou',
-        fullname: 'Maria Mitrelou',
+        fullnameEN: 'Maria Mitrelou',
         linkedIn: 'https://www.linkedin.com/in/maria-mitrelou-301975296/'
       },
       {
         slug: 'dimitra-gkini',
-        fullname: 'Dimitra Gkini',
+        fullnameEN: 'Dimitra Gkini',
         linkedIn: 'https://www.linkedin.com/in/dimitra-gkini-6b939b334/'
       },
       {
         slug: 'eleni-papaioannou',
-        fullname: 'Eleni Papaioannou',
+        fullnameEN: 'Eleni Papaioannou',
         linkedIn: 'https://www.linkedin.com/in/eleni-papaioannou-852431296/'
       },
       {
         slug: 'maria-fatourou',
-        fullname: 'Maria Fatourou',
+        fullnameEN: 'Maria Fatourou',
         linkedIn: 'https://www.linkedin.com/in/maria-fatourou-106a75269/'
       },
       {
         slug: 'aggelos-antonopoulos',
-        fullname: 'Aggelos Antonopoulos',
+        fullnameEN: 'Aggelos Antonopoulos',
         linkedIn: 'https://www.linkedin.com/in/angelos-antonopoulos-74b86a203/'
       }
     ]
@@ -99,22 +99,22 @@ export const ABOUTLIST = [
     members: [
       {
         slug: 'elpida-lavrenidi',
-        fullname: 'Elpida Lavrenidi',
+        fullnameEN: 'Elpida Lavrenidi',
         linkedIn: 'https://www.linkedin.com/in/elpida-lavrenidi-b43714312/'
       },
       {
         slug: 'fannie-panagiotou',
-        fullname: 'Fannie Panagiotou',
+        fullnameEN: 'Fannie Panagiotou',
         linkedIn: 'https://www.linkedin.com/in/fannie-panagiotou-0a21b1219/'
       },
       {
         slug: 'maria-lito-drousiotou',
-        fullname: 'Maria Lito Drousiotou',
+        fullnameEN: 'Maria Lito Drousiotou',
         linkedIn: 'https://www.linkedin.com/in/maria-lito-drousiotou-801b99294/'
       },
       {
         slug: 'paris-bagkas',
-        fullname: 'Paris Bagkas',
+        fullnameEN: 'Paris Bagkas',
         linkedIn: 'https://www.linkedin.com/in/paris-bagkas-1b5344253/'
       }
     ]
@@ -124,27 +124,27 @@ export const ABOUTLIST = [
     members: [
       {
         slug: 'kostas-haros',
-        fullname: 'Kostas Haros',
+        fullnameEN: 'Kostas Haros',
         linkedIn: 'https://www.linkedin.com/in/konstantinos-haros-381b6a184/'
       },
       {
         slug: 'aliki-delinikoli',
-        fullname: 'Aliki Delinikoli',
+        fullnameEN: 'Aliki Delinikoli',
         linkedIn: 'https://www.linkedin.com/in/aliki-delinikoli-9b94922a3/'
       },
       {
         slug: 'anastasia-stefanou',
-        fullname: 'Anastasia Stefanou',
+        fullnameEN: 'Anastasia Stefanou',
         linkedIn: 'https://www.linkedin.com/in/anastasia-stefanou-327780251/'
       },
       {
         slug: 'tolis-apostolos',
-        fullname: 'Tolis Apostolos',
+        fullnameEN: 'Tolis Apostolos',
         linkedIn: 'https://www.linkedin.com/in/apostolos-tolis'
       },
       {
         slug: 'myrto-badou',
-        fullname: 'Myrto Badou',
+        fullnameEN: 'Myrto Badou',
         linkedIn: 'https://www.linkedin.com/in/myrto-badou-a19136285/'
       }
     ]
@@ -154,17 +154,17 @@ export const ABOUTLIST = [
     members: [
       {
         slug: 'katerina-alexandri',
-        fullname: 'Katerina Alexandri',
+        fullnameEN: 'Katerina Alexandri',
         linkedIn: 'https://www.linkedin.com/in/katerina-alexandri-ntua/'
       },
       {
         slug: 'eirini-ioannidou',
-        fullname: 'Eirini Ioannidou',
+        fullnameEN: 'Eirini Ioannidou',
         linkedIn: ''
       },
       {
         slug: 'andriani-kaimaklioti',
-        fullname: 'Andriani Kaimaklioti',
+        fullnameEN: 'Andriani Kaimaklioti',
         linkedIn: ''
       }
     ]
@@ -174,27 +174,27 @@ export const ABOUTLIST = [
     members: [
       {
         slug: 'angelos-karasavvidis',
-        fullname: 'Angelos Karasavvidis',
+        fullnameEN: 'Angelos Karasavvidis',
         linkedIn: 'https://www.linkedin.com/in/angelos-karasavvidis-3a3802231'
       },
       {
         slug: 'elena-kotsiafiti',
-        fullname: 'Elena Kotsiafiti',
+        fullnameEN: 'Elena Kotsiafiti',
         linkedIn: 'https://www.linkedin.com/in/elena-kotsiafiti/'
       },
       {
         slug: 'eirini-simitzi',
-        fullname: 'Eirini Simitzi',
+        fullnameEN: 'Eirini Simitzi',
         linkedIn: 'https://www.linkedin.com/in/eirini-simitzi/'
       },
       {
         slug: 'dimitra-papangeli',
-        fullname: 'Dimitra Papangeli',
+        fullnameEN: 'Dimitra Papangeli',
         linkedIn: 'https://www.linkedin.com/in/dimitra-papangeli/'
       },
       {
         slug: 'yiorgos-papanikos',
-        fullname: 'Yiorgos Papanikos',
+        fullnameEN: 'Yiorgos Papanikos',
         linkedIn: 'https://www.linkedin.com/in/yiorgos-papanikos'
       }
     ]

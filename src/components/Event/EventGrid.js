@@ -5,7 +5,8 @@ export default function EventGrid({type, hosts}) {
     return <p className="text-center text-gray-500">Stay Tuned. To be announced</p>;
   }
 
-  let gridClasses = 'grid justify-items-center items-start gap-6 lg:gap-12 ';
+  let gridClasses =
+    'grid justify-items-center items-start gap-y-10 gap-x-6 lg:gap-y-16 lg:gap-x-12 ';
 
   if (type === 'speaker') {
     gridClasses += 'grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4';
