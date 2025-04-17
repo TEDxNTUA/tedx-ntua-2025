@@ -1,16 +1,16 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import {useRef, useEffect} from 'react';
 import Image from 'next/image';
-import { useScroll, useTransform, motion } from 'framer-motion';
+import {useScroll, useTransform, motion} from 'framer-motion';
 
 export default function ParallaxImage() {
   const containerRef = useRef();
   const imageRef = useRef();
 
-  const { scrollYProgress } = useScroll({
+  const {scrollYProgress} = useScroll({
     target: containerRef,
-    offset: ['start start', 'end start'],
+    offset: ['start start', 'end start']
   });
 
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
@@ -23,17 +23,11 @@ export default function ParallaxImage() {
   }, []);
 
   return (
-    <div
-      ref={containerRef}
-      className="relative h-screen w-full overflow-hidden"
-    >
-      <motion.div
-        style={{ y }}
-        className="absolute inset-0"
-      >
+    <div ref={containerRef} className="relative h-screen w-full overflow-hidden">
+      <motion.div style={{y}} className="absolute inset-0">
         <Image
           ref={imageRef}
-          src="/logo/SYNELIXIS.png"
+          src="./logo/SYNELIXIS.png"
           alt="Parallax Synelixis"
           fill
           className="w-full h-auto"
