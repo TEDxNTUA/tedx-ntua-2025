@@ -14,8 +14,6 @@ function EventCard({host, type}) {
   let hoverColor = '';
   let socialHoverColor = '';
 
-  const slug = encodeURIComponent(host.slug);
-
   switch (type) {
     case 'speaker':
       linkUrl = `/event/speakers/${slug}`;

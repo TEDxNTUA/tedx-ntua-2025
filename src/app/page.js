@@ -55,7 +55,12 @@ export default function Home() {
   }, []);
 
   return (
-    <main className={`${styles.main} bg-[url('/background.jpg')]`}>
+    <main
+      className={styles.main}
+      style={{
+        backgroundImage: `url('./background.jpg')`
+      }}
+    >
       <div className={styles.sliderContainer}>
         <div ref={topSlider} className={styles.slider}>
           {Array(20)
