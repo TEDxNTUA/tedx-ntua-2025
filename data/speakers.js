@@ -146,57 +146,57 @@ export const SPEAKERS = [
     bioGR:
       'Αρχιτέκτων και Αρχιτέκτων Τοπίου, προάγει την απλότητα και τη χωρική ευελιξία μέσω καινοτόμων, bottom-up συστημάτων. Επικεντρώνεται στην ανεξάρτητη έρευνα και τη διάδοση γνώσεων για τον σύγχρονο σχεδιασμό βιώσιμων δημόσιων χώρων. Μέσω των μελετών της, δημιουργεί πρακτικές που ενδυναμώνουν τις κοινότητες, διαμορφώνοντας πόλεις που είναι όχι μόνο προσαρμοστικές αλλά και ικανές να εξελίσσονται μέσα από προκλήσεις.',
     bioEN: ''
-  },
-  {
-    slug: 'vangelis-simakis',
-    fullNameGR: 'Βαγγέλης Σιμάκης ',
-    fullNameEN: 'Vangelis Simakis',
-    artisticName: 'Backpack Brothers / Α.Τ.Α.Χ.Τ.Ο.Ι.',
-    jobGR: 'Συνιδρυτής BACKPACK BROTHERS / A.T.A.X.T.O.I.',
-    jobEN: 'Co-Founder BACKPACK BROTHERS / A.T.A.X.T.O.I.',
-    infoLinks: {
-      facebook: [
-        'https://www.facebook.com/Ataxtoi/',
-        'https://www.facebook.com/backpackbrothers.gr'
-      ],
-      instagram: [
-        'https://www.instagram.com/ataxtoi/',
-        'https://www.instagram.com/backpackbrothers.gr/'
-      ]
-    },
-    session: 0,
-    time: '',
-    talkCategory: 'Volunteering',
-    talkDescriptionGR:
-      'Ο εθελοντισμός καθιστά την απόλυτη έκφραση της συνέλιξης, καθώς έρχεται να αποδείξει πως διάφορες μικρές πράξεις καλοσύνης μπορούν να πυροδοτήσουν ένα μεγάλο κύμα αλλαγής. Είναι μια πράξη θεμελιωμένη πάνω στην έννοια της αλληλεπίδρασης, του κάθε εθελοντή με τον εαυτό του, των ανθρώπων μεταξύ τους, του καθενός μας με την κοινωνία που έχουμε απέναντί μας και την κοινωνία που θα θέλαμε να έχουμε. Δεν πρόκειται για μια σχέση δότη και αποδέκτη βοήθειας, αλλά για μια συνάντηση δύο κόσμων διαφορετικών αλλά ίσων, που αλληλεπιδρούν, μαθαίνουν ο ένας από τον άλλον και δημιουργούν νέες προοπτικές.',
-    talkDescriptionEN: '',
-    bioGR:
-      'Γεννήθηκε στο Ηράκλειο Κρήτης, ενώ σπούδασε Οικονομικές Επιστήμες στο Πανεπιστήμιο στο Ρέθυμνο. Κατέχει επίσης μεταπτυχιακό στην Εκπαίδευση και πιο συγκεκριμένα της Κριτικής Παιδαγωγικής και Εκπαίδευσης Εκπαιδευτικών του ίδιου ιδρύματος. Η ενασχόληση με τον εθελοντισμό ξεκίνησε στο Ηράκλειο και μέσα απο το Εθελοντικό Σωματείο Α.Τ.Α.Χ.Τ.Ο.Ι., ενώ στην συνέχεια ίδρυσε μαζί με τον αδελφό του Σαράντη, τους Backpack Brothers.',
-    bioEN:
-      'He was born in Heraklion, Crete, and studied Economic Sciences at the University of Rethymno. He also holds a Master’s degree in Education, specializing in Critical Pedagogy and Teacher Education from the same institution. His involvement with volunteering began in Heraklion through the volunteer organization A.T.A.X.T.O.I., and later, together with his brother Sarantis, he founded the Backpack Brothers.'
-  },
-  {
-    slug: 'eva-kotta',
-    fullNameGR: 'Εύα Κώττα',
-    fullNameEN: 'Eva Kotta',
-    artisticName: 'The Abstract Girl',
-    jobGR: 'Product Manager & Ακτιβίστρια',
-    jobEN: 'Product Manager & Activist',
-    infoLinks: {
-      facebook: ['https://www.facebook.com/p/The-Abstract-Girl-100063759715231/'],
-      instagram: ['https://www.instagram.com/the.abstract.girl/']
-    },
-    session: 0,
-    time: '',
-    talkCategory: '',
-    talkDescriptionGR:
-      'H έννοια της αλληλεπίδρασης σχετίζεται άμεσα με τις κοινωνικές και πολιτισμικές κατασκευές του φύλου, την έννοια της ατομικής και συλλογικής ταυτότητας και με τη σεξουαλικότητα. Πώς οι αντιλήψεις γύρω από αυτές τις έννοιες διαμορφώνουν γενικότερα τις κοινωνικές σχέσεις; Πώς επηρεάζονται και αντιδρούν τα άτομα στους κυρίαρχους και στερεοτυπικούς λόγους; Με ποιον τρόπο η πατριαρχία έχει δομήσει το αφήγημα των θηλυκών οντοτήτων; Η εσωτερίκευση του σεξισμού και η κατασκευασμένη ηθική η οποία μας επιβάλλεται υποσυνείδητα, με ποιον τρόπο "συνελίσσονται" μεταξύ τους και καταλήγουν στη δημιουργία τύψεων και δυσλειτουργικών συναισθημάτων; Αλλά και στο επίπεδο της ατομικής μας ταυτότητας, μήπως η συνέλιξη είναι η βάση της δόμησής της, καθώς οι διάφορες πτυχές του εαυτού μας αλληλεπιδρούν συνθέτοντάς την;',
-    talkDescriptionEN: '',
-    bioGR:
-      'Η Εύα Κώττα μεγάλωσε στο Αμύνταιο της Φλώρινας και σπούδασε Ηλεκτρολόγος Μηχανικός και Μηχανικός Υπολογιστών στο Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης. Τα τελευταία χρόνια ζει και εργάζεται στην Αθήνα. Από το 2020, αναπτύσσει ακτιβιστική δράση στα μέσα κοινωνικής δικτύωσης μέσα από τον λογαριασμό της “The Abstract Girl”, όπου μοιράζεται σκέψεις και απόψεις για την κοινωνία και την ισότητα των φύλων.',
-    bioEN:
-      'Eva Kotta grew up in Amyntaio, Florina, and studied Electrical and Computer Engineering at the Aristotle University of Thessaloniki. In recent years, she has been living and working in Athens. Since 2020, she has been engaging in activism on social media through her account “The Abstract Girl,” where she shares thoughts and perspectives on society and gender equality.'
   }
+  // {
+  //   slug: 'vangelis-simakis',
+  //   fullNameGR: 'Βαγγέλης Σιμάκης ',
+  //   fullNameEN: 'Vangelis Simakis',
+  //   artisticName: 'Backpack Brothers / Α.Τ.Α.Χ.Τ.Ο.Ι.',
+  //   jobGR: 'Συνιδρυτής BACKPACK BROTHERS / A.T.A.X.T.O.I.',
+  //   jobEN: 'Co-Founder BACKPACK BROTHERS / A.T.A.X.T.O.I.',
+  //   infoLinks: {
+  //     facebook: [
+  //       'https://www.facebook.com/Ataxtoi/',
+  //       'https://www.facebook.com/backpackbrothers.gr'
+  //     ],
+  //     instagram: [
+  //       'https://www.instagram.com/ataxtoi/',
+  //       'https://www.instagram.com/backpackbrothers.gr/'
+  //     ]
+  //   },
+  //   session: 0,
+  //   time: '',
+  //   talkCategory: 'Volunteering',
+  //   talkDescriptionGR:
+  //     'Ο εθελοντισμός καθιστά την απόλυτη έκφραση της συνέλιξης, καθώς έρχεται να αποδείξει πως διάφορες μικρές πράξεις καλοσύνης μπορούν να πυροδοτήσουν ένα μεγάλο κύμα αλλαγής. Είναι μια πράξη θεμελιωμένη πάνω στην έννοια της αλληλεπίδρασης, του κάθε εθελοντή με τον εαυτό του, των ανθρώπων μεταξύ τους, του καθενός μας με την κοινωνία που έχουμε απέναντί μας και την κοινωνία που θα θέλαμε να έχουμε. Δεν πρόκειται για μια σχέση δότη και αποδέκτη βοήθειας, αλλά για μια συνάντηση δύο κόσμων διαφορετικών αλλά ίσων, που αλληλεπιδρούν, μαθαίνουν ο ένας από τον άλλον και δημιουργούν νέες προοπτικές.',
+  //   talkDescriptionEN: '',
+  //   bioGR:
+  //     'Γεννήθηκε στο Ηράκλειο Κρήτης, ενώ σπούδασε Οικονομικές Επιστήμες στο Πανεπιστήμιο στο Ρέθυμνο. Κατέχει επίσης μεταπτυχιακό στην Εκπαίδευση και πιο συγκεκριμένα της Κριτικής Παιδαγωγικής και Εκπαίδευσης Εκπαιδευτικών του ίδιου ιδρύματος. Η ενασχόληση με τον εθελοντισμό ξεκίνησε στο Ηράκλειο και μέσα απο το Εθελοντικό Σωματείο Α.Τ.Α.Χ.Τ.Ο.Ι., ενώ στην συνέχεια ίδρυσε μαζί με τον αδελφό του Σαράντη, τους Backpack Brothers.',
+  //   bioEN:
+  //     'He was born in Heraklion, Crete, and studied Economic Sciences at the University of Rethymno. He also holds a Master’s degree in Education, specializing in Critical Pedagogy and Teacher Education from the same institution. His involvement with volunteering began in Heraklion through the volunteer organization A.T.A.X.T.O.I., and later, together with his brother Sarantis, he founded the Backpack Brothers.'
+  // },
+  // {
+  //   slug: 'eva-kotta',
+  //   fullNameGR: 'Εύα Κώττα',
+  //   fullNameEN: 'Eva Kotta',
+  //   artisticName: 'The Abstract Girl',
+  //   jobGR: 'Product Manager & Ακτιβίστρια',
+  //   jobEN: 'Product Manager & Activist',
+  //   infoLinks: {
+  //     facebook: ['https://www.facebook.com/p/The-Abstract-Girl-100063759715231/'],
+  //     instagram: ['https://www.instagram.com/the.abstract.girl/']
+  //   },
+  //   session: 0,
+  //   time: '',
+  //   talkCategory: '',
+  //   talkDescriptionGR:
+  //     'H έννοια της αλληλεπίδρασης σχετίζεται άμεσα με τις κοινωνικές και πολιτισμικές κατασκευές του φύλου, την έννοια της ατομικής και συλλογικής ταυτότητας και με τη σεξουαλικότητα. Πώς οι αντιλήψεις γύρω από αυτές τις έννοιες διαμορφώνουν γενικότερα τις κοινωνικές σχέσεις; Πώς επηρεάζονται και αντιδρούν τα άτομα στους κυρίαρχους και στερεοτυπικούς λόγους; Με ποιον τρόπο η πατριαρχία έχει δομήσει το αφήγημα των θηλυκών οντοτήτων; Η εσωτερίκευση του σεξισμού και η κατασκευασμένη ηθική η οποία μας επιβάλλεται υποσυνείδητα, με ποιον τρόπο "συνελίσσονται" μεταξύ τους και καταλήγουν στη δημιουργία τύψεων και δυσλειτουργικών συναισθημάτων; Αλλά και στο επίπεδο της ατομικής μας ταυτότητας, μήπως η συνέλιξη είναι η βάση της δόμησής της, καθώς οι διάφορες πτυχές του εαυτού μας αλληλεπιδρούν συνθέτοντάς την;',
+  //   talkDescriptionEN: '',
+  //   bioGR:
+  //     'Η Εύα Κώττα μεγάλωσε στο Αμύνταιο της Φλώρινας και σπούδασε Ηλεκτρολόγος Μηχανικός και Μηχανικός Υπολογιστών στο Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης. Τα τελευταία χρόνια ζει και εργάζεται στην Αθήνα. Από το 2020, αναπτύσσει ακτιβιστική δράση στα μέσα κοινωνικής δικτύωσης μέσα από τον λογαριασμό της “The Abstract Girl”, όπου μοιράζεται σκέψεις και απόψεις για την κοινωνία και την ισότητα των φύλων.',
+  //   bioEN:
+  //     'Eva Kotta grew up in Amyntaio, Florina, and studied Electrical and Computer Engineering at the Aristotle University of Thessaloniki. In recent years, she has been living and working in Athens. Since 2020, she has been engaging in activism on social media through her account “The Abstract Girl,” where she shares thoughts and perspectives on society and gender equality.'
+  // }
   // {
   //   slug: 'aristides-eliopoulos',
   //   fullNameGR: 'Αριστείδης Γ. Ηλιόπουλος',

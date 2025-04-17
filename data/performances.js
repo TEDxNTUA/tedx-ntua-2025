@@ -105,22 +105,22 @@ export const PERFORMANCES = [
       'Στην Lah Porella (Αφροδίτη) αρέσει πολύ να ζωγραφίζει, να τραγουδάει, να γράφει, να βγάζει φωτογραφίες και να παίζει bendir. Αυτή τη στιγμή ετοιμάζει το πρώτο της solo άλμπουμ το οποίο και θα κυκλοφορήσει το φθινόπωρο, σε δικούς της στίχους & μουσική, ενώ την παραγωγή έχει επιμεληθεί ο Lorqa. Στη σκηνή του TEDx NTUA θα παρουσιάσει τρία ακυκλοφόρητα κομμάτια από τον επερχόμενο δίσκο της, παρεά με τον Lorqa, τον ελληνοαμερικάνο παραγωγό/μουσικό όπου έχουν κοινή καταγωγή, την Ερεσό, αλλά και την Weronica Amelia Kijewska (γνωστή ως WERA), συνθέτης, μουσικός και τσελίστρια από την Πολωνία. ',
     bioEN:
       'Lah Porella (Aphrodite) really loves painting, singing, writing, taking photos, and playing the bendir. Right now, she’s preparing her first solo album, which will be released in the fall, with lyrics and music written by her. The production is handled by Lorqa. On the TEDx NTUA stage, she will present three unreleased tracks from her upcoming album, together with Lorqa—the Greek-American producer/musician with whom she shares roots in Eressos—as well as Weronica Amelia Kijewska (known as WERA), a composer, musician, and cellist from Poland.'
+  },
+  {
+    slug: 'papazo-and-amal',
+    fullNameGR: 'Βασίλης Παπαζώτος & Αμάλ Ιντ-Σαμπούν',
+    fullNameEN: ' Vassilis Papazotos & Amal Int-Sampoun',
+    artisticNameGR: 'Παπαζό & Αμάλ',
+    artisticNameEN: 'Papazό & Amal',
+    infoLinks: {
+      instagram: ['https://www.instagram.com/papazo_/', 'https://www.instagram.com/amalsverse']
+    },
+    performanceTypeGR: 'Τραγούδι',
+    performanceTypeEN: 'Music Producer/ Singer & Singer/ Songwriter',
+    descriptionGR: '',
+    descriptioEN: '',
+    bioGR:
+      'O Papazó είναι μουσικός παραγωγός, τραγουδιστής-τραγουδοποιός με κλασσικές σπουδές στην κιθάρα και την αρμονία. Εκτός από κιθάρα παίζει μπάσο,πλήκτρα, μαντολίνο κ.α. Παράλληλα, συνεργάζεται με αρκετούς καλλιτέχνες indie pop, rock, hip-hop και έντεχνο στο home studio του στην Αθήνα.  Εδώ και ένα χρόνο, ξεκίνησε να ανεβάζει βίντεο με άλλους καλλιτέχνες στο μπαλκόνι του κάθε Κυριακή και δημιούργησε ένα hype ρεύμα μέσα από την πλατφόρμα του TikTok και του Instagram. Πρόσφατα το τραγούδι του “Ατελιέ” έφτασε τα 1.000.000 streams. Η Αμάλ Ιντ-Σαμπούν είναι τραγουδοποιός, στιχουργός, μουσικός και ερμηνεύτρια, γεννημένη στις 5 Νοεμβρίου 2001. Η μουσική αποτελεί την απόλυτη παθιασμένη ασχολία της, έχοντας γράψει αρκετά τραγούδια όπως το πρώτο της single το Σεπτέμβριο του 2024 με τον τίτλο “Vasanizomai”,καθώς και άλλα που αναμένεται να κυκλοφορήσουν σύντομα. Στη μουσική της συνδυάζει είδη όπως afropop, r&b, hip hop και pop, δημιουργώντας έναν ιδιαίτερο ήχο που αποπνέει την προσωπικότητά της. Η Αμάλ συμμετείχε στην τηλεοπτική εκπομπή *The Voice of Greece* για τη σεζόν 2024-2025, όπου κατάφερε να φτάσει μέχρι τον ημιτελικό, μια εμπειρία που συνέβαλε στην καλλιτεχνική της εξέλιξη.Έχει πραγματοποιήσει αρκετά live στην Αθήνα και εργάζεται για να σχεδιάσει και άλλα, καθώς η ζωντανή παρουσίαση της μουσικής της είναι κάτι που αγαπά ιδιαίτερα. Η πορεία της συνεχίζεται με δημιουργικότητα και πάθος, με την ίδια να ανυπομονεί να μοιραστεί τα νέα της έργα με το κοινό.',
+    bioEN: ''
   }
-  // {
-  //   slug: 'papazo-and-amal',
-  //   fullNameGR: 'Βασίλης Παπαζώτος & Αμάλ Ιντ-Σαμπούν',
-  //   fullNameEN: ' Vassilis Papazotos & Amal Int-Sampoun',
-  //   artisticNameGR: 'Παπαζό & Αμάλ',
-  //   artisticNameEN: 'Papazό & Amal',
-  //   infoLinks: {
-  //     instagram: ['https://www.instagram.com/papazo_/', 'https://www.instagram.com/amalsverse']
-  //   },
-  //   performanceTypeGR: 'Τραγούδι',
-  //   performanceTypeEN: 'Music Producer/ Singer & Singer/ Songwriter',
-  //   descriptionGR: '',
-  //   descriptioEN: '',
-  //   bioGR:
-  //     'O Papazó είναι μουσικός παραγωγός, τραγουδιστής-τραγουδοποιός με κλασσικές σπουδές στην κιθάρα και την αρμονία. Εκτός από κιθάρα παίζει μπάσο,πλήκτρα, μαντολίνο κ.α. Παράλληλα, συνεργάζεται με αρκετούς καλλιτέχνες indie pop, rock, hip-hop και έντεχνο στο home studio του στην Αθήνα.  Εδώ και ένα χρόνο, ξεκίνησε να ανεβάζει βίντεο με άλλους καλλιτέχνες στο μπαλκόνι του κάθε Κυριακή και δημιούργησε ένα hype ρεύμα μέσα από την πλατφόρμα του TikTok και του Instagram. Πρόσφατα το τραγούδι του “Ατελιέ” έφτασε τα 1.000.000 streams. Η Αμάλ Ιντ-Σαμπούν είναι τραγουδοποιός, στιχουργός, μουσικός και ερμηνεύτρια, γεννημένη στις 5 Νοεμβρίου 2001. Η μουσική αποτελεί την απόλυτη παθιασμένη ασχολία της, έχοντας γράψει αρκετά τραγούδια όπως το πρώτο της single το Σεπτέμβριο του 2024 με τον τίτλο “Vasanizomai”,καθώς και άλλα που αναμένεται να κυκλοφορήσουν σύντομα. Στη μουσική της συνδυάζει είδη όπως afropop, r&b, hip hop και pop, δημιουργώντας έναν ιδιαίτερο ήχο που αποπνέει την προσωπικότητά της. Η Αμάλ συμμετείχε στην τηλεοπτική εκπομπή *The Voice of Greece* για τη σεζόν 2024-2025, όπου κατάφερε να φτάσει μέχρι τον ημιτελικό, μια εμπειρία που συνέβαλε στην καλλιτεχνική της εξέλιξη.Έχει πραγματοποιήσει αρκετά live στην Αθήνα και εργάζεται για να σχεδιάσει και άλλα, καθώς η ζωντανή παρουσίαση της μουσικής της είναι κάτι που αγαπά ιδιαίτερα. Η πορεία της συνεχίζεται με δημιουργικότητα και πάθος, με την ίδια να ανυπομονεί να μοιραστεί τα νέα της έργα με το κοινό.',
-  //   bioEN: ''
-  // }
 ];
