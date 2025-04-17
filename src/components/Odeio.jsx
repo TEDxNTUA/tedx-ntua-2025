@@ -56,7 +56,7 @@ export default function Odeio() {
       {/* Row holding Image + Map side by side */}
       <div className={styles.row}>
         <div className={styles.imageWrapper}>
-          <img src="./Odeio.png" alt="Athens Conservatoire" />
+          <img src="/Odeio.png" alt="Athens Conservatoire" />
         </div>
         <div className={styles.mapWrapper}>
           <iframe

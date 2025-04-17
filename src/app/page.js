@@ -58,7 +58,7 @@ export default function Home() {
     <main
       className={styles.main}
       style={{
-        backgroundImage: `url('./background.jpg')`
+        backgroundImage: `url('/background.jpg')`
       }}
     >
       <div className={styles.sliderContainer}>

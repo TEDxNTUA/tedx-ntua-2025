@@ -6,7 +6,7 @@ export default function AboutGrid({teamSlug, members}) {
     <>
       <div>
         <img
-          src={`./team/bitmaps/${teamSlug}.png`}
+          src={`/team/bitmaps/${teamSlug}.png`}
           alt={`Title for team: ${teamSlug}`}
           className="h-12 max-h-16 w-auto mx-auto"
         />

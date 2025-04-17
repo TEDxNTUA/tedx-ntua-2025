@@ -14,12 +14,12 @@ export default function ScrollReel() {
   };
 
   const frames = [
-    {src: './logo/syn.png', alt: 'Syn'},
-    {src: './logo/eli.png', alt: 'Eli'},
-    {src: './logo/xis.png', alt: 'Xis'}
+    {src: '/logo/syn.png', alt: 'Syn'},
+    {src: '/logo/eli.png', alt: 'Eli'},
+    {src: '/logo/xis.png', alt: 'Xis'}
   ];
 
-  const asterismos = {src: './logo/asterismos.png', alt: 'Asterismos'};
+  const asterismos = {src: '/logo/asterismos.png', alt: 'Asterismos'};
 
   useEffect(() => {
     const scrollDistance = frames.length * 300;

@@ -18,7 +18,7 @@ function EventCard({host, type}) {
   switch (type) {
     case 'speaker':
       linkUrl = `/event/speakers/${slug}`;
-      imageUrl = `./event/speakers/${slug}.jpg`;
+      imageUrl = `/event/speakers/${slug}.jpg`;
       displayName = host.fullNameEN || host.artisticName;
       secondaryInfo = host.jobEN;
       altText = `Picture of ${type}: ${displayName}`;
@@ -27,7 +27,7 @@ function EventCard({host, type}) {
       break;
     case 'performance':
       linkUrl = `/event/performances/${slug}`;
-      imageUrl = `./event/performances/${slug}.jpg`;
+      imageUrl = `/event/performances/${slug}.jpg`;
       displayName = host.artisticNameEN || host.fullNameEN;
       secondaryInfo = host.performanceTypeEN;
       altText = `Image for ${type}: ${displayName}`;
@@ -36,7 +36,7 @@ function EventCard({host, type}) {
       break;
     case 'side-happening':
       linkUrl = `/event/side-happenings/${slug}`;
-      imageUrl = `./event/side-happenings/${slug}.jpg`;
+      imageUrl = `/event/side-happenings/${slug}.jpg`;
       displayName = host.name;
       secondaryInfo = host.description || '';
       altText = `Picture of ${type}: ${displayName}`;
@@ -46,7 +46,7 @@ function EventCard({host, type}) {
     case 'fundraising-workshop':
       const workshopBasePath = `${type}s`;
       linkUrl = `/event/${workshopBasePath}s/${slug}`;
-      imageUrl = `./event/${workshopBasePath}s/${slug}.jpg`;
+      imageUrl = `/event/${workshopBasePath}s/${slug}.jpg`;
       displayName = host.companyName;
       secondaryInfo = host.titleEN || host.titleGR;
       altText = `Picture of ${type}: ${displayName}`;

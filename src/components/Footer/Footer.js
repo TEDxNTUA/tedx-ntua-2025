@@ -9,7 +9,7 @@ export default function Footer() {
     <footer
       className="text-white pt-12 pb-6 px-6 md:px-12 object-cover bg-center"
       style={{
-        backgroundImage: `url('./background.jpg')`
+        backgroundImage: `url('/background.jpg')`
       }}
     >
       <div className="flex flex-col gap-8">

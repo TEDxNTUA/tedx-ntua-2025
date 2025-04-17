@@ -20,7 +20,7 @@ export default function OrganizationAndHistoryPage() {
             WebkitMaskSize: `${size}px`
           }}
           style={{
-            WebkitMaskImage: "url('./mask.svg')",
+            WebkitMaskImage: "url('/mask.svg')",
             WebkitMaskRepeat: 'no-repeat'
           }}
           transition={{type: 'tween', ease: 'backOut', duration: 0.5}}

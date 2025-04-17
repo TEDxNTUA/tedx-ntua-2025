@@ -6,7 +6,7 @@ function TeamPage() {
     <div
       className="relative min-h-screen overflow-x-hidden overflow-y-visible flex flex-col items-center bg-cover bg-center bg-no-repeat bg-fixed"
       style={{
-        backgroundImage: `url('./background.jpg')`
+        backgroundImage: `url('/background.jpg')`
       }}
     >
       <div className="lg:w-[90%] w-[80%] max-w-[2080px] mx-auto pt-20">

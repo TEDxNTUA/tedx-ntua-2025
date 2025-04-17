@@ -92,7 +92,7 @@ export default function Descriptiontwo() {
 
       {/* IMAGE BELOW TEXT */}
       <div className={styles.logoWrapper}>
-        <img src="./logo/SYNELIXIS.png" alt="SYNELIXIS Logo" className={styles.synelixisLogo} />
+        <img src="/logo/SYNELIXIS.png" alt="SYNELIXIS Logo" className={styles.synelixisLogo} />
       </div>
     </div>
   );
