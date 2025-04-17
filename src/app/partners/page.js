@@ -10,7 +10,7 @@ export const metadata = {
 function PartnersPage() {
   return (
     <main className="bg-synelixis-blue">
-      <TextRevealByWord text="Each and one of you makes this event possible" />
+      <TextRevealByWord text="Each and every one of you makes this event possibl." />
       <HandWrittenTitle text={'Thank you!'} />
       <PartnersPageComponent />
     </main>

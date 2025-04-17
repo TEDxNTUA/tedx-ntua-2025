@@ -31,35 +31,32 @@ function PartnersPageComponent() {
       content: (
         <>
           <img
+            src="/partners/platinum/dei.webp"
+            alt="DEI"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full"
+          />
+          <img
             src="/partners/platinum/the-american-college-of-greece.webp"
             alt="ACG Logo"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full"
           />
-
           <img
             src="/partners/platinum/archidoron.webp"
             alt="Archirodon 65 Years"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full"
           />
-
-          <img
-            src="/partners/platinum/dei.webp"
-            alt="DEI"
-            width={500}
-            height={500}
-            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full grayscale-[0.65] hover:grayscale-0"
-          />
-
           <img
             src="/partners/platinum/oliver-wyman.webp"
             alt="Oliver Wyman"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full"
           />
         </>
       )
@@ -73,7 +70,7 @@ function PartnersPageComponent() {
             alt="uniperfect"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
           />
 
           <img
@@ -81,7 +78,7 @@ function PartnersPageComponent() {
             alt="elpedison"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
           />
 
           <img
@@ -89,7 +86,7 @@ function PartnersPageComponent() {
             alt="thenamaris"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
           />
 
           <img
@@ -97,7 +94,7 @@ function PartnersPageComponent() {
             alt="space"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
           />
         </>
       )
@@ -111,7 +108,7 @@ function PartnersPageComponent() {
             alt="Coca Cola 3E"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full lg:grayscale-[0.65] lg:hover:grayscale-0"
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full lgrayscale-0"
           />
 
           <img
@@ -119,7 +116,7 @@ function PartnersPageComponent() {
             alt="Partner 1"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
           />
         </>
       )
@@ -133,7 +130,7 @@ function PartnersPageComponent() {
             alt="OLYMPOS"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
 
           <img
@@ -141,7 +138,7 @@ function PartnersPageComponent() {
             alt="Melissa"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
 
           <img
@@ -149,21 +146,21 @@ function PartnersPageComponent() {
             alt="mega-spileo"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
           <img
             src="/partners/supporters/frenzyderm.webp"
             alt="Frenzyderm"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
           />
           <img
             src="/partners/supporters/red-bull.webp"
             alt="Red Bull"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
           />
 
           <img
@@ -171,14 +168,14 @@ function PartnersPageComponent() {
             alt="Partner 1"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
           />
           <img
             src="/partners/supporters/nanou.webp"
             alt="nanou"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
 
           <img
@@ -186,7 +183,7 @@ function PartnersPageComponent() {
             alt="IKEA"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
 
           <img
@@ -194,14 +191,14 @@ function PartnersPageComponent() {
             alt="deepsealogo"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
           <img
             src="/partners/supporters/ahmad-tea.webp"
             alt="ahmad-tea"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
 
           <img
@@ -209,7 +206,7 @@ function PartnersPageComponent() {
             alt="atflya"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
 
           <img
@@ -217,7 +214,7 @@ function PartnersPageComponent() {
             alt="cavino"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
 
           <img
@@ -225,7 +222,7 @@ function PartnersPageComponent() {
             alt="Colgate"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
 
           <img
@@ -233,7 +230,7 @@ function PartnersPageComponent() {
             alt="Flexopack"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
 
           <img
@@ -301,7 +298,7 @@ function PartnersPageComponent() {
             alt="Aegean"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full grayscale-[0.65] hover:grayscale-0"
+            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full"
           />
         </>
       )
