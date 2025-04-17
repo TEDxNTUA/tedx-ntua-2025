@@ -6,14 +6,7 @@ import styles from './magnetic.module.css';
 
 export default function Footer() {
   return (
-    <footer
-      className="text-white pt-12 pb-6 px-6 md:px-12"
-      style={{
-        backgroundImage: `url('./background.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}
-    >
+    <footer className="text-white pt-12 pb-6 px-6 md:px-12 bg-[url('./background.jpg')] object-cover bg-center">
       <div className="flex flex-col gap-8">
         {/* Top Row: TEDxNTUA Info + Social */}
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10">

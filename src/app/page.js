@@ -1,8 +1,8 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {useEffect, useRef} from 'react';
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 import Description from '@components/Description';
 import Descriptiontwo from '@components/Descriptiontwo';
@@ -12,13 +12,13 @@ import Odeio from '@components/Odeio';
 import styles from './page.module.css';
 
 export default function Home() {
-  const topSlider    = useRef(null);
+  const topSlider = useRef(null);
   const bottomSlider = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    let xPercent  = 0;
+    let xPercent = 0;
     let direction = -1;
     let sliderLoop;
 
@@ -28,7 +28,7 @@ export default function Home() {
       else if (xPercent > 0) xPercent = -100;
 
       [topSlider.current, bottomSlider.current].forEach(el => {
-        if (el) gsap.set(el, { xPercent });
+        if (el) gsap.set(el, {xPercent});
       });
 
       xPercent += 0.1 * direction;
@@ -45,7 +45,7 @@ export default function Home() {
       scrub: 0.5,
       onUpdate: self => {
         direction = self.direction * -1;
-      },
+      }
     });
 
     return () => {
@@ -55,12 +55,14 @@ export default function Home() {
   }, []);
 
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main} bg-[url('./background.jpg')]`}>
       <div className={styles.sliderContainer}>
         <div ref={topSlider} className={styles.slider}>
-          {Array(20).fill('Synelixis').map((word, i) => (
-            <span key={i}>{word}</span>
-          ))}
+          {Array(20)
+            .fill('Synelixis')
+            .map((word, i) => (
+              <span key={i}>{word}</span>
+            ))}
         </div>
       </div>
 
@@ -74,13 +76,15 @@ export default function Home() {
 
       <div className={styles.sliderContainer}>
         <div ref={bottomSlider} className={styles.slider}>
-          {Array(20).fill(0).map((_, i) => (
-            <span key={i}>
-              <span className={styles.speakers}>Speakers:</span> 10 –{' '}
-              <span className={styles.performances}>Performances:</span> 5 –{' '}
-              <span className={styles.workshops}>Workshops:</span> 8
-            </span>
-          ))}
+          {Array(20)
+            .fill(0)
+            .map((_, i) => (
+              <span key={i}>
+                <span className={styles.speakers}>Speakers:</span> 10 –{' '}
+                <span className={styles.performances}>Performances:</span> 5 –{' '}
+                <span className={styles.workshops}>Workshops:</span> 8
+              </span>
+            ))}
         </div>
       </div>
 
