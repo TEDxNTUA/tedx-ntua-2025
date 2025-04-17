@@ -10,7 +10,13 @@ function TeamPage() {
       }}
     >
       <div className="lg:w-[90%] w-[80%] max-w-[2080px] mx-auto pt-20">
-        <AboutGrid aboutlist={ABOUTLIST} />
+        <ul className="mx-auto flex flex-col gap-16 pb-12">
+          {ABOUTLIST.map(team => (
+            <li key={team.teamSlug}>
+              <AboutGrid teamSlug={team.teamSlug} members={team.members} />
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
