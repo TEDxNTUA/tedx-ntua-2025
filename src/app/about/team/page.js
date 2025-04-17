@@ -1,6 +1,11 @@
 import AboutGrid from '@components/about/AboutGrid';
 import {ABOUTLIST} from '@data';
 
+export const metadata = {
+  title: 'Meet The Team | Synelixis',
+  description: "The team of TEDxNTUA's 2025 event with theme Synelixis."
+};
+
 function TeamPage() {
   return (
     <div
