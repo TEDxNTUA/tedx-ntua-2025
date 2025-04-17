@@ -339,7 +339,7 @@ function PartnersPage() {
   return (
     <main
       className="bg-white min-h-screen bg-cover bg-center bg-no-repeat"
-      // style={{backgroundImage: "url('./background.jpg')"}}
+      // style={{backgroundImage: "url('/background.jpg')"}}
     >
       <section>
         <Timeline data={timelineData} />
