@@ -12,7 +12,7 @@ export default function AboutGrid({teamSlug, members}) {
       />
 
       {/* Grid of Members */}
-      <ul className="flex flex-row items-center gap-4 lg:gap-12 justify-center mx-auto flex-wrap w-[100%] md:w-[80%]">
+      <ul className="flex flex-row gap-4 lg:gap-12 justify-center mx-auto flex-wrap w-[100%] md:w-[80%]">
         {members.map(teamMember => (
           <li
             key={teamMember.slug}
