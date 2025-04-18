@@ -110,7 +110,20 @@ function PartnersPageComponent() {
             height={500}
             className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full lgrayscale-0"
           />
-
+          <img
+            src="/partners/partners/frenzyderm.webp"
+            alt="Frenzyderm"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
+          />
+          <img
+            src="/partners/partners/papoutsanis.webp"
+            alt="Partner 1"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
+          />
           <img
             src="/partners/partners/q-project.webp"
             alt="Partner 1"
@@ -126,11 +139,40 @@ function PartnersPageComponent() {
       content: (
         <>
           <img
+            src="/partners/supporters/deepsea.webp"
+            alt="deepsealogo"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/supporters/flexopack.webp"
+            alt="Flexopack"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+
+          <img
+            src="/partners/supporters/kanellakis.webp"
+            alt="kanellakis"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.9] hover:grayscale-0"
+          />
+          <img
             src="/partners/supporters/olympos.webp"
             alt="OLYMPOS"
             width={500}
             height={500}
             className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/supporters/symetal.webp"
+            alt="Symetal"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.9] hover:grayscale-0"
           />
 
           <img
@@ -148,13 +190,7 @@ function PartnersPageComponent() {
             height={500}
             className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
-          <img
-            src="/partners/supporters/frenzyderm.webp"
-            alt="Frenzyderm"
-            width={500}
-            height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
-          />
+
           <img
             src="/partners/supporters/red-bull.webp"
             alt="Red Bull"
@@ -163,13 +199,6 @@ function PartnersPageComponent() {
             className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
           />
 
-          <img
-            src="/partners/supporters/papoutsanis.webp"
-            alt="Partner 1"
-            width={500}
-            height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
-          />
           <img
             src="/partners/supporters/nanou.webp"
             alt="nanou"
@@ -186,13 +215,6 @@ function PartnersPageComponent() {
             className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
 
-          <img
-            src="/partners/supporters/deepsea.webp"
-            alt="deepsealogo"
-            width={500}
-            height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
-          />
           <img
             src="/partners/supporters/ahmad-tea.webp"
             alt="ahmad-tea"
@@ -226,22 +248,6 @@ function PartnersPageComponent() {
           />
 
           <img
-            src="/partners/supporters/flexopack.webp"
-            alt="Flexopack"
-            width={500}
-            height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
-          />
-
-          <img
-            src="/partners/supporters/kanellakis.webp"
-            alt="kanellakis"
-            width={500}
-            height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.9] hover:grayscale-0"
-          />
-
-          <img
             src="/partners/supporters/red-raven.webp"
             alt="Red Raven"
             width={500}
@@ -252,14 +258,6 @@ function PartnersPageComponent() {
           <img
             src="/partners/supporters/rodopaki.webp"
             alt="Rodopaki"
-            width={500}
-            height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.9] hover:grayscale-0"
-          />
-
-          <img
-            src="/partners/supporters/symetal.webp"
-            alt="Symetal"
             width={500}
             height={500}
             className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full grayscale-[0.9] hover:grayscale-0"
