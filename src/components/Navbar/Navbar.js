@@ -265,7 +265,15 @@ export default function Navbar() {
               </li>
               {/* --- End Mobile About Dropdown --- */}
             </ul>
-
+            {/* UNCOMMENT WHEN EVENT STARTS AND TICKETS ARE AVAILABLE */}
+            <a
+              className="w-[80%] mx-auto bg-synelixis-blue/80 bg-opacity-100 hover:bg-synelixis-blue hover:bg-opacity-80 text-white font-semibold py-4 px-6 rounded-md focus:outline-none focus:shadow-outline-red"
+              href="https://www.eventora.com/en/Events/tedxntua2025"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book Your Ticket!
+            </a>
             <SocialMediaNav />
           </div>
         </div>
@@ -406,6 +414,15 @@ export default function Navbar() {
             </div>
           </li>
           {/* --- End Desktop About Dropdown --- */}
+          <li>
+            <a
+              href="https://www.eventora.com/en/Events/tedxntua2025"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="ticket h-[60px]" src="/ticket-synelixis.png" alt="ticket"></img>
+            </a>{' '}
+          </li>
         </ul>
       </div>
     </nav>
