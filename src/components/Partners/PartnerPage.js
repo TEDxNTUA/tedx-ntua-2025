@@ -203,7 +203,7 @@ function PartnersPageComponent() {
             alt="Red Bull"
             width={500}
             height={500}
-            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
 
           <img
