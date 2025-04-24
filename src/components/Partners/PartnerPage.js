@@ -105,7 +105,14 @@ function PartnersPageComponent() {
         <>
           <img
             src="/partners/partners/q-project.webp"
-            alt="Partner 1"
+            alt="Q Project logo"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
+          />
+          <img
+            src="/partners/partners/gdm-assets.webp"
+            alt="GDM Assets logo"
             width={500}
             height={500}
             className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
