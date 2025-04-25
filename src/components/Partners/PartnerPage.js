@@ -289,13 +289,6 @@ function PartnersPageComponent() {
             className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
           />
           <img
-            src="/partners/supporters/impact-hub-athens.webp"
-            alt="Impact Hub Athens"
-            width={500}
-            height={500}
-            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
-          />
-          <img
             src="/partners/supporters/to-kati-allo.webp"
             alt="To Kati Allo"
             width={500}
@@ -332,7 +325,21 @@ function PartnersPageComponent() {
         <>
           <img
             src="/partners/exclusive-burger/layers.webp"
-            alt="Aegean"
+            alt="Layers Burgers"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full"
+          />
+        </>
+      )
+    },
+    {
+      title: 'Venue Sponsors',
+      content: (
+        <>
+          <img
+            src="/partners/venue-sponsors/impact-hub-athens.webp"
+            alt="Impact Hub Athens"
             width={500}
             height={500}
             className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full"
