@@ -58,6 +58,13 @@ function PartnersPageComponent() {
             height={500}
             className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full"
           />
+          <img
+            src="/partners/platinum/be-wise.webp"
+            alt="Be Wise"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full"
+          />
         </>
       )
     },
@@ -75,23 +82,21 @@ function PartnersPageComponent() {
 
           <img
             src="/partners/grand/elpedison.webp"
-            alt="elpedison"
+            alt="Elpedison"
             width={500}
             height={500}
             className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
           />
-
           <img
             src="/partners/grand/thenamaris.webp"
-            alt="thenamaris"
+            alt="Thenamaris"
             width={500}
             height={500}
             className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
           />
-
           <img
             src="/partners/grand/space.webp"
-            alt="space"
+            alt="Space"
             width={500}
             height={500}
             className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
@@ -139,8 +144,15 @@ function PartnersPageComponent() {
             className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
           />
           <img
-            src="/partners/supporters/red-bull.webp"
+            src="/partners/partners/red-bull.webp"
             alt="Red Bull"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
+          />
+          <img
+            src="/partners/partners/kleidarithmos.webp"
+            alt="Kleidarithmos"
             width={500}
             height={500}
             className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full"
@@ -272,6 +284,27 @@ function PartnersPageComponent() {
           <img
             src="/partners/supporters/tefaco.webp"
             alt="Tefaco"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/supporters/impact-hub-athens.webp"
+            alt="Impact Hub Athens"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/supporters/to-kati-allo.webp"
+            alt="To Kati Allo"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/supporters/wowchi.webp"
+            alt="Wowchi"
             width={500}
             height={500}
             className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
