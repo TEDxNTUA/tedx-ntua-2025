@@ -305,9 +305,199 @@ const SUPPORTERS = [
   // },
 ];
 
+const MEDIA_PARTNERS = [
+  {
+    slug: 'e-daily',
+    name: 'e-daily',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'e-radio',
+    name: 'e-radio',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'epixeiro',
+    name: 'Epixeiro',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'tech-press',
+    name: 'Tech Press',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'interesting-people',
+    name: 'Interesting People',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'startup',
+    name: 'Startup',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'antivirus',
+    name: 'Antivirus',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'neolaia-gr',
+    name: 'neolaia.gr',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'skywalker',
+    name: 'Skywalker',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'uni-ties',
+    name: 'uni-ties',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'isws',
+    name: '@isws',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'yperoxi-athina',
+    name: '@yperoxi_athina',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'i-tech-4-u',
+    name: 'iTech4u',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'linq',
+    name: 'Linq',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'uni-students',
+    name: 'UniStudents',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  }
+  // {
+  //   slug: '',
+  //   name: '',
+  //   bioGR: '',
+  //   bioEN: '',
+  //   infoLinks: {}
+  // }
+];
+
+const COMMUNITY_PARTNERS = [
+  {
+    slug: 'prometheus-eco-racing',
+    name: 'Prometheus Eco Racing NTUA Team',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'ath-chemists',
+    name: 'AthChemists',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'envi-now',
+    name: 'EnviNow',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'fs-det',
+    name: 'Φοιτητικό Συνέδριο ΔΕΤ',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'chemecon',
+    name: 'Chemecon',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'ant',
+    name: 'Athens Negotiations Tournament',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'i-gem-athens',
+    name: 'iGEM Athens',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'mimec',
+    name: 'Mining and Metallurgical Engineering',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'euroavia-athens',
+    name: 'Euroavia Athens',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  }
+  // {
+  //   slug: '',
+  //   name: '',
+  //   bioGR: '',
+  //   bioEN: '',
+  //   infoLinks: {}
+  // }
+];
+
 export const ALL_PARTNERS = [
   {title: 'Platinum Sponsors', data: PLATINUM_SPONSORS},
   {title: 'Grand Sponsors', data: GRAND_SPONSORS},
   {title: 'Partners', data: PARTNERS},
-  {title: 'Supporters', data: SUPPORTERS}
+  {title: 'Supporters', data: SUPPORTERS},
+  {title: 'Media Partners', data: MEDIA_PARTNERS},
+  {title: 'Community Partners', data: COMMUNITY_PARTNERS}
 ];

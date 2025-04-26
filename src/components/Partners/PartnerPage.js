@@ -346,6 +346,195 @@ function PartnersPageComponent() {
           />
         </>
       )
+    },
+    {
+      title: 'Media Partners',
+      content: (
+        <>
+          <img
+            src="/partners/media-partners/e-daily.webp"
+            alt="e-daily"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/media-partners/e-radio.webp"
+            alt="e-radio"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/media-partners/epixeiro.webp"
+            alt="Epixeiro"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/media-partners/tech-press.webp"
+            alt="Tech Press"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/media-partners/interesting-people.webp"
+            alt="Interesting People"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          {/* <img
+            src="/partners/media-partners/startup.webp"
+            alt="Startup"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          /> */}
+          <img
+            src="/partners/media-partners/antivirus.webp"
+            alt="Antivirus"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/media-partners/neolaia-gr.webp"
+            alt="neolaia.gr"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          {/* <img
+            src="/partners/media-partners/skywalker.webp"
+            alt="skywalker"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/media-partners/uni-ties.webp"
+            alt="uni-ties"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/media-partners/isws.webp"
+            alt="@isws"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/media-partners/yperoxi-athina.webp"
+            alt="@yperoxi_athina"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          /> */}
+          <img
+            src="/partners/media-partners/i-tech-4-u.webp"
+            alt="iTech4u"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/media-partners/linq.webp"
+            alt="Linq"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          {/* <img
+            src="/partners/media-partners/uni-students.webp"
+            alt="UniStudents"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          /> */}
+          {/* <img
+            src="/partners/media-partners/.webp"
+            alt=""
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full"
+          /> */}
+        </>
+      )
+    },
+    {
+      title: 'Community Partners',
+      content: (
+        <>
+          <img
+            src="/partners/community-partners/prometheus-eco-racing.webp"
+            alt="Prometheus Eco Racing NTUA Team"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/community-partners/ath-chemists.webp"
+            alt="AthChemists"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/community-partners/envi-now.webp"
+            alt="EnviNow"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/community-partners/fs-det.webp"
+            alt="Φοιτητικό Συνέδριο ΔΕΤ"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/community-partners/chemecon.webp"
+            alt="Chemecon"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/community-partners/ant.webp"
+            alt="Athens Negotiations Tournament"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/community-partners/i-gem-athens.webp"
+            alt="iGEM Athens"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/community-partners/mimec.webp"
+            alt="Mining and Metallurgical Engineering"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+          <img
+            src="/partners/community-partners/euroavia-athens.webp"
+            alt="Euroavia Athens"
+            width={500}
+            height={500}
+            className="rounded-lg object-contain h-14 md:h-24 lg:h-28 w-full"
+          />
+        </>
+      )
     }
   ];
 

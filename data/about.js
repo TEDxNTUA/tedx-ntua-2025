@@ -88,8 +88,8 @@ export const ABOUTLIST = [
         linkedIn: 'https://www.linkedin.com/in/maria-fatourou-106a75269/'
       },
       {
-        slug: 'aggelos-antonopoulos',
-        fullnameEN: 'Aggelos Antonopoulos',
+        slug: 'angelos-antonopoulos',
+        fullnameEN: 'Angelos Antonopoulos',
         linkedIn: 'https://www.linkedin.com/in/angelos-antonopoulos-74b86a203/'
       }
     ]
