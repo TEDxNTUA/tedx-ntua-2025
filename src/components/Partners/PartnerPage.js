@@ -3,7 +3,7 @@
 import React, {useEffect} from 'react';
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
-import Timeline from '@components/Timeline';
+import Timeline from '@src/components/Partners/Timeline';
 import {
   GRAND_SPONSORS,
   PLATINUM_SPONSORS,
@@ -30,7 +30,7 @@ const generateTimelineData = (title, sponsors, folder) => {
             alt={sponsor.name}
             width={500}
             height={500}
-            className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full"
+            className="rounded-lg object-contain size-16 sm:size-32 md:size-44"
           />
         ))}
       </>
