@@ -139,7 +139,7 @@ export const ABOUTLIST = [
       },
       {
         slug: 'tolis-apostolos',
-        fullnameEN: 'Tolis Apostolos',
+        fullnameEN: 'Apostolos Tolis',
         linkedIn: 'https://www.linkedin.com/in/apostolos-tolis'
       },
       {
