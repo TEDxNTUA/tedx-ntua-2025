@@ -6,7 +6,7 @@
 //   infoLinks: {};
 // };
 
-const PLATINUM_SPONSORS = [
+export const PLATINUM_SPONSORS = [
   {
     slug: 'dei',
     name: 'ΔΕΗ',
@@ -53,9 +53,9 @@ const PLATINUM_SPONSORS = [
   }
 ];
 
-const GRAND_SPONSORS = [
+export const GRAND_SPONSORS = [
   {
-    slug: 'uniperfect',
+    slug: 'uni-perfect',
     name: 'Uniperfect',
     bioGR:
       'To UNIPERFECT είναι ένα υπερσύγχρονο κέντρο προετοιμασίας σπουδών, με έμφαση στη διαφορετικότητα του κάθε σπουδαστή. Στηρίζει τους μαθητές του στην επιλογή του κατάλληλου Προπτυχιακού, Μεταπτυχιακού ή Διδακτορικού, με βάση τα δικά τους κριτήρια και τους βοηθάει στο να κάνουν την τέλεια αίτηση. Επιπλέον προσφέρει τις καλύτερες και αποτελεσματικότερες μεθόδους για τα standardized tests GMAT, GRE, IELTS, TOEFL και USMLE. Οι instructors του είναι εξειδικευμένοι, με πολυετή εμπειρία και top ratings στο ενεργητικό τους. Διαθέτει σύγχρονες εγκαταστάσεις με εξειδικευμένους χώρους για προσομοιώσεις των tests, σε συνθήκες ίδιες των εξετάσεων. Όλα του τα μαθήματα είναι hybrid, με την επιλογή για ιδιαίτερα μαθήματα ή συμμετοχή σε ολιγομελή τμήματα, με προσοχή και φροντίδα στον κάθε σπουδαστή. Ακόμα, παρέχει ολοκληρωμένη υποστήριξη μέσω των υπηρεσιών του Mentoring και του Academic and Career Counseling.',
@@ -93,7 +93,7 @@ const GRAND_SPONSORS = [
   }
 ];
 
-const PARTNERS = [
+export const PARTNERS = [
   {
     slug: 'q-project',
     name: 'QPROJECT',
@@ -141,9 +141,39 @@ const PARTNERS = [
   }
 ];
 
-const SUPPORTERS = [
+export const EXCLUSIVE_AIR = [
   {
-    slug: 'deep-sea',
+    slug: 'aegean',
+    name: 'Aegean Airlines',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  }
+];
+
+export const EXCLUSIVE_BURGER = [
+  {
+    slug: 'layers',
+    name: 'Layers Burger',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  }
+];
+
+export const VENUE_SPONSOR = [
+  {
+    slug: 'impact-hub-athens',
+    name: 'Impact Hub Athens',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  }
+];
+
+export const SUPPORTERS = [
+  {
+    slug: 'deepsea',
     name: 'Deepsea',
     bioGR: '',
     bioEN: '',
@@ -164,15 +194,15 @@ const SUPPORTERS = [
     infoLinks: {}
   },
   {
-    slug: 'olympos',
-    name: 'ΟΛΥΜΠΟΣ',
+    slug: 'symetal',
+    name: 'Symetal',
     bioGR: '',
     bioEN: '',
     infoLinks: {}
   },
   {
-    slug: 'symetal',
-    name: 'Symetal',
+    slug: 'olympos',
+    name: 'ΟΛΥΜΠΟΣ',
     bioGR: '',
     bioEN: '',
     infoLinks: {}
@@ -255,13 +285,6 @@ const SUPPORTERS = [
     infoLinks: {}
   },
   {
-    slug: 'impact-hub-athens',
-    name: 'Impact Hub Athens',
-    bioGR: '',
-    bioEN: '',
-    infoLinks: {}
-  },
-  {
     slug: 'to-kati-allo',
     name: 'To Kati Allo',
     bioGR: '',
@@ -305,7 +328,7 @@ const SUPPORTERS = [
   // },
 ];
 
-const MEDIA_PARTNERS = [
+export const MEDIA_PARTNERS = [
   {
     slug: 'e-daily',
     name: 'e-daily',
@@ -341,13 +364,13 @@ const MEDIA_PARTNERS = [
     bioEN: '',
     infoLinks: {}
   },
-  {
-    slug: 'startup',
-    name: 'Startup',
-    bioGR: '',
-    bioEN: '',
-    infoLinks: {}
-  },
+  // {
+  //   slug: 'startup',
+  //   name: 'Startup',
+  //   bioGR: '',
+  //   bioEN: '',
+  //   infoLinks: {}
+  // },
   {
     slug: 'antivirus',
     name: 'Antivirus',
@@ -362,34 +385,34 @@ const MEDIA_PARTNERS = [
     bioEN: '',
     infoLinks: {}
   },
-  {
-    slug: 'skywalker',
-    name: 'Skywalker',
-    bioGR: '',
-    bioEN: '',
-    infoLinks: {}
-  },
-  {
-    slug: 'uni-ties',
-    name: 'uni-ties',
-    bioGR: '',
-    bioEN: '',
-    infoLinks: {}
-  },
-  {
-    slug: 'isws',
-    name: '@isws',
-    bioGR: '',
-    bioEN: '',
-    infoLinks: {}
-  },
-  {
-    slug: 'yperoxi-athina',
-    name: '@yperoxi_athina',
-    bioGR: '',
-    bioEN: '',
-    infoLinks: {}
-  },
+  // {
+  //   slug: 'skywalker',
+  //   name: 'Skywalker',
+  //   bioGR: '',
+  //   bioEN: '',
+  //   infoLinks: {}
+  // },
+  // {
+  //   slug: 'uni-ties',
+  //   name: 'uni-ties',
+  //   bioGR: '',
+  //   bioEN: '',
+  //   infoLinks: {}
+  // },
+  // {
+  //   slug: 'isws',
+  //   name: '@isws',
+  //   bioGR: '',
+  //   bioEN: '',
+  //   infoLinks: {}
+  // },
+  // {
+  //   slug: 'yperoxi-athina',
+  //   name: '@yperoxi_athina',
+  //   bioGR: '',
+  //   bioEN: '',
+  //   infoLinks: {}
+  // },
   {
     slug: 'i-tech-4-u',
     name: 'iTech4u',
@@ -403,14 +426,14 @@ const MEDIA_PARTNERS = [
     bioGR: '',
     bioEN: '',
     infoLinks: {}
-  },
-  {
-    slug: 'uni-students',
-    name: 'UniStudents',
-    bioGR: '',
-    bioEN: '',
-    infoLinks: {}
   }
+  // {
+  //   slug: 'uni-students',
+  //   name: 'UniStudents',
+  //   bioGR: '',
+  //   bioEN: '',
+  //   infoLinks: {}
+  // }
   // {
   //   slug: '',
   //   name: '',
@@ -420,7 +443,7 @@ const MEDIA_PARTNERS = [
   // }
 ];
 
-const COMMUNITY_PARTNERS = [
+export const COMMUNITY_PARTNERS = [
   {
     slug: 'prometheus-eco-racing',
     name: 'Prometheus Eco Racing NTUA Team',
@@ -491,13 +514,4 @@ const COMMUNITY_PARTNERS = [
   //   bioEN: '',
   //   infoLinks: {}
   // }
-];
-
-export const ALL_PARTNERS = [
-  {title: 'Platinum Sponsors', data: PLATINUM_SPONSORS},
-  {title: 'Grand Sponsors', data: GRAND_SPONSORS},
-  {title: 'Partners', data: PARTNERS},
-  {title: 'Supporters', data: SUPPORTERS},
-  {title: 'Media Partners', data: MEDIA_PARTNERS},
-  {title: 'Community Partners', data: COMMUNITY_PARTNERS}
 ];
