@@ -6,13 +6,7 @@ export default function EventGrid({type, hosts}) {
   }
 
   let gridClasses =
-    'grid justify-items-center items-start gap-y-10 gap-x-6 lg:gap-y-16 lg:gap-x-12 ';
-
-  if (type === 'speaker') {
-    gridClasses += 'grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4';
-  } else {
-    gridClasses += 'grid-cols-1 sm:grid-cols-2';
-  }
+    'grid justify-items-center items-start gap-y-10 gap-x-6 lg:gap-y-16 lg:gap-x-12 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4';
 
   return (
     <div className="w-[90%] md:w-[80%] mx-auto py-8">
