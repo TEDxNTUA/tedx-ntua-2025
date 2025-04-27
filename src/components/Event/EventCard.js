@@ -1,77 +1,93 @@
-import React from 'react';
+'use client';
+import React, {useState} from 'react';
 import SocialList from '@components/SocialMedia/SocialList';
+import Modal from '@components/Modal';
 // PropsInterface {
 //   host: Speaker | Performance | SideHappening | ExperienceWorkshop | FundraisingWorkshop;
 //   type: 'speaker' | 'performance' | 'side-happening' | 'experience-workshop' | 'fundraising-workshop';
 // }
 
 function EventCard({host, type}) {
-  let linkUrl = '';
-  let imageUrl = '';
-  let displayName = 'Unnamed Event';
-  let secondaryInfo = '';
-  let altText = 'Event image';
-  let hoverColor = '';
-  let socialHoverColor = '';
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const session = host.session || '';
+  const time = host.time;
+  const bio = host.bioGR || host.bioEN || 'No biography available.';
+  const description =
+    host.descriptionGR || host.descriptionEN || 'Η περιγραφή δεν είναι διαθέσιμη.';
   const slug = host.slug;
+  const socialMediaLinks = host.infoLinks;
+
+  let color = '';
+  let name = '';
+  let artisticName = '';
+  let secondaryInfo = '';
+  let imageUrl = '';
+  let category = '';
 
   switch (type) {
     case 'speaker':
-      linkUrl = `/event/speakers/${slug}`;
+      color = 'yellow';
+      name = host.fullNameEN || host.artisticName;
+      artisticName = host.artisticName;
+      secondaryInfo = host.jobEN || host.jobGR;
       imageUrl = `/event/speakers/${slug}.jpg`;
-      displayName = host.fullNameEN || host.artisticName;
-      secondaryInfo = host.jobEN;
-      altText = `Picture of ${type}: ${displayName}`;
-      hoverColor = 'group-hover:text-synelixis-yellow';
-      socialHoverColor = 'yellow';
+      category = host.talkCategory;
       break;
     case 'performance':
-      linkUrl = `/event/performances/${slug}`;
+      color = 'orange';
+      name = host.artisticName || host.fullNameEN;
+      secondaryInfo = host.performanceTypeEN || host.performanceTypeGR || '';
       imageUrl = `/event/performances/${slug}.jpg`;
-      displayName = host.artisticNameEN || host.fullNameEN;
-      secondaryInfo = host.performanceTypeEN;
-      altText = `Image for ${type}: ${displayName}`;
-      hoverColor = 'group-hover:text-synelixis-orange';
-      socialHoverColor = 'orange';
+      category = host.performanceTypeEN || host.performanceTypeGR || '';
       break;
     case 'side-happening':
-      linkUrl = `/event/side-happenings/${slug}`;
+      color = 'blue';
+      name = host.name;
       imageUrl = `/event/side-happenings/${slug}.jpg`;
-      displayName = host.name;
-      secondaryInfo = host.description || '';
-      altText = `Picture of ${type}: ${displayName}`;
-      hoverColor = 'group-hover:text-synelixis-orange';
       break;
     case 'experience-workshop':
     case 'fundraising-workshop':
-      const workshopBasePath = `${type}s`;
-      linkUrl = `/event/${workshopBasePath}s/${slug}`;
-      imageUrl = `/event/${workshopBasePath}s/${slug}.jpg`;
-      displayName = host.companyName;
+      color = 'blue';
+      name = host.companyName;
       secondaryInfo = host.titleEN || host.titleGR;
-      altText = `Picture of ${type}: ${displayName}`;
-      hoverColor = 'group-hover:text-synelixis-orange';
+      const workshopBasePath = `${type}s`;
+      imageUrl = `/event/${workshopBasePath}s/${slug}.jpg`;
       break;
-
     default:
       console.warn(`EventCard received unknown event type: ${type}`);
-      linkUrl = `/${slug}`;
-      imageUrl = `/event/default/${slug}.jpg`;
-      displayName = 'Unknown Event';
-      secondaryInfo = 'No additional information available';
-      altText = '';
       break;
   }
 
-  const socialMediaLinks = host.infoLinks;
+  const hoverColor = `group-hover:text-synelixis-${color}`;
+
+  const displayInfo = {
+    color,
+    hoverColor,
+    name,
+    artisticName,
+    secondaryInfo,
+    imageUrl,
+    socialMediaLinks,
+    bio,
+    happening: {
+      category,
+      session,
+      time,
+      description
+    }
+  };
 
   return (
     <div className="flex flex-col gap-2">
-      <section className="link-wrapper mb-2 text-white group max-w-[300px] h-full">
+      <section
+        onClick={() => setIsModalOpen(true)}
+        className="link-wrapper cursor-pointer mb-2 text-white group max-w-[300px] h-full"
+      >
         <img
           className="object-cover grayscale-[0.65] group-hover:grayscale-0 transition"
           src={imageUrl}
-          alt={altText}
+          alt={`Picture of ${name}`}
           width={300}
           height={300}
         />
@@ -79,7 +95,7 @@ function EventCard({host, type}) {
           <h2
             className={`text-lg xl:text-xl text-synelixis-blue ${hoverColor} font-semibold transition-colors duration-200 ease-in-out text-wrap`}
           >
-            {displayName}
+            {name}
           </h2>
           {/* {secondaryInfo && ( */}
           <p className="text-sm text-synelixis-blue/50 group-hover:underline transition-colors duration-200 ease-in-out mt-1 text-wrap">
@@ -88,12 +104,21 @@ function EventCard({host, type}) {
         </div>
       </section>
       <section className="flex flex-row gap-3">
-        <SocialList
-          socialMediaLinks={socialMediaLinks}
-          color={'blue'}
-          hoverColor={socialHoverColor}
-        />
+        <SocialList socialMediaLinks={socialMediaLinks} color={'blue'} hoverColor={color} />
       </section>
+      <button
+        onClick={() => setIsModalOpen(true)}
+        className="block lg:hidden bg-synelixis-blue text-white py-2 "
+      >
+        Show More
+      </button>
+      <Modal
+        displayInfo={displayInfo}
+        type={type}
+        host={host}
+        open={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </div>
   );
 }

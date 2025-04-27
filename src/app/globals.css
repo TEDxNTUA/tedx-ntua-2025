@@ -15,3 +15,37 @@
     font-family: 'CascadiaCode', ui-sans-serif, system-ui, sans-serif;
   }
 }
+
+/* styles/globals.css (or your main CSS file) */
+
+/* Always show scrollbars and style them for modal content */
+.modal-scrollable-content::-webkit-scrollbar {
+  width: 8px; /* Adjust width as needed */
+  height: 8px; /* For horizontal scrollbars if ever needed */
+}
+
+.modal-scrollable-content::-webkit-scrollbar-track {
+  background: #e2e8f0; /* Lighter gray background (Tailwind gray-200) */
+  border-radius: 10px;
+}
+
+.modal-scrollable-content::-webkit-scrollbar-thumb {
+  background: #94a3b8; /* Medium gray thumb (Tailwind gray-400) */
+  border-radius: 10px;
+  border: 2px solid #e2e8f0; /* Creates padding around thumb */
+}
+
+.modal-scrollable-content::-webkit-scrollbar-thumb:hover {
+  background: #64748b; /* Darker gray on hover (Tailwind gray-500) */
+}
+
+/* Optional: Basic styling for Firefox */
+.modal-scrollable-content {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #94a3b8 #e2e8f0; /* thumb track */
+}
+
+/* Apply overscroll-contain using a utility class if not using Tailwind arbitrary properties */
+.overscroll-contain {
+  overscroll-behavior: contain;
+}

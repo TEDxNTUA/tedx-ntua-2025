@@ -33,6 +33,7 @@ export default function RootLayout({children}) {
         <ClientScrollProvider>
           <main className="max-w-[2000px] mx-auto">{children}</main>
         </ClientScrollProvider>
+        <div id="portal"></div>
         <Footer />
       </body>
     </html>
