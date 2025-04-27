@@ -297,28 +297,28 @@ export const SUPPORTERS = [
     bioGR: '',
     bioEN: '',
     infoLinks: {}
+  },
+  {
+    slug: 'charge-me',
+    name: 'Charge Me',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'ioniki',
+    name: 'Ιονική',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'bakkar',
+    name: 'Bakkar',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
   }
-  // {
-  //   slug: 'charge-me',
-  //   name: 'Charge Me',
-  //   bioGR: '',
-  //   bioEN: '',
-  //   infoLinks: {}
-  // },
-  // {
-  //   slug: 'ioniki',
-  //   name: 'Ιονική',
-  //   bioGR: '',
-  //   bioEN: '',
-  //   infoLinks: {}
-  // },
-  // {
-  //   slug: 'bakkar',
-  //   name: 'Bakkar',
-  //   bioGR: '',
-  //   bioEN: '',
-  //   infoLinks: {}
-  // },
   // {
   //   slug: 'glaros',
   //   name: 'Γλάρος',
