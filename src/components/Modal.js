@@ -87,7 +87,7 @@ function Modal({open, onClose, displayInfo}) {
             <img
               src={displayInfo.imageUrl}
               alt={displayInfo.name}
-              className="hidden lg:block w-[300px] h-full rounded-lg"
+              className="hidden lg:block w-[230px] h-full rounded-lg"
             />
             <div className="flex gap-4 flex-col text-center md:text-left flex-grow min-w-0">
               {/* Name & Secondary Info*/}
@@ -130,7 +130,7 @@ function Modal({open, onClose, displayInfo}) {
               </div>
             </div>
           </section>
-          <div className="border-t my-2 md:my-4"></div>
+          <div className="border-t"></div>
           {/* Happening Info Section */}
           {displayInfo.happening && (
             <section id="happening-info">
@@ -140,7 +140,7 @@ function Modal({open, onClose, displayInfo}) {
                 {displayInfo.happening.time ? ` | ${displayInfo.happening.time}` : ''}
               </p>
               <div
-                className="max-h-[23vh] overflow-y-auto modal-scrollable-content pr-2 rounded"
+                className="max-h-[20vh] overflow-y-auto modal-scrollable-content pr-2 rounded"
                 onWheel={handleWheelScroll}
               >
                 <p className="text-synelixis-blue/70 leading-relaxed">
