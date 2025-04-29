@@ -187,8 +187,8 @@ export const SUPPORTERS = [
     infoLinks: {}
   },
   {
-    slug: 'kanellakis',
-    name: 'Kanellakis AE',
+    slug: 'elliniki-paragwgi',
+    name: 'Ελληνική Παραγωγή',
     bioGR: '',
     bioEN: '',
     infoLinks: {}
@@ -196,6 +196,13 @@ export const SUPPORTERS = [
   {
     slug: 'symetal',
     name: 'Symetal',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'kanellakis',
+    name: 'Kanellakis AE',
     bioGR: '',
     bioEN: '',
     infoLinks: {}
