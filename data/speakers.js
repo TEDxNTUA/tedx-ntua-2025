@@ -243,27 +243,35 @@ export const SPEAKERS = [
       'Ενεργός απ’ τα τέλη της δεκαετίας του 90, ο Ζωγράφος ξεκίνησε να δισκογραφεί ως Solo καλλιτέχνης το 2013 με τον δίσκο "Δεν φοβήθηκα να ζήσω" ενώ τον Δεκέμβριο του 2022 κυκλοφόρησε το "Πυρίτιδα και δυόσμος" μαζί με τον Wise Dopes. Έχει στο βιογραφικό του πολλές συνεργασίες με καλλιτέχνες εντός και εκτός του hip hop, ενώ αυτό που τον ξεχωρίζει είναι ο ιδιαίτερος στίχος του, σε συνδυασμό με τις εξίσου ιδιαίτερες παραγωγές του, που συνδέουν την παράδοση με το σήμερα.',
     bioEN:
       'Active since the late 1990s, Zografos began releasing music as a solo artist in 2013 with the album "I Wasn’t Afraid to Live", while in December 2022 he released "Gunpowder and Spearmint" in collaboration with Wise Dopes. His résumé includes numerous collaborations with artists both within and beyond the hip hop scene. What sets him apart is his distinctive lyrical style, combined with equally unique productions that blend tradition with the present.'
+  },
+  {
+    slug: 'aristides-g-eliopoulos',
+    fullNameGR: 'Αριστείδης Γ. Ηλιόπουλος',
+    fullNameEN: 'Aristides G. Eliopoulos',
+    artisticName: '',
+    jobGR:
+      'Καθηγητής Βιολογίας & Γενετικής, Διευθυντής Εργαστηρίου Βιολογίας της Ιατρικής Σχολής του ΕΚΠΑ. Συνιδρυτής και Επιστημονικός Υπεύθυνος της εταιρείας-τεχνοβλαστού GENOSOPHY',
+    jobEN: 'Biology & Genetics NKUA Prof., Co-founder & CSO of GENOSOPHY S.A.',
+    infoLinks: {
+      facebook: ['https://www.facebook.com/eliopag'],
+      linkedIn: ['https://www.linkedin.com/in/eliopoulos-aristides-0586159a/'],
+      website: [
+        'https://biology.med.uoa.gr',
+        'https://genosophy.gr',
+        'https://precision-medicine-cap.gr'
+      ]
+    },
+    session: 0,
+    time: '',
+    talkCategory: '',
+    descriptionGR:
+      'Στην εποχή της γενετικής ανάλυσης, της τεχνητής νοημοσύνης και της συνθετικής βιολογίας, το Δελφικό παράγγελμα «γνώθι σεαυτόν» αποκτά νέο, κυριολεκτικό νόημα. Για πρώτη φορά μπορούμε να διαβάσουμε τον εαυτό μας σε μοριακό επίπεδο, και ίσως, να τον ξαναγράψουμε. Η ομιλία εξερευνά τη συνέλιξη της γενετικής με την τεχνολογία, πώς αυτή αλλάζει την έννοια της ταυτότητας, και τι σημαίνει να έχεις τη δύναμη της πρόβλεψης ή της παρέμβασης στη ζωή. Μπορεί η επιστήμη να ενδυναμώσει τον άνθρωπο χωρίς να τον αλλοιώσει;',
+    descriptionEN: '',
+    bioGR:
+      'Ο Αριστείδης Ηλιόπουλος είναι Καθηγητής Βιολογίας και Γενετικής στην Ιατρική Σχολή του ΕΚΠΑ και συνιδρυτής της εταιρείας-τεχνοβλαστού GENOSOPHY® . Το έργο του γεφυρώνει την μοριακή γενετική, τη βιοπληροφορική και την ιατρική ακριβείας, με διεθνείς διακρίσεις, πέντε πατέντες, εκτεταμένο εκπαιδευτικό έργο και ενεργό συμμετοχή σε εμβληματικές ερευνητικές δράσεις.',
+    bioEN:
+      'Aristeidis Iliopoulos is a Professor of Biology and Genetics at the Medical School of the National and Kapodistrian University of Athens (NKUA) and co-founder of the biotech spin-off company GENOSOPHY®. His work bridges molecular genetics, bioinformatics, and precision medicine, earning international recognition. He holds five patents, has an extensive teaching portfolio, and actively participates in groundbreaking research initiatives.'
   }
-  // {
-  //   slug: 'aristides-g-eliopoulos',
-  //   fullNameGR: 'Αριστείδης Γ. Ηλιόπουλος',
-  //   fullNameEN: 'Aristides G. Eliopoulos',
-  //   artisticName: '',
-  //   jobGR: 'Καθηγητής Βιολογίας & Γενετικής, Διευθυντής Εργαστηρίου Βιολογίας της Ιατρικής Σχολής του ΕΚΠΑ. Συνιδρυτής και Επιστημονικός Υπεύθυνος της εταιρείας-τεχνοβλαστού GENOSOPHY',
-  //   jobEN: 'Professor of Biology & Genetics, Head of Department of Biology, School of Medicine, NKUA, Co-founder and CSO of GENOSOPHY S.A. spin-off company.',
-  //   infoLinks: { facebook: ['https://www.facebook.com/eliopag'],
-  //    linkedIn: ['https://www.linkedin.com/in/eliopoulos-aristides-0586159a/'],
-  //    website: ['https://biology.med.uoa.gr', 'https://genosophy.gr', 'https://precision-medicine-cap.gr']
-  //    }
-  //   session: 0,
-  //   time: '',
-  //   talkCategory: '',
-  //   descriptionGR: '',
-  //   descriptionEN: '',
-  //   bioGR:
-  //     'Ενεργός απ’ τα τέλη της δεκαετίας του 90, ο Ζωγράφος ξεκίνησε να δισκογραφεί ως Solo καλλιτέχνης το 2013 με τον δίσκο ¨Δεν φοβήθηκα να ζήσω ενώ τον Δεκέμβριο του 2022 κυκλοφόρησε το ¨Πυρίτιδα και δυόσμος¨ μαζί με τον Wise Dopes. Έχει στο βιογραφικό του πολλές συνεργασίες με καλλιτέχνες εντός και εκτός του hip hop, ενώ αυτό που τον ξεχωρίζει είναι ο ιδιαίτερος στίχος του, σε συνδυασμό με τις εξίσου ιδιαίτερες παραγωγές του, που συνδέουν την παράδοση με το σήμερα.',
-  //   bioEN: ''
-  // },
   // {
   //   slug: 'evi-daeli',
   //   fullNameGR: 'Εύη Δαέλη',
