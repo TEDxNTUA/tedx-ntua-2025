@@ -13,7 +13,8 @@ import {
   VENUE_SPONSOR,
   SUPPORTERS,
   MEDIA_PARTNERS,
-  COMMUNITY_PARTNERS
+  COMMUNITY_PARTNERS,
+  MOBILE_APP_PROVIDER
 } from '@data';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -62,6 +63,7 @@ function PartnersPageComponent() {
     generateTimelineData('Partners', PARTNERS, 'partners'),
     generateTimelineData('Exclusive Air Transport Sponsor', EXCLUSIVE_AIR, 'exclusive-air'),
     generateTimelineData('Exclusive Burger Provider', EXCLUSIVE_BURGER, 'exclusive-burger'),
+    generateTimelineData('Mobile App Provider', MOBILE_APP_PROVIDER, 'mobile-app-providers'),
     generateTimelineData('Venue Sponsors', VENUE_SPONSOR, 'venue-sponsors'),
     generateTimelineData('Supporters', SUPPORTERS, 'supporters'),
     generateTimelineData('Media Partners', MEDIA_PARTNERS, 'media-partners'),

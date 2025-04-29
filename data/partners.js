@@ -171,6 +171,16 @@ export const VENUE_SPONSOR = [
   }
 ];
 
+export const MOBILE_APP_PROVIDER = [
+  {
+    slug: 'conferience',
+    name: 'Conferience',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  }
+];
+
 export const SUPPORTERS = [
   {
     slug: 'deepsea',

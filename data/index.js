@@ -12,7 +12,8 @@ import {
   VENUE_SPONSOR,
   SUPPORTERS,
   MEDIA_PARTNERS,
-  COMMUNITY_PARTNERS
+  COMMUNITY_PARTNERS,
+  MOBILE_APP_PROVIDER
 } from './partners';
 import {CONTENT_MAP} from './contentMap';
 import {ABOUTLIST} from './about';
@@ -33,6 +34,7 @@ export {
   SUPPORTERS,
   MEDIA_PARTNERS,
   COMMUNITY_PARTNERS,
+  MOBILE_APP_PROVIDER,
   CONTENT_MAP,
   ABOUTLIST
 };
