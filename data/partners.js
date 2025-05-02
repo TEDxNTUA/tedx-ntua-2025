@@ -274,13 +274,6 @@ export const SUPPORTERS = [
     infoLinks: {}
   },
   {
-    slug: 'ikea',
-    name: 'IKEA',
-    bioGR: '',
-    bioEN: '',
-    infoLinks: {}
-  },
-  {
     slug: 'ahmad-tea',
     name: 'Ahmad Tea',
     bioGR: '',
@@ -388,6 +381,13 @@ export const SUPPORTERS = [
   {
     slug: 'loumidis',
     name: 'Καφεκοπτεία Λουμίδης',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'ikea',
+    name: 'IKEA',
     bioGR: '',
     bioEN: '',
     infoLinks: {}

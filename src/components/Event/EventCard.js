@@ -24,6 +24,7 @@ function EventCard({host, type}) {
   let secondaryInfo = '';
   let imageUrl = '';
   let category = '';
+  let workshopBasePath = '';
 
   switch (type) {
     case 'speaker':
@@ -47,12 +48,18 @@ function EventCard({host, type}) {
       imageUrl = `/event/side-happenings/${slug}.jpg`;
       break;
     case 'experience-workshop':
-    case 'fundraising-workshop':
       color = 'blue';
-      name = host.companyName;
-      secondaryInfo = host.titleEN || host.titleGR;
-      const workshopBasePath = `${type}s`;
-      imageUrl = `/event/${workshopBasePath}s/${slug}.jpg`;
+      name = host.title;
+      secondaryInfo = host.artisticName || host.fullNameEN || host.fullNameGR;
+      workshopBasePath = `${type}s`;
+      imageUrl = `/event/${workshopBasePath}/${slug}.jpg`;
+      break;
+    case 'professional-workshop':
+      color = 'blue';
+      name = host.title;
+      secondaryInfo = host.companyName;
+      workshopBasePath = `${type}s`;
+      imageUrl = `/event/${workshopBasePath}/${slug}.jpg`;
       break;
     default:
       console.warn(`EventCard received unknown event type: ${type}`);

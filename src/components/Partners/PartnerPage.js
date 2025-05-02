@@ -31,7 +31,7 @@ const generateTimelineData = (title, sponsors, folder) => {
             alt={sponsor.name}
             width={500}
             height={500}
-            className="rounded-lg object-contain size-16 sm:size-32 md:size-44"
+            className="rounded-lg object-contain h-16 sm:h-32 md:h-44 w-auto"
           />
         ))}
       </>
