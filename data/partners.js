@@ -138,6 +138,20 @@ export const PARTNERS = [
     bioGR: '',
     bioEN: '',
     infoLinks: {}
+  },
+  {
+    slug: 'mamos',
+    name: 'Athenian Brewery',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'septona',
+    name: 'Septona',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
   }
 ];
 
@@ -218,6 +232,13 @@ export const SUPPORTERS = [
     infoLinks: {}
   },
   {
+    slug: 'eventora',
+    name: 'Eventora',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
     slug: 'olympos',
     name: 'ΟΛΥΜΠΟΣ',
     bioGR: '',
@@ -227,6 +248,13 @@ export const SUPPORTERS = [
   {
     slug: 'melissa',
     name: 'Melissa',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'corfu-villa-selection',
+    name: 'Corfu Villa Selection',
     bioGR: '',
     bioEN: '',
     infoLinks: {}
@@ -332,6 +360,34 @@ export const SUPPORTERS = [
   {
     slug: 'bakkar',
     name: 'Bakkar',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'ab-vasilopoulos',
+    name: 'ΑΒ Βασιλόπουλος',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'euro-vita-group',
+    name: 'Euro Vita Group',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'ion',
+    name: 'Ion',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'loumidis',
+    name: 'Καφεκοπτεία Λουμίδης',
     bioGR: '',
     bioEN: '',
     infoLinks: {}

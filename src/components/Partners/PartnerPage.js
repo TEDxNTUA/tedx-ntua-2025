@@ -62,7 +62,7 @@ function PartnersPageComponent() {
     generateTimelineData('Grand Sponsors', GRAND_SPONSORS, 'grand'),
     generateTimelineData('Partners', PARTNERS, 'partners'),
     generateTimelineData('Exclusive Air Transport Sponsor', EXCLUSIVE_AIR, 'exclusive-air'),
-    generateTimelineData('Exclusive Burger Provider', EXCLUSIVE_BURGER, 'exclusive-burger'),
+    generateTimelineData('Exclusive Lunch Provider', EXCLUSIVE_BURGER, 'exclusive-burger'),
     generateTimelineData('Mobile App Provider', MOBILE_APP_PROVIDER, 'mobile-app-providers'),
     generateTimelineData('Venue Sponsors', VENUE_SPONSOR, 'venue-sponsors'),
     generateTimelineData('Supporters', SUPPORTERS, 'supporters'),
