@@ -465,27 +465,27 @@ export const MEDIA_PARTNERS = [
   //   bioEN: '',
   //   infoLinks: {}
   // },
-  // {
-  //   slug: 'uni-ties',
-  //   name: 'uni-ties',
-  //   bioGR: '',
-  //   bioEN: '',
-  //   infoLinks: {}
-  // },
-  // {
-  //   slug: 'isws',
-  //   name: '@isws',
-  //   bioGR: '',
-  //   bioEN: '',
-  //   infoLinks: {}
-  // },
-  // {
-  //   slug: 'yperoxi-athina',
-  //   name: '@yperoxi_athina',
-  //   bioGR: '',
-  //   bioEN: '',
-  //   infoLinks: {}
-  // },
+  {
+    slug: 'uni-ties',
+    name: 'uni-ties',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'isws',
+    name: '@isws',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'yperoxi-athina',
+    name: '@yperoxi_athina',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
   {
     slug: 'i-tech-4-u',
     name: 'iTech4u',
@@ -499,21 +499,49 @@ export const MEDIA_PARTNERS = [
     bioGR: '',
     bioEN: '',
     infoLinks: {}
+  },
+  {
+    slug: 'uni-students',
+    name: 'UniStudents',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'tfc',
+    name: 'TFC Maganize',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'neopolis',
+    name: 'Neopolis.gr',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  // {
+  //   slug: 're-generation',
+  //   name: 'ReGeneration',
+  //   bioGR: '',
+  //   bioEN: '',
+  //   infoLinks: {}
+  // },
+  {
+    slug: 'ftina-tsigara',
+    name: '@ftinatsigara',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'monadikoi-anthropoi',
+    name: '@monadikoi.anthropoi',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
   }
-  // {
-  //   slug: 'uni-students',
-  //   name: 'UniStudents',
-  //   bioGR: '',
-  //   bioEN: '',
-  //   infoLinks: {}
-  // }
-  // {
-  //   slug: '',
-  //   name: '',
-  //   bioGR: '',
-  //   bioEN: '',
-  //   infoLinks: {}
-  // }
 ];
 
 export const COMMUNITY_PARTNERS = [
@@ -579,12 +607,68 @@ export const COMMUNITY_PARTNERS = [
     bioGR: '',
     bioEN: '',
     infoLinks: {}
-  }
+  },
+  {
+    slug: 'think-biz',
+    name: 'ThinkBiz',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'best-athens',
+    name: 'Best Athens',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
   // {
-  //   slug: '',
-  //   name: '',
+  //   slug: 'metsovio-travellers',
+  //   name: '@metsovio_travelers',
   //   bioGR: '',
   //   bioEN: '',
   //   infoLinks: {}
-  // }
+  // },
+  {
+    slug: 'oceanos',
+    name: 'Oceanos',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'we-lead',
+    name: 'WE LEAD',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'eulist',
+    name: 'EULiST',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'young-minds-nkua',
+    name: 'Young Minds NKUA',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'ieee-ntua',
+    name: 'IEEE NTUA',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'young-minds-ntua',
+    name: 'Young Minds NTUA',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  }
 ];
