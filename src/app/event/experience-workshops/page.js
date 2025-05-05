@@ -13,9 +13,9 @@ export default function ExperienceWorkshopsListPage() {
         <h1 className="text-synelixis-blue/90 text-3xl font-bold text-center">
           Explore our Experience Workshops
         </h1>
-        <p className="text-synelixis-blue/50 text-lg text-center ">
+        {/* <p className="text-synelixis-blue/50 text-lg text-center ">
           Stay tuned for more experience workshop announcements!
-        </p>
+        </p> */}
       </section>
 
       <EventGrid hosts={EXPERIENCE_WORKSHOPS} type={'experience-workshop'} />

@@ -49,27 +49,27 @@ export const EXPERIENCE_WORKSHOPS = [
       facebook: ['https://www.facebook.com/p/Pilgrim-Makers-hub-100069155687105/'],
       website: ['https://pilgrimathens.com', 'https://gr.pinterest.com/whodisioli/_saved/']
     }
+  },
+  {
+    slug: 'momix',
+    title: 'Molecular Mixology στην πράξη',
+    fullNameGR: '',
+    fullNameEN: 'MoMix',
+    artisticName: 'MoMix',
+    descriptionGR:
+      'Η δημιουργία ενός μενού cocktail εισάγοντας την επιστήμη στο bartending. Για μια ώρα 25 άτομα θα γίνουν μέλη της ομάδας του MoMix που για περισσότερα από 12 χρόνια ζει σε ένα molecular κόσμο.',
+    descriptionEN:
+      'For one hour, 25 participants will join the MoMix team — pioneers who have been living in a molecular world for over 12 years. Together, they will create a unique cocktail menu, blending science with bartending through molecular gastronomy techniques. An experience where creativity, imagination, and flavor collide!',
+    bioGR:
+      'Το MoMix προέρχεται από τις έννοιες της μοριακής μιξολογίας. Αξιοποιώντας τα ευρήματα της μοριακής επιστήμης αξιοποιούνται από τις τεχνικές του Bartending / Mixology για να δημιουργήσουν μια πρωτόγνωρη και γευστική εμπειρία. Η μοριακή μιξολογία είναι η χρήση χημικών ενώσεων για την ανάμειξη και τη διαμόρφωση συστατικών ώστε να αναδεικνύονται γεύσεις και αρώματα. Ο συνδυασμός του bartending και της ζαχαροπλαστικής δίνει την ευκαιρία να δοκιμάσουμε τις αισθήσεις. Τεχνικές όπως η σφαιροποίηση, η ζελατινοποίηση, η εξάτμιση, η χρήση ξηρού πάγου, υγρού αζώτου, υδροκολλοειδών και πολλών άλλων πρόσθετων τροφίμων δίνουν μια άλλη διάσταση σε ό,τι γνωρίζαμε μέχρι τώρα για τα ποτά.',
+    bioEN:
+      'MoMix is derived from the concepts of Molecular Mixology. Utilizing the findings of molecular science are harnessed by the techniques of Bar tending/ Mixology to create an unprecedented and tasty experience. Molecular Mixology is the use of chemical compounds to mix and shape ingredients to bring out flavors and aromas. The combination of bartending and confectionery give the opportunity to taste the senses. Techniques such as pelletizing, gelation, vaporization, the use of dry ice, liquid nitrogen, hydrocolloids and many other food additives give another dimension to what we have known until now about drinking beverages.',
+    infoLinks: {
+      instagram: ['https://www.instagram.com/momixbar'],
+      facebook: ['https://www.facebook.com/MoMixBarKerameikos'],
+      website: ['https://www.momixbar.com']
+    }
   }
-  // {
-  //   slug: 'molecular-mixology',
-  //   title: 'Molecular Mixology στην πράξη',
-  //   fullNameGR: '',
-  //   fullNameEN: 'MoMix',
-  //   artisticName: 'Pilgrim Maker’s Hub',
-  //   descriptionGR:
-  //     'Η δημιουργία ενός μενού cocktail εισάγοντας την επιστήμη στο bartending. Για μια ώρα 25 άτομα θα γίνουν μέλη της ομάδας του MoMix που για περισσότερα από 12 χρόνια ζει σε ένα molecular κόσμο.',
-  //   descriptionEN:
-  //     'For one hour, 25 participants will join the MoMix team — pioneers who have been living in a molecular world for over 12 years. Together, they will create a unique cocktail menu, blending science with bartending through molecular gastronomy techniques. An experience where creativity, imagination, and flavor collide!',
-  //   bioGR:
-  //     'Το MoMix προέρχεται από τις έννοιες της μοριακής μιξολογίας. Αξιοποιώντας τα ευρήματα της μοριακής επιστήμης αξιοποιούνται από τις τεχνικές του Bartending / Mixology για να δημιουργήσουν μια πρωτόγνωρη και γευστική εμπειρία. Η μοριακή μιξολογία είναι η χρήση χημικών ενώσεων για την ανάμειξη και τη διαμόρφωση συστατικών ώστε να αναδεικνύονται γεύσεις και αρώματα. Ο συνδυασμός του bartending και της ζαχαροπλαστικής δίνει την ευκαιρία να δοκιμάσουμε τις αισθήσεις. Τεχνικές όπως η σφαιροποίηση, η ζελατινοποίηση, η εξάτμιση, η χρήση ξηρού πάγου, υγρού αζώτου, υδροκολλοειδών και πολλών άλλων πρόσθετων τροφίμων δίνουν μια άλλη διάσταση σε ό,τι γνωρίζαμε μέχρι τώρα για τα ποτά.',
-  //   bioEN:
-  //     'MoMix is derived from the concepts of Molecular Mixology. Utilizing the findings of molecular science are harnessed by the techniques of Bar tending/ Mixology to create an unprecedented and tasty experience. Molecular Mixology is the use of chemical compounds to mix and shape ingredients to bring out flavors and aromas. The combination of bartending and confectionery give the opportunity to taste the senses. Techniques such as pelletizing, gelation, vaporization, the use of dry ice, liquid nitrogen, hydrocolloids and many other food additives give another dimension to what we have known until now about drinking beverages.',
-  //   infoLinks: {
-  //     instagram: ['https://www.instagram.com/momixbar'],
-  //     facebook: ['https://www.facebook.com/MoMixBarKerameikos'],
-  //     website: ['https://www.momixbar.com']
-  //   }
-  // }
   // {
   //   slug: 'mount-moss',
   //   title: 'Mount Moss',
