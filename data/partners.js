@@ -280,13 +280,13 @@ export const SUPPORTERS = [
     bioEN: '',
     infoLinks: {}
   },
-  {
-    slug: 'atflya',
-    name: 'AtFlya',
-    bioGR: '',
-    bioEN: '',
-    infoLinks: {}
-  },
+  // {
+  //   slug: 'atflya',
+  //   name: 'AtFlya',
+  //   bioGR: '',
+  //   bioEN: '',
+  //   infoLinks: {}
+  // },
   {
     slug: 'cavino',
     name: 'Cavino',
@@ -385,6 +385,71 @@ export const SUPPORTERS = [
     bioEN: '',
     infoLinks: {}
   },
+  {
+    slug: 'kellogs',
+    name: 'Kellog`s',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'mama-crepa',
+    name: 'Mama Crepa',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'again',
+    name: 'Again',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'everest',
+    name: 'Everest',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+
+  {
+    slug: 'kontos',
+    name: 'Kontos',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'kungi',
+    name: 'Kungi',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'photo-booth-van',
+    name: 'Photo Booth Van',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'starbucks',
+    name: 'Starbucks',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'uni-out',
+    name: 'Uni Out',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+
   {
     slug: 'ikea',
     name: 'IKEA',
@@ -553,6 +618,13 @@ export const COMMUNITY_PARTNERS = [
     infoLinks: {}
   },
   {
+    slug: 'hustle-hours',
+    name: 'Hustle Hours',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
     slug: 'ath-chemists',
     name: 'AthChemists',
     bioGR: '',
@@ -667,6 +739,20 @@ export const COMMUNITY_PARTNERS = [
   {
     slug: 'young-minds-ntua',
     name: 'Young Minds NTUA',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'ieee-pes',
+    name: 'IEEE PES',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'ras',
+    name: 'Ras',
     bioGR: '',
     bioEN: '',
     infoLinks: {}
