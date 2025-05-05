@@ -12,9 +12,8 @@ function EventCard({host, type}) {
 
   const session = host.session || '';
   const time = host.time;
-  const bio = host.bioGR || host.bioEN || 'No biography available.';
-  const description =
-    host.descriptionGR || host.descriptionEN || 'Η περιγραφή δεν είναι διαθέσιμη.';
+  let bio = host.bioGR || host.bioEN || 'No biography available.';
+  let description = host.descriptionGR || host.descriptionEN || 'Η περιγραφή δεν είναι διαθέσιμη.';
   const slug = host.slug;
   const socialMediaLinks = host.infoLinks;
 
@@ -42,11 +41,6 @@ function EventCard({host, type}) {
       imageUrl = `/event/performances/${slug}.jpg`;
       category = host.performanceTypeEN || host.performanceTypeGR || '';
       break;
-    case 'side-happening':
-      color = 'blue';
-      name = host.name;
-      imageUrl = `/event/side-happenings/${slug}.jpg`;
-      break;
     case 'experience-workshop':
       color = 'blue';
       name = host.title;
@@ -60,6 +54,15 @@ function EventCard({host, type}) {
       secondaryInfo = host.companyName;
       workshopBasePath = `${type}s`;
       imageUrl = `/event/${workshopBasePath}/${slug}.jpg`;
+      break;
+    case 'side-happening':
+      color = 'blue';
+      name = host.title;
+      secondaryInfo = host.fullNameEN || host.fullNameGR || '';
+      workshopBasePath = `${type}s`;
+      imageUrl = `/event/side-happenings/${slug}.jpg`;
+      bio = host.bioGR || host.bioEN || host.descriptionGR || host.descriptionEN || '';
+      description = '';
       break;
     default:
       console.warn(`EventCard received unknown event type: ${type}`);
