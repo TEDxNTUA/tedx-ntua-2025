@@ -67,7 +67,7 @@ export default function Home() {
             .fill(0)
             .map((_, i) => (
               <span key={i}>
-                <span className={styles.speakers}>Speakers:</span> 10 –{' '}
+                <span className={styles.speakers}>Speakers:</span> 11 –{' '}
                 <span className={styles.performances}>Performances:</span> 5 –{' '}
                 <span className={styles.workshops}>Workshops:</span> 8
               </span>
