@@ -442,13 +442,6 @@ export const SUPPORTERS = [
     bioEN: '',
     infoLinks: {}
   },
-  {
-    slug: 'uni-out',
-    name: 'Uni Out',
-    bioGR: '',
-    bioEN: '',
-    infoLinks: {}
-  },
 
   {
     slug: 'ikea',
@@ -482,6 +475,13 @@ export const MEDIA_PARTNERS = [
     infoLinks: {}
   },
   {
+    slug: 'foititis-stigmi',
+    name: '@foititistigmh',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
     slug: 'epixeiro',
     name: 'Epixeiro',
     bioGR: '',
@@ -502,13 +502,13 @@ export const MEDIA_PARTNERS = [
     bioEN: '',
     infoLinks: {}
   },
-  // {
-  //   slug: 'startup',
-  //   name: 'Startup',
-  //   bioGR: '',
-  //   bioEN: '',
-  //   infoLinks: {}
-  // },
+  {
+    slug: 'startup-gr',
+    name: 'Startup',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
   {
     slug: 'antivirus',
     name: 'Antivirus',
@@ -523,13 +523,13 @@ export const MEDIA_PARTNERS = [
     bioEN: '',
     infoLinks: {}
   },
-  // {
-  //   slug: 'skywalker',
-  //   name: 'Skywalker',
-  //   bioGR: '',
-  //   bioEN: '',
-  //   infoLinks: {}
-  // },
+  {
+    slug: 'sky-walker',
+    name: 'Skywalker',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
   {
     slug: 'uni-ties',
     name: 'uni-ties',
@@ -603,6 +603,13 @@ export const MEDIA_PARTNERS = [
   {
     slug: 'monadikoi-anthropoi',
     name: '@monadikoi.anthropoi',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'uni-out',
+    name: 'Uni Out',
     bioGR: '',
     bioEN: '',
     infoLinks: {}
@@ -753,6 +760,34 @@ export const COMMUNITY_PARTNERS = [
   {
     slug: 'ras',
     name: 'Ras',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'panorama',
+    name: 'Πανόραμα Επιχειρηματικότητα',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'odyceo',
+    name: 'Odyceo',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'she-tells',
+    name: 'She Tells',
+    bioGR: '',
+    bioEN: '',
+    infoLinks: {}
+  },
+  {
+    slug: 'skaki-ntua',
+    name: 'Skaki NTUA',
     bioGR: '',
     bioEN: '',
     infoLinks: {}
