@@ -12,7 +12,7 @@ function EventCard({host, type}) {
 
   const session = host.session || '';
   const time = host.time;
-  let bio = host.bioGR || host.bioEN || 'No biography available.';
+  let bio = host.bioGR || host.bioEN || '';
   let description = host.descriptionGR || host.descriptionEN || 'Η περιγραφή δεν είναι διαθέσιμη.';
   const slug = host.slug;
   const socialMediaLinks = host.infoLinks;
