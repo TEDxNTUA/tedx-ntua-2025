@@ -10,7 +10,9 @@ export default function PerformancesListPgae() {
   return (
     <div>
       <section className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-synelixis-blue/90 text-3xl font-bold text-center">Live Performances</h1>
+        <h1 className="text-synelixis-blue/90 text-3xl font-bold text-center py-4">
+          Live Performances
+        </h1>
         {/* <p className="text-synelixis-blue/50 text-lg text-center ">
           Stay tuned for more performance announcements!
         </p> */}

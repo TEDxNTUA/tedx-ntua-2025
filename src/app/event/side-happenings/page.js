@@ -10,7 +10,7 @@ export default function ExperienceWorkshopsListPage() {
   return (
     <div>
       <section className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-synelixis-blue/90 text-3xl font-bold text-center">
+        <h1 className="text-synelixis-blue/90 text-3xl font-bold text-center py-4">
           Explore our Side Happenings
         </h1>
         {/* <p className="text-synelixis-blue/50 text-lg text-center ">

@@ -10,12 +10,12 @@ export default function ExperienceWorkshopsListPage() {
   return (
     <div>
       <section className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-synelixis-blue/90 text-3xl font-bold text-center">
+        <h1 className="text-synelixis-blue/90 text-3xl font-bold text-center py-4">
           Explore our Professional Workshops
         </h1>
-        <p className="text-synelixis-blue/50 text-lg text-center ">
+        {/* <p className="text-synelixis-blue/50 text-lg text-center ">
           Stay tuned for more experience workshop announcements!
-        </p>
+        </p> */}
       </section>
 
       <EventGrid hosts={PROFESSIONAL_WORKSHOPS} type={'professional-workshop'} />
