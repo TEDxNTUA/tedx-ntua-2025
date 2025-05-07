@@ -67,7 +67,7 @@ const MobileSchedule = () => {
                     </div>
                   ))}
               </main>
-            ) : (
+            ) : session.type === 'break' ? (
               <main className="w-full flex flex-col">
                 <div
                   className={`$${styles.borderDashed} grid grid-cols-4 bg-synelixis-blue py-4 px-2 font-semibold text-lg lg:text-xl`}
@@ -104,6 +104,31 @@ const MobileSchedule = () => {
                         {happening.timeSpecificHappenings && happening.timeSpecificHappenings[2]
                           ? happening.timeSpecificHappenings[2].title
                           : '---'}
+                      </span>
+                    </div>
+                  ))}
+              </main>
+            ) : (
+              <main className="w-full flex flex-col">
+                <div className="grid grid-cols-4 bg-synelixis-blue py-4 px-2 font-semibold text-lg lg:text-xl">
+                  <span className="mx-auto text-center">Time</span>
+                  <span className="col-span-3 mx-auto text-center"></span>
+                </div>
+                {session.allHappenings &&
+                  session.allHappenings.map((happening, happeningIndex) => (
+                    <div
+                      key={
+                        happening.slug !== undefined
+                          ? `happening-${happening.slug}-${happeningIndex}`
+                          : `happening-idx-${sessionIndex}-${happeningIndex}`
+                      }
+                      className={`grid grid-cols-4 items-center py-3 px-2 border-b border-gray-200 last:border-b-0 text-md lg:text-lg`}
+                    >
+                      <span className="mx-auto text-center font-medium text-white">
+                        {happening.time}
+                      </span>
+                      <span className="text-white col-span-3 mx-auto text-center px-2">
+                        {happening.timeSpecificHappenings?.[0]?.title}
                       </span>
                     </div>
                   ))}

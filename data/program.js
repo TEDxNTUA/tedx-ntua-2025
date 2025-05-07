@@ -15,6 +15,23 @@ const HAPPENING_TYPE_MAPPING = {
 
 export const PROGRAM = [
   {
+    title: 'Registration',
+    type: 'general',
+    allHappenings: [
+      {
+        time: '10:00-11:20',
+        timeSpecificHappenings: [
+          {
+            type: HAPPENING_TYPE_MAPPING.OTHER,
+            title: 'Registration',
+            slug: 'registration',
+            room: ROOM_MAPPING.ROOM_1
+          }
+        ]
+      }
+    ]
+  },
+  {
     title: 'Converge - 1st Session',
     type: 'session',
     allHappenings: [
@@ -167,7 +184,7 @@ export const PROGRAM = [
     ]
   },
   {
-    title: '3rd Session',
+    title: 'Evolve - 3rd Session',
     type: 'session',
     allHappenings: [
       {
@@ -217,7 +234,7 @@ export const PROGRAM = [
     ]
   },
   {
-    title: '3rd Break',
+    title: '3rd Break (1.15 h)',
     type: 'break',
     allHappenings: [
       {
@@ -246,7 +263,7 @@ export const PROGRAM = [
     ]
   },
   {
-    title: '4th Session',
+    title: 'Synelixis - 4th Session',
     type: 'session',
     allHappenings: [
       {
@@ -294,35 +311,35 @@ export const PROGRAM = [
         ]
       }
     ]
+  },
+  {
+    title: 'After Party',
+    type: 'general',
+    allHappenings: [
+      {
+        time: '19:55-20:10',
+        timeSpecificHappenings: [
+          {
+            type: HAPPENING_TYPE_MAPPING.OTHER,
+            title: 'Closing',
+            slug: 'closing',
+            room: ROOM_MAPPING.ROOM_1
+          }
+        ]
+      },
+      {
+        time: '20:10-20:25',
+        timeSpecificHappenings: [
+          {
+            type: HAPPENING_TYPE_MAPPING.OTHER,
+            title: 'After Party',
+            slug: 'after-party',
+            room: ROOM_MAPPING.ROOM_1
+          }
+        ]
+      }
+    ]
   }
-  // {
-  //   title: 'After Party',
-  //   type: 'general',
-  //   allHappenings: [
-  //     {
-  //       time: '19:55-20:10',
-  //       timeSpecificHappenings: [
-  //         {
-  //           type: HAPPENING_TYPE_MAPPING.OTHER,
-  //           title: 'Closing',
-  //           slug: 'closing',
-  //           room: ROOM_MAPPING.ROOM_1
-  //         }
-  //       ]
-  //     },
-  //     {
-  //       time: '20:10-20:25',
-  //       timeSpecificHappenings: [
-  //         {
-  //           type: HAPPENING_TYPE_MAPPING.OTHER,
-  //           title: 'After Party',
-  //           slug: 'after-party',
-  //           room: ROOM_MAPPING.ROOM_1
-  //         }
-  //       ]
-  //     }
-  //   ]
-  // }
 ];
 
 // export const PROGRAM = [
