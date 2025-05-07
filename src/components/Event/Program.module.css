@@ -1,0 +1,17 @@
+.titleWith {
+  border: none;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #f1be3d 40%, #ed6d23 100%);
+  border-image-slice: 1;
+}
+
+.borderDashed {
+  border: none;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, #f1be3d 40%, #ed6d23 100%);
+  border-image-slice: 1;
+}
+
+/* 'synelixis-blue': '#001a32',
+'synelixis-orange': '#ed6d23', */
+/* 'synelixis-yellow': '#f1be3d' */
