@@ -6,7 +6,7 @@
 //   performanceTypeGR: string,
 //   performanceTypeEN: string,
 //   infoLinks: string[],
-//   session: number,
+//   session: 'Session n'umber,
 //   time: string,
 //   descriptionGR: string,
 //   descriptionEN: string,
@@ -28,6 +28,8 @@ export const PERFORMANCES = [
         'https://www.instagram.com/daikosalexandros/'
       ]
     },
+    session: 'Session 3',
+    time: '16:15 - 16:30',
     performanceTypeGR: 'Τραγούδι',
     performanceTypeEN: 'Band & Musician',
     descriptionGR:
@@ -54,6 +56,8 @@ export const PERFORMANCES = [
         'https://www.instagram.com/maria_blossoms'
       ]
     },
+    session: 'Session 3',
+    time: '17:10 - 17:25',
     performanceTypeGR: 'Χορός & Τραγούδι',
     performanceTypeEN: 'Dancer/Choreographer & Singer/Performer',
     descriptionGR:
@@ -76,6 +80,8 @@ export const PERFORMANCES = [
         'https://www.instagram.com/spirosparaskevakos'
       ]
     },
+    session: 'Session 2',
+    time: '13:45 - 14:00',
     performanceTypeGR: 'Τραγούδι',
     performanceTypeEN: 'Singer/Songwriter & Performer/Songwriter',
     descriptionGR:
@@ -99,6 +105,8 @@ export const PERFORMANCES = [
         'https://www.instagram.com/werraki'
       ]
     },
+    session: 'Session 1',
+    time: '11:20 - 11:40',
     performanceTypeGR: 'Τραγούδι',
     performanceTypeEN: 'Musicians',
     descriptionGR:
@@ -117,6 +125,8 @@ export const PERFORMANCES = [
     infoLinks: {
       instagram: ['https://www.instagram.com/papazo_/', 'https://www.instagram.com/amalsverse']
     },
+    session: 'Session 4',
+    time: '19:40 - 19:55',
     performanceTypeGR: 'Τραγούδι',
     performanceTypeEN: 'Music Producer/ Singer & Singer/ Songwriter',
     descriptionGR:

@@ -136,7 +136,7 @@ function Modal({open, onClose, displayInfo}) {
             <section id="happening-info">
               <p className="text-sm text-synelixis-blue/50 mb-2 uppercase tracking-wider">
                 {displayInfo.happening.category}
-                {displayInfo.happening.session ? ` | Session ${displayInfo.happening.session}` : ''}
+                {displayInfo.happening.session ? ` | ${displayInfo.happening.session}` : ''}
                 {displayInfo.happening.time ? ` | ${displayInfo.happening.time}` : ''}
               </p>
               <div

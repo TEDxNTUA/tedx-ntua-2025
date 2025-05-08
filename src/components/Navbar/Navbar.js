@@ -6,7 +6,7 @@ import NavLink from './NavLink';
 import SocialMediaNav from './SocialMediaNav';
 
 const eventLinks = [
-  // {href: '/event/program', title: 'Program'},
+  {href: '/event/program', title: 'Program'},
   {href: '/event/speakers', title: 'Speakers'},
   {href: '/event/performances', title: 'Performances'},
   {href: '/event/professional-workshops', title: 'Professional Workshops'},

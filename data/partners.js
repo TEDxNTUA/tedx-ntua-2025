@@ -117,6 +117,14 @@ export const PARTNERS = [
   {
     slug: 'septona',
     name: 'Septona'
+  },
+  {
+    slug: 'kleidarithmos',
+    name: 'Εκδόσεις Κλειδάριθμος'
+  },
+  {
+    slug: 'ben-and-jerry',
+    name: "Ben & Jerry's"
   }
 ];
 

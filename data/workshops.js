@@ -28,7 +28,9 @@ export const EXPERIENCE_WORKSHOPS = [
       'Sotiris Fokeas (b: 1989) a.k.a. “SOTEUR” is a multidisciplinary artist based in Athens, Greece. He graduated from Athens School of Fine Arts (ASFA) in 2013 and from the Master in Fine Arts Program of ASFA in 2020. His work spans street art, conceptual installations, and digital culture. Known for his bold and vibrant visuals, he explores the boundaries between public and private spaces, blending physical and digital mediums to create a unique artistic language.His practice combines neo-pop art aesthetics with playful commentary, challenging traditional notions of art and audience engagement. From large-scale urban murals to social media experiments, Soteur’s work invites viewers to interact, reflect, and find humor in the unexpected. Soteur has exhibited his work both locally and internationally, with a portfolio that includes 4 solo and plenty of group shows. His projects often extend beyond the gallery space, embracing the dynamic interplay of contemporary art, digital platforms, and cultural trends. Rooted in a passion for connecting with people through creativity, Soteur continues to redefine his craft, inspiring conversations around identity, community, and the evolving nature of art in the modern age.',
     infoLinks: {
       instagram: ['https://www.instagram.com/soteur']
-    }
+    },
+    session: 'Break 2',
+    time: '15:00 - 16:15'
   },
   {
     slug: 'weaving',
@@ -48,7 +50,9 @@ export const EXPERIENCE_WORKSHOPS = [
       instagram: ['https://www.instagram.com/pilgrim_makershub/'],
       facebook: ['https://www.facebook.com/p/Pilgrim-Makers-hub-100069155687105/'],
       website: ['https://pilgrimathens.com', 'https://gr.pinterest.com/whodisioli/_saved/']
-    }
+    },
+    session: 'Break 1',
+    time: '12:25 - 13:45'
   },
   {
     slug: 'momix',
@@ -68,7 +72,9 @@ export const EXPERIENCE_WORKSHOPS = [
       instagram: ['https://www.instagram.com/momixbar'],
       facebook: ['https://www.facebook.com/MoMixBarKerameikos'],
       website: ['https://www.momixbar.com']
-    }
+    },
+    session: 'Break 3',
+    time: '17:25 - 18:40'
   }
   // {
   //   slug: 'mount-moss',
@@ -116,7 +122,9 @@ export const PROFESSIONAL_WORKSHOPS = [
       facebook: ['https://www.facebook.com/DereeTheAmericanCollegeOfGreece/'],
       instagram: ['https://www.instagram.com/deree_acg'],
       youtube: ['https://www.youtube.com/user/DereeCollegeTube']
-    }
+    },
+    session: 'Break 1',
+    time: '12:25 - 13:45'
   },
   {
     slug: 'oliver-wyman',
@@ -135,7 +143,9 @@ export const PROFESSIONAL_WORKSHOPS = [
       facebook: ['https://www.facebook.com/oliverwyman'],
       instagram: ['https://www.instagram.com/oliverwymanconsulting'],
       youtube: ['https://www.youtube.com/oliverwyman']
-    }
+    },
+    session: 'Break 2',
+    time: '15:00 - 16:15'
   },
   {
     slug: 'dei',
@@ -147,7 +157,9 @@ export const PROFESSIONAL_WORKSHOPS = [
     descriptionGR:
       'Αλέξιος Παΐζης, Αναπληρωτής Διευθύνων Σύμβουλος, Επικεφαλής συμβατικής παραγωγής Ομίλου ΔΕΗ Ο Αλέξης Παΐζης είναι Αναπληρωτής Διευθύνων Σύμβουλος της ΔΕΗ για τις δραστηριότητες σχετικές με τη συμβατική παραγωγή. Υπό την ευθύνη του εντάσσονται η ανάπτυξη, κατασκευή και λειτουργία όλων των συμβατικών θερμικών, υδροηλεκτρικών, αντλιοθερμικών σταθμών καθώς και υπηρεσίες συνοδείας σταθμών. Διαθέτει πτυχίο και διδακτορικό στη Μηχανολογία και Μεταπτυχιακό (MSc) στη Ναυτιλιακή Μηχανολογία. Κατά την 20ετή και πλέον καριέρα του στην Ελλάδα και το εξωτερικό, κατείχε διάφορες θέσεις ευθύνης στον τομέα της λειτουργίας, του μηχανολογικού σχεδιασμού, της κατασκευής, της διαχείρισης έργων και της ανάπτυξης στους τομείς της Ενέργειας και του Περιβάλλοντος.',
     descriptionEN: '',
-    infoLinks: {website: ['https://www.ppcgroup.com/']}
+    infoLinks: {website: ['https://www.ppcgroup.com/']},
+    session: 'Break 2',
+    time: '15:00 - 16:15'
   },
   {
     slug: 'archidoron',
@@ -162,7 +174,9 @@ export const PROFESSIONAL_WORKSHOPS = [
     infoLinks: {
       linkedIn: ['https://nl.linkedin.com/company/archirodon-group-n-v-'],
       website: ['https://careers.smartrecruiters.com/ArchirodonGroup']
-    }
+    },
+    session: 'Break 3',
+    time: '17:25 - 18:40'
   },
   {
     slug: 'be-wise',
@@ -178,6 +192,8 @@ export const PROFESSIONAL_WORKSHOPS = [
       instagram: ['https://www.instagram.com/bewisesolutions/'],
       facebook: ['https://www.facebook.com/bewisesolutions'],
       linkedIn: ['https://www.linkedin.com/company/bewisesolutions/about/?viewAsMember=true']
-    }
+    },
+    session: 'Break 3',
+    time: '17:25 - 18:40'
   }
 ];

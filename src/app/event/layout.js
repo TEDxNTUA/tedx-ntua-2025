@@ -1,4 +1,4 @@
-import EventFilterNav from '@components/EventFilterNav'; // Adjust path if needed
+import EventFilterNav from '@src/components/Event/EventFilterNav';
 
 export default function EventLayout({children}) {
   return (
