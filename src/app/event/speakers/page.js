@@ -11,7 +11,7 @@ export default function SpeakersListPage() {
     <div>
       <section className="flex flex-col items-center justify-center gap-4">
         <h1 className="text-synelixis-blue/90 text-3xl font-bold text-center py-4">
-          Meet our Speakers
+          Meet our Hostess & Speakers
         </h1>
         {/* <p className="text-synelixis-blue/50 text-lg text-center ">
           Stay tuned for more speaker announcements!

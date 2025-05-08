@@ -13,7 +13,7 @@ function EventCard({host, type}) {
   const session = host.session || '';
   const time = host.time;
   let bio = host.bioGR || host.bioEN || '';
-  let description = host.descriptionGR || host.descriptionEN || 'Η περιγραφή δεν είναι διαθέσιμη.';
+  let description = host.descriptionGR || host.descriptionEN || '';
   const slug = host.slug;
   const socialMediaLinks = host.infoLinks;
 
@@ -27,7 +27,7 @@ function EventCard({host, type}) {
 
   switch (type) {
     case 'speaker':
-      color = 'yellow';
+      color = host.slug !== 'evi-daeli' ? 'yellow' : '';
       name = host.fullNameEN || host.artisticName;
       artisticName = host.artisticName;
       secondaryInfo = host.jobEN || host.jobGR;

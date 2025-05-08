@@ -135,9 +135,9 @@ function Modal({open, onClose, displayInfo}) {
           {displayInfo.happening && (
             <section id="happening-info">
               <p className="text-sm text-synelixis-blue/50 mb-2 uppercase tracking-wider">
-                {displayInfo.happening.category}
-                {displayInfo.happening.session ? ` | ${displayInfo.happening.session}` : ''}
+                {displayInfo.happening.session ? `${displayInfo.happening.session}` : ''}
                 {displayInfo.happening.time ? ` | ${displayInfo.happening.time}` : ''}
+                {displayInfo.happening.category ? ` | ${displayInfo.happening.category}` : ''}
               </p>
               <div
                 className="max-h-[20vh] overflow-y-auto modal-scrollable-content pr-2 rounded"
