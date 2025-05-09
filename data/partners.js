@@ -504,9 +504,9 @@ export const COMMUNITY_PARTNERS = [
   {
     slug: 'odyceo',
     name: 'Odyceo'
+  },
+  {
+    slug: 'elsa-athens',
+    name: 'Elsa Athens'
   }
-  // {
-  //   slug: 'elsa-athens',
-  //   name: 'Elsa Athens'
-  // }
 ];
