@@ -2,7 +2,7 @@
 import Navbar from '@components/Navbar/Navbar';
 import Footer from '@components/Footer/Footer';
 import ClientScrollProvider from './ClientScrollProvider';
-import MarketingModal from '@components/MarketingModal';
+// import MarketingModal from '@components/MarketingModal';
 import './globals.css';
 
 export const metadata = {
@@ -33,7 +33,7 @@ export default function RootLayout({children}) {
         {/* only inside here do we enable client‑side effects */}
         <ClientScrollProvider>
           <main className="max-w-[2000px] mx-auto">{children}</main>
-          <MarketingModal />
+          {/* <MarketingModal /> */}
         </ClientScrollProvider>
         <div id="portal"></div>
         <Footer />
