@@ -7,3 +7,6 @@ COPY . .
 EXPOSE 3000
 RUN npm run build
 CMD npm run start
+
+#CMD npm run dev 
+#ONLY IN DEVELOPMENT...IF THIS WORKS IT DOESN'T MEAN ITS OK TO PUSH
