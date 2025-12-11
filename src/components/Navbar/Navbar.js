@@ -414,7 +414,7 @@ export default function Navbar() {
             </div>
           </li>
           {/* --- End Desktop About Dropdown --- */}
-          <li>
+          {/* <li>
             <a
               href="https://www.eventora.com/en/Events/tedxntua2025"
               target="_blank"
@@ -422,7 +422,7 @@ export default function Navbar() {
             >
               <img className="ticket h-[60px]" src="/ticket-synelixis.png" alt="ticket"></img>
             </a>{' '}
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>
