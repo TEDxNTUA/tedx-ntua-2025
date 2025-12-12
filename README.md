@@ -1,4 +1,9 @@
+# FIRST THINGS FIRST
 You need to have installed docker before anything else below!
+ALSO THIS IS NOT YET HOSTED FROM THE GITHUB PAGE ...PLEASE CONTACT WITH GiannisTsagkaropoulos IF ANY ERROR OCCURS.
+HE IS HOSTING THE SITE RIGHT NOW AND THE SITE IS NOT HOSTED FROM IN HERE DIRECTLY!!!
+# 
+
 
 You can start this page using:
 
