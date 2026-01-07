@@ -1,22 +1,22 @@
 'use client';
-import {useState, useEffect, useRef} from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 import NavLink from './NavLink';
 import SocialMediaNav from './SocialMediaNav';
 
 const eventLinks = [
-  {href: '/event/program', title: 'Program'},
-  {href: '/event/speakers', title: 'Speakers'},
-  {href: '/event/performances', title: 'Performances'},
-  {href: '/event/professional-workshops', title: 'Professional Workshops'},
-  {href: '/event/experience-workshops', title: 'Experience Workshops'},
-  {href: '/event/side-happenings', title: 'Side Happenings'}
+  { href: '/event/program', title: 'Program' },
+  { href: '/event/speakers', title: 'Speakers' },
+  { href: '/event/performances', title: 'Performances' },
+  { href: '/event/professional-workshops', title: 'Professional Workshops' },
+  { href: '/event/experience-workshops', title: 'Experience Workshops' },
+  { href: '/event/side-happenings', title: 'Side Happenings' }
 ];
 
 const aboutLinks = [
-  {href: '/about/organization-and-history', title: 'Organization & History'},
-  {href: '/about/team', title: 'The Team'}
+  { href: '/about/organization-and-history', title: 'Organization & History' },
+  { href: '/about/team', title: 'The Team' }
 ];
 
 export default function Navbar() {
@@ -84,17 +84,33 @@ export default function Navbar() {
   return (
     <nav className={`h-[65px] bg-black flex sticky top-0 z-50`}>
       <div className="max-w-[1600px] flex items-center justify-between w-[85%] xl:w-[90%] mx-auto">
-        {/* Logo */}
-        <Link href="/" onClick={drawerIsOpen ? closeDrawer : undefined} className="z-50">
-          {' '}
-          {/* Ensure logo is clickable */}
-          <img
-            src="/tedxntua-logo.png"
-            className="w-auto h-[40px] object-contain cursor-pointer"
-            alt="TEDxNTUA Logo"
-          />
-        </Link>
-
+        <div className="flex items-center gap-6"> {/* This gap-6 controls the red rectangle space */}
+          {/* Logo */}
+          <Link href="/" onClick={drawerIsOpen ? closeDrawer : undefined} className="z-50">
+            {' '}
+            {/* Ensure logo is clickable */}
+            <img
+              src="/tedxntua-logo.png"
+              className="h-[35px] w-auto transition-transform duration-200 hover:scale-110 cursor-pointer"
+              alt="TEDxNTUA Logo"
+              onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+              onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            />
+          </Link>
+          <a
+            href="https://www.tedxntua.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/archive.png"
+              alt="TEDxNTUA Archive"
+              className="h-[35px] w-auto transition-transform duration-200 hover:scale-110 cursor-pointer"
+              onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+              onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            />
+          </a>
+        </div>
         {/* --- Burger for Mobile Nav --- */}
         <div id="burger" className="block lg:hidden z-50">
           {' '}
@@ -109,9 +125,8 @@ export default function Navbar() {
               className={`${hamburgerLine} ${drawerIsOpen ? 'translate-y-[9px] rotate-45' : ''}`}
             />
             <div
-              className={`${hamburgerLine} ${
-                drawerIsOpen ? 'origin-center scale-x-0 opacity-0' : ''
-              }`}
+              className={`${hamburgerLine} ${drawerIsOpen ? 'origin-center scale-x-0 opacity-0' : ''
+                }`}
             />
             <div
               className={`${hamburgerLine} ${drawerIsOpen ? '-translate-y-[9px] -rotate-45' : ''}`}
@@ -124,18 +139,16 @@ export default function Navbar() {
           onClick={closeDrawer}
           id="underlay"
           aria-hidden="true"
-          className={`lg:hidden fixed inset-0 top-[65px] bg-black/40 transition-opacity duration-300 ${
-            drawerIsOpen ? 'opacity-100 pointer-events-auto z-30' : 'opacity-0 pointer-events-none'
-          }`}
+          className={`lg:hidden fixed inset-0 top-[65px] bg-black/40 transition-opacity duration-300 ${drawerIsOpen ? 'opacity-100 pointer-events-auto z-30' : 'opacity-0 pointer-events-none'
+            }`}
         ></div>
 
         {/* --- Mobile Drawer Menu --- */}
         <div
           id="mobile-menu"
           className={`fixed bg-black w-[300px] top-[65px] right-0 z-40 h-[calc(100vh-65px)] overflow-y-auto lg:hidden
-          ${
-            drawerIsOpen ? 'translate-x-0' : 'translate-x-full'
-          } transition-transform duration-500 ease-in-out
+          ${drawerIsOpen ? 'translate-x-0' : 'translate-x-full'
+            } transition-transform duration-500 ease-in-out
           `}
           role="dialog"
           aria-modal="true"
@@ -167,9 +180,8 @@ export default function Navbar() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className={`w-5 h-5 transition-transform ${
-                      mobileEventDropdownIsOpen ? 'rotate-180' : ''
-                    }`}
+                    className={`w-5 h-5 transition-transform ${mobileEventDropdownIsOpen ? 'rotate-180' : ''
+                      }`}
                   >
                     <path
                       fillRule="evenodd"
@@ -180,9 +192,8 @@ export default function Navbar() {
                 </button>
                 {/* Sub-menu */}
                 <div
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    mobileEventDropdownIsOpen ? 'border-y border-white max-h-96' : 'max-h-0'
-                  }`}
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${mobileEventDropdownIsOpen ? 'border-y border-white max-h-96' : 'max-h-0'
+                    }`}
                 >
                   {/* Sub-menu list */}
                   <ul className="flex flex-col items-center py-2 gap-1" role="menu">
@@ -230,9 +241,8 @@ export default function Navbar() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className={`w-5 h-5 transition-transform ${
-                      mobileAboutDropdownIsOpen ? 'rotate-180' : ''
-                    }`}
+                    className={`w-5 h-5 transition-transform ${mobileAboutDropdownIsOpen ? 'rotate-180' : ''
+                      }`}
                   >
                     <path
                       fillRule="evenodd"
@@ -243,9 +253,8 @@ export default function Navbar() {
                 </button>
                 {/* Sub-menu */}
                 <div
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    mobileAboutDropdownIsOpen ? 'border-y border-white max-h-96' : 'max-h-0'
-                  }`}
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${mobileAboutDropdownIsOpen ? 'border-y border-white max-h-96' : 'max-h-0'
+                    }`}
                 >
                   {/* Sub-menu list */}
                   <ul className="flex flex-col items-center py-2 gap-1" role="menu">
@@ -306,9 +315,8 @@ export default function Navbar() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className={`w-5 h-5 transition-transform ${
-                  eventDropdownIsOpen ? 'rotate-180' : ''
-                }`}
+                className={`w-5 h-5 transition-transform ${eventDropdownIsOpen ? 'rotate-180' : ''
+                  }`}
               >
                 <path
                   fillRule="evenodd"
@@ -320,11 +328,10 @@ export default function Navbar() {
             {/* Dropdown Menu Panel */}
             <div
               className={`absolute left-0 w-56 origin-top-left rounded-md shadow-lg bg-black ring-1 ring-gray-700 ring-opacity-50 py-1 z-50
-            transition ease-out duration-100 ${
-              eventDropdownIsOpen
-                ? 'opacity-100 scale-100 pointer-events-auto'
-                : 'opacity-0 scale-95 pointer-events-none'
-            }
+            transition ease-out duration-100 ${eventDropdownIsOpen
+                  ? 'opacity-100 scale-100 pointer-events-auto'
+                  : 'opacity-0 scale-95 pointer-events-none'
+                }
         `}
               role="menu"
               aria-orientation="vertical"
@@ -372,9 +379,8 @@ export default function Navbar() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className={`w-5 h-5 transition-transform ${
-                  aboutDropdownIsOpen ? 'rotate-180' : ''
-                }`}
+                className={`w-5 h-5 transition-transform ${aboutDropdownIsOpen ? 'rotate-180' : ''
+                  }`}
               >
                 <path
                   fillRule="evenodd"
@@ -386,11 +392,10 @@ export default function Navbar() {
             {/* Dropdown Menu Panel */}
             <div
               className={`absolute left-0 w-56 origin-top-left rounded-md shadow-lg bg-black ring-1 ring-gray-700 ring-opacity-50 py-1 z-50
-            transition ease-out duration-100 ${
-              aboutDropdownIsOpen
-                ? 'opacity-100 scale-100 pointer-events-auto'
-                : 'opacity-0 scale-95 pointer-events-none'
-            }
+            transition ease-out duration-100 ${aboutDropdownIsOpen
+                  ? 'opacity-100 scale-100 pointer-events-auto'
+                  : 'opacity-0 scale-95 pointer-events-none'
+                }
         `}
               role="menu"
               aria-orientation="vertical"
